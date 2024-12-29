@@ -2,21 +2,46 @@ body {
     background-color: rgb(255, 253, 229);
 }
 
+a, :visited {
+    font-style: normal;
+    color: royalblue;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+}
+
 .title {
-    font-size: 4em;
-    margin: 0em 0em 0.2em 0em;
+    font-size: 5vw;
+    margin: 0em 0em 0.2em 50pt;
     padding: 0em;
     line-height: 1em;
 }
 
+.menu {
+    display: flex;
+    flex: 1;
+}
+
+.push {
+    display: block;
+    margin-left: auto;
+}
+
+.menuitem {
+    display: inline-flex;
+    margin-right: 1vw;
+}
+
 .subtitle {
     font-size: 1.39em;
-    margin:  0em 0em 0.2em 0em;
+    margin:  0em 0em 0.2em 50pt;
     padding: 0em;
 }
 
 .editor {
-    margin:  0.8em 0em 0.4em 2em;
+    margin:  0.8em 0em 0.4em 90pt;
 }
 
 .committee {

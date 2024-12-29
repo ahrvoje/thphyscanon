@@ -118,7 +118,7 @@
     [
         {
             "id": 5,
-            "author": ["Richard P. Feynman", "Robert B. Leighton", "Matthew L. Sands"],
+            "author": ["Feyman, Richard P.", "Leighton, Robert B.", "Sands, Matthew L."],
             "editor": [],
             "title": "The Feynman lectures on physics",
             "engtitle": "",
@@ -142,6 +142,64 @@
             "canon": ["academic"],
             "tags": [],
             "entry": "2024-12-16"
+        }    
+    ],
+    [
+        {
+            "id": 6,
+            "author": ["Goldstein, Herbert"],
+            "editor": [],
+            "title": "Classical mechanics",
+            "engtitle": "",
+            "subtitle": [],
+            "engsubtitle": [],
+            "volumes": 1,
+            "pages": ["xii + 399"],
+            "dimensions": ["24 cm"],
+            "publisher": ["Addison-Wesley Press"],
+            "date": "1950",
+            "place": "Cambridge, Massachusetts, United States",
+            "contributor": [],
+            "language": ["English"],
+            "media": "hardcover",
+            "cover": [[["ID0006_ED001_Goldstein_jacket-front.webp", "ID0006_ED001_Goldstein_jacket-spine.webp"], ""]],
+            "isbn": [],
+            "oclc": "295876",
+            "doi": "",
+            "category": ["undergraduate"],
+            "subject": ["mechanics, classical mechanics"],
+            "canon": ["academic"],
+            "tags": [],
+            "entry": "2024-12-29"
+        }    
+    ],
+    [
+        {
+            "id": 7,
+            "author": ["Maxwell, John Clerk"],
+            "editor": [],
+            "title": "On Physical Lines of Force",
+            "engtitle": "",
+            "subtitle": [],
+            "engsubtitle": [],
+            "volumes": 1,
+            "pages": ["62"],
+            "dimensions": [""],
+            "publisher": [""],
+            "date": "1861",
+            "place": "",
+            "contributor": [],
+            "language": ["English"],
+            "media": "paper",
+            "cover": [[["ID0007_ED001_Maxwell.webp"], ""]],
+            "isbn": [],
+            "oclc": "62578511",
+            "doi": "",
+            "category": ["undergraduate"],
+            "subject": ["electricity", "magnetism", "electromagnetism", "electrodynamics"],
+            "canon": ["historical"],
+            "tags": [],
+            "entry": "2024-12-29"
         }    
     ]
 ]

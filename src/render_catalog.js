@@ -43,7 +43,7 @@ createDataEntry = (name, data) => {
     } else if (name === "ISBN") {
         value.textContent = joinValues(data, separator= " / ")
     } else if (name === "OCLC") {
-        value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\">" + data + "</a>"
+        value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
     } else if (name === "Category") {
         value.textContent = joinValues(data)
     } else if (name === "Subject") {
