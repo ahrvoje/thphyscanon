@@ -44,6 +44,8 @@ createDataEntry = (name, data) => {
         value.textContent = joinValues(data, separator= " / ")
     } else if (name === "OCLC") {
         value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
+    } else if (name === "Link") {
+        value.innerHTML = "<a href=\"" + data + "\" target=\"_blank\">" + data + "</a>"
     } else if (name === "Category") {
         value.textContent = joinValues(data)
     } else if (name === "Subject") {
@@ -104,10 +106,12 @@ const renderCatalog = async () => {
         data.appendChild(createDataEntry("Publisher", book.publisher))
         data.appendChild(createDataEntry("Date", book.date))
         data.appendChild(createDataEntry("Place", book.place))
+        data.appendChild(createDataEntry("Reference", book.reference))
         data.appendChild(createDataEntry("Contributor", book.contributor))
         data.appendChild(createDataEntry("Language", book.language))
         data.appendChild(createDataEntry("ISBN", book.isbn))
         data.appendChild(createDataEntry("OCLC", book.oclc))
+        data.appendChild(createDataEntry("Link", book.link))
         data.appendChild(createDataEntry("Category", book.category))
         data.appendChild(createDataEntry("Subject", book.subject))
         data.appendChild(createDataEntry("Canon", book.canon))
