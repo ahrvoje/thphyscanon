@@ -6,7 +6,7 @@ joinValues = (values, separator=', ') => {
     return txt.substring(0, txt.length - separator.length)  // delete trailing separator
 }
 
-createDataEntry = (name, data) => {
+createDataEntry = (item, name, data) => {
     if (!data.length) {
         return document.createElement('div')
     }
@@ -33,11 +33,11 @@ createDataEntry = (name, data) => {
     } else if (name === "Contributor") {
         txt = ""
         separator = " / "
-        for (i in book.contributor) {
-            contributor = book.contributor[i]
+        for (i in item.contributor) {
+            contributor = item.contributor[i]
             txt += contributor[0] + " (" + contributor[1] + ")"+ separator
         }
-        value.textContent = txt.substring(0, txt.length - separator.length) // delete trailing separator
+        value.textContent = txt.substring(0, txt.length - separator.length)  // delete trailing separator
     } else if (name === "Language") {
         value.textContent = joinValues(data)
     } else if (name === "ISBN") {
@@ -45,7 +45,13 @@ createDataEntry = (name, data) => {
     } else if (name === "OCLC") {
         value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
     } else if (name === "Link") {
-        value.innerHTML = "<a href=\"" + data + "\" target=\"_blank\">" + data + "</a>"
+        txt = ""
+        separator = ", "
+        for (i in item.link) {
+            link = item.link[i]
+            txt += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a>" + separator
+        }
+        value.innerHTML = txt.substring(0, txt.length - separator.length)  // delete trailing separator
     } else if (name === "Category") {
         value.textContent = joinValues(data)
     } else if (name === "Subject") {
@@ -64,58 +70,58 @@ createDataEntry = (name, data) => {
     return entry
 }
 
-createCovers = (covers) => {
-    if (!covers.length) {
+createImages = (images) => {
+    if (!images.length) {
         return document.createElement('div')
     }
 
-    var covers_el = document.createElement('div')
-    covers_el.setAttribute('class', 'covers')
+    var images_el = document.createElement('div')
+    images_el.setAttribute('class', 'images')
 
-    for (i in covers[0][0]) {
-        cover_img = covers[0][0][i]
+    for (i in images[0][0]) {
+        image_img = images[0][0][i]
 
-        var cover_el = document.createElement('img')
-        cover_el.setAttribute('class', 'cover')
-        cover_el.setAttribute('src', "resources/covers/" + cover_img)
-        covers_el.appendChild(cover_el)
+        var image_el = document.createElement('img')
+        image_el.setAttribute('class', 'image')
+        image_el.setAttribute('src', "resources/images/" + image_img)
+        images_el.appendChild(image_el)
     }
 
-    return covers_el
+    return images_el
 }
 
 const renderCatalog = async () => {
     catalog = await loadCatalog();
 
     for (i in catalog) {
-        book = catalog[i][0]
+        item = catalog[i][0]
 
         var card = document.createElement('div')
         card.setAttribute('class', 'card')
         card.setAttribute('id', i)
-        card.appendChild(createCovers(book.cover))
+        card.appendChild(createImages(item.image))
 
         var data = document.createElement('table')
         data.setAttribute('class', 'data')
-        data.appendChild(createDataEntry("Author", book.author))
-        data.appendChild(createDataEntry("Editor", book.editor))
-        data.appendChild(createDataEntry("Title", book.title))
-        data.appendChild(createDataEntry("English title", book.engtitle))
-        data.appendChild(createDataEntry("Subtitle", book.subtitle))
-        data.appendChild(createDataEntry("English subtitle", book.engsubtitle))
-        data.appendChild(createDataEntry("Publisher", book.publisher))
-        data.appendChild(createDataEntry("Date", book.date))
-        data.appendChild(createDataEntry("Place", book.place))
-        data.appendChild(createDataEntry("Reference", book.reference))
-        data.appendChild(createDataEntry("Contributor", book.contributor))
-        data.appendChild(createDataEntry("Language", book.language))
-        data.appendChild(createDataEntry("ISBN", book.isbn))
-        data.appendChild(createDataEntry("OCLC", book.oclc))
-        data.appendChild(createDataEntry("Link", book.link))
-        data.appendChild(createDataEntry("Category", book.category))
-        data.appendChild(createDataEntry("Subject", book.subject))
-        data.appendChild(createDataEntry("Canon", book.canon))
-        data.appendChild(createDataEntry("Tags", book.tags))
+        data.appendChild(createDataEntry(item, "Author", item.author))
+        data.appendChild(createDataEntry(item, "Editor", item.editor))
+        data.appendChild(createDataEntry(item, "Title", item.title))
+        data.appendChild(createDataEntry(item, "Eng. title", item.engtitle))
+        data.appendChild(createDataEntry(item, "Subtitle", item.subtitle))
+        data.appendChild(createDataEntry(item, "Eng. subtitle", item.engsubtitle))
+        data.appendChild(createDataEntry(item, "Publisher", item.publisher))
+        data.appendChild(createDataEntry(item, "Date", item.date))
+        data.appendChild(createDataEntry(item, "Place", item.place))
+        data.appendChild(createDataEntry(item, "Reference", item.reference))
+        data.appendChild(createDataEntry(item, "Contributor", item.contributor))
+        data.appendChild(createDataEntry(item, "Language", item.language))
+        data.appendChild(createDataEntry(item, "ISBN", item.isbn))
+        data.appendChild(createDataEntry(item, "OCLC", item.oclc))
+        data.appendChild(createDataEntry(item, "Link", item.link))
+        data.appendChild(createDataEntry(item, "Category", item.category))
+        data.appendChild(createDataEntry(item, "Subject", item.subject))
+        data.appendChild(createDataEntry(item, "Canon", item.canon))
+        data.appendChild(createDataEntry(item, "Tags", item.tags))
         card.appendChild(data)
 
         document.getElementById('catalog').appendChild(card);
