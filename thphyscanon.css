@@ -2,7 +2,26 @@ body {
     background-color: rgb(255, 253, 229);
 }
 
+.dont-break-out {
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+  
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
 a, :visited {
+    display: block;
     font-style: normal;
     color: royalblue;
 }
@@ -61,14 +80,15 @@ a, :visited {
 }
 
 .images {
-    width: 45%;
-    min-width: 25em;
-    max-width: 45%;
+    width: 30%;
+    min-width: 27em;
+    max-width: 30%;
     height: 100%;
     column-gap: 1em;
     display: flex;
     white-space: nowrap;
     justify-content: center;
+    margin-left: 15%;
 }
 
 .image {
@@ -78,7 +98,7 @@ a, :visited {
 
 .data {
     min-width: 30em;
-    max-width: 45%;
+    max-width: 50%;
     table-layout: fixed;
 }
 
@@ -89,6 +109,25 @@ a, :visited {
 }
 
 .value {
+    min-width: 20em;
     font-weight: bold;
     padding-left: 1em;
+    overflow-wrap: break-word;
+}
+
+.queue {
+    display: grid;
+    margin-top: 3em;
+    justify-content: center;
+}
+
+.queuetitle {
+    margin-left: -5em;
+    font-size: 2em;
+}
+
+.queuelist {
+    margin-top: 1em;
+    justify-content: left;
+    font-size: 1.5em;
 }

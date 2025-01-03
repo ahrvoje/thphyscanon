@@ -46,17 +46,15 @@ createDataEntry = (item, name, data) => {
         value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
     } else if (name === "Link") {
         txt = ""
-        separator = ", "
+        separator = ""
         for (i in item.link) {
             link = item.link[i]
-            txt += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a>" + separator
+            txt += "<a class=\"dont-break-out\" href=\"" + link + "\" target=\"_blank\">" + link + "</a>" + separator
         }
         value.innerHTML = txt.substring(0, txt.length - separator.length)  // delete trailing separator
-    } else if (name === "Category") {
-        value.textContent = joinValues(data)
     } else if (name === "Subject") {
         value.textContent = joinValues(data)
-    } else if (name === "Canon") {
+    } else if (name === "Tags") {
         value.textContent = joinValues(data)
     } else {
             value.textContent = data
@@ -118,9 +116,7 @@ const renderCatalog = async () => {
         data.appendChild(createDataEntry(item, "ISBN", item.isbn))
         data.appendChild(createDataEntry(item, "OCLC", item.oclc))
         data.appendChild(createDataEntry(item, "Link", item.link))
-        data.appendChild(createDataEntry(item, "Category", item.category))
         data.appendChild(createDataEntry(item, "Subject", item.subject))
-        data.appendChild(createDataEntry(item, "Canon", item.canon))
         data.appendChild(createDataEntry(item, "Tags", item.tags))
         card.appendChild(data)
 

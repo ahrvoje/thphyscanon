@@ -27,10 +27,8 @@
             "oclc": "1151794999",
             "doi": "",
             "link": ["https://ntnu.tind.io/record/115139?ln=no", "https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00002", "https://www.e-rara.ch/zut/wihibe/content/titleinfo/338026", "https://archive.org/details/newtonspmathema00newtrich/mode/2up"],
-            "category": ["historical"],
             "subject": ["mechanics", "mathematical physics"],
-            "canon": ["academic"],
-            "tags": [],
+            "tags": ["historical", "academic"],
             "entry": "2024-12-14"
         }    
     ],
@@ -62,10 +60,8 @@
             "oclc": "535998",
             "doi": "",
             "link": [],
-            "category": ["graduate"],
             "subject": ["electromagnetism", "electrodynamics"],
-            "canon": ["academic"],
-            "tags": [],
+            "tags": ["graduate", "academic"],
             "entry": "2024-12-15"
         }    
     ],
@@ -97,10 +93,8 @@
             "oclc": "585119",
             "doi": "",
             "link": [],
-            "category": ["graduate"],
             "subject": ["general relativity", "gravitation"],
-            "canon": ["academic"],
-            "tags": [],
+            "tags": ["graduate", "academic"],
             "entry": "2024-12-15"
         }    
     ],
@@ -132,10 +126,8 @@
             "oclc": "869552361",
             "doi": "",
             "link": [],
-            "category": ["graduate"],
             "subject": ["mechanics", "science history"],
-            "canon": ["popular"],
-            "tags": [],
+            "tags": ["popular"],
             "entry": "2024-12-16"
         }    
     ],
@@ -167,10 +159,8 @@
             "oclc": "531535",
             "doi": "",
             "link": [],
-            "category": ["undergraduate"],
             "subject": ["physics"],
-            "canon": ["academic"],
-            "tags": [],
+            "tags": ["academic"],
             "entry": "2024-12-16"
         }    
     ],
@@ -202,10 +192,8 @@
             "oclc": "295876",
             "doi": "",
             "link": [],
-            "category": ["undergraduate"],
             "subject": ["mechanics, classical mechanics"],
-            "canon": ["academic"],
-            "tags": [],
+            "tags": ["academic"],
             "entry": "2024-12-29"
         }    
     ],
@@ -237,10 +225,8 @@
             "oclc": "62578511",
             "doi": "10.1080/14786431003659180",
             "link": ["https://en.wikisource.org/wiki/On_Physical_Lines_of_Force"],
-            "category": ["undergraduate"],
             "subject": ["electricity", "magnetism", "electromagnetism", "electrodynamics"],
-            "canon": ["historical"],
-            "tags": [],
+            "tags": ["historical"],
             "entry": "2024-12-29"
         }    
     ],
@@ -272,10 +258,8 @@
             "oclc": "934484635",
             "doi": "",
             "link": ["https://gdz.sub.uni-goettingen.de/id/PPN380672502", "https://gdz.sub.uni-goettingen.de/id/PPN380673029"],
-            "category": [],
             "subject": ["mathematics", "mathematical physics"],
-            "canon": ["academic"],
-            "tags": [],
+            "tags": ["academic"],
             "entry": "2025-01-02"
         }    
     ]
