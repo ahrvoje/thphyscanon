@@ -39,21 +39,6 @@ a, :visited {
     white-space: nowrap;
 }
 
-.menu {
-    display: flex;
-    flex: 1;
-}
-
-.push {
-    display: block;
-    margin-left: auto;
-}
-
-.menuitem {
-    display: inline-flex;
-    margin-right: 1vw;
-}
-
 .subtitle {
     font-size: 1.73vw;
     margin:  0em 0em 0.2em 50pt;
@@ -88,7 +73,8 @@ a, :visited {
     display: flex;
     white-space: nowrap;
     justify-content: center;
-    margin-left: 15%;
+    padding-right: 2em;
+    margin-left: 5%;
 }
 
 .image {
@@ -99,7 +85,8 @@ a, :visited {
 .data {
     min-width: 30em;
     max-width: 50%;
-    table-layout: fixed;
+    max-height: 100%;
+    table-layout: auto;
 }
 
 .entry {
@@ -131,4 +118,26 @@ a, :visited {
     justify-content: left;
     font-size: 1.25em;
     line-height: 1.3em;
+}
+
+.footer {
+    width: 100%;
+    min-height: 3em;
+    display: flex;
+    margin-top: 1em;
+    padding-top: 1.5em;
+    flex: 1;
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: black;
+}
+
+.footerpush {
+    display: block;
+    margin-left: auto;
+}
+
+.footeritem {
+    display: inline-flex;
+    margin-right: 1vw;
 }
