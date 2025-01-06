@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <!-- <link rel="stylesheet" href="src/reset.css"> -->
         <link rel="stylesheet" href="src/thphyscanon.css">
         <script type="text/javascript" src="src/load_catalog.js"></script>
         <title>Theoretical Physics Canon</title>
@@ -14,6 +16,12 @@
         <h4 class="subtitle">provide enduring reference, and instruct present study in theoretical physics.</h4>
         <h3 class="editor">Editor: Hrvoje Abraham (ahrvoje@gmail.com)</h3>
         <!--<h3 class="committee">Committee:</h3>-->
+        <div class="filtersection" id="filtersection">
+            <!-- <div class="filterrow" id="subjectsfilterrow"><input type="checkbox" class="filtercheck" id="subjects" onclick="filterLabelClick(this)" checked /><label class="filterlabel" for="subjects" onclick="filterLabelClick(this)">Subjects:</label><div class="filters"></div></div>
+            <div class="filterrow" id="tagsfilterrow"><input type="checkbox" class="filtercheck" id="tags" onclick="filterLabelClick(this)" checked /><label class="filterlabel" for="tags" onclick="filterLabelClick(this)">Tags:</label><div class="filters"></div></div> -->
+            <div class="filterrow" id="subjectsfilterrow"><label class="filterlabel" for="subjects">Subjects:</label><div class="filters"></div></div>
+            <div class="filterrow" id="tagsfilterrow"><label class="filterlabel" for="tags">Tags:</label><div class="filters"></div></div>
+        </div>
         <div class="catalog" id="catalog"></div>
         <div class="queue">
             <div class="queuetitle">To Do:</div>
@@ -21,7 +29,7 @@
                 Landau, L.D. and Lifshitz, E.M. The Course of Theoretical Physics<br />
                 Marion, Jerry B. Classical Dynamics of Particles and Systems, 1965 New York Academic Press<br />
                 French, A.P. Vibrations and Waves 1 1971 New York W.W. Norton<br />
-                Taylor, Edwin T. & John Archibald Wheeler Spacetime Physics: Introduction to Special Relativity, 1992 NewYork W.H.Freeman<br />
+                Taylor, Edwin T. & John Archibald Wheeler Spacetime Physics: Introduction to Special Relativity, 1992 NewYork W.H. Freeman<br />
                 Dirac, P.A.M. General Theory of Relativity  1996 Princeton PUP<br />
                 Schutz, Bernard F. A first course in general relativity, 1998 Cambridge CUP<br />
                 Taylor, Edwin F. & John Archibald Wheeler Exploring Black Holes: Introduction to General Relativity 2000 San Francisco Addison-Wesley<br />
@@ -32,7 +40,7 @@
                 Dirac, P.A.M. Lectures on Quantum Mechanics 2001 Mineola, NY Dover Pub.<br />
                 Pathria, R.K. Statistical Mechanics 1996 Oxford Butterworth Heinemann<br />
                 Fermi, Enrico Thermodynamics 1956 New York Dover Pub.<br />
-                Kittel, Charles & Herbert Kroemer Thermal Physics 1998 New York W.H.Freeman<br />
+                Kittel, Charles & Herbert Kroemer Thermal Physics 1998 New York W.H. Freeman<br />
                 Ashcroft, Neil W. & N. David Mermin Solid State Physics 1976 Ft. Worth,TX Saunders College Pub.<br />
                 Kittel, Charles Introduction to Solid State Physics 1996 New York Wiley<br />
                 Arfken, George B. & Hans J. Weber Mathematical Methods for Physicists 1995 San Diego Academic Press<br />
@@ -71,6 +79,27 @@
                 Robert Resnick, David Halliday, Jearl Walker - Fundamentals of Physics, 11th Edition Extended (2018, Wiley)<br />
                 NIST Handbook of Mathematical Functions<br />
                 Gradshtein, I.S. & Ryzhik, I.M. Tables of integrals, series and products (7ed., AP, 2007)(ISBN 0123736374)(1221s)<br />
+                A. Korn and M. Korn, “Mathematical Handbook for Scientists and Engineers,” Mc Graw-Hill Book Company, Inc., New York, Toronto, London, 1961<br />
+                IRODOV, Igor E. PROBLEMS IN GENERAL PHYSICS 1988 MIR PUBLISHERS<br />
+                Green, M. B.; Schwarz, J. H.; Witten, E., Superstring Theory<br />
+                A Symposium of Problems in Physics (Sbornik zadach po fizike), D. I. Sakharov, I. S. Kosmlnkov, Kiev, "Radyanska shkola," 1949, 240 pp<br />
+                Stanić B. V., Marković M. I., Zbirka rešenih zadatka iz atomske fizike, Naučna knjiga, Beograd, 1973.<br />
+                Dhawan D. K., Problems in Solid State Physics, Campus Book International, New Delhi, 2003.<br />
+                Pillai S. O., Modern Physics and Solid State Physics - Problems and Solutions, New Age International, New Delhi, 2008.<br />
+                Han F., Problems in Solid State Physics, World Scientific, Singapore, 2012.<br />
+                Goldsmid H. J., Problems in Solid State Physics, Pion, London, 1968.<br />
+                Kupčić I., Fizika čvrstog stanja - Zbirka zadataka, Hinus, Zagreb, 1998.<br />
+                Lim Y., Problems and Solutions on Solid State Physics, Relativity and Miscellaneous Topics, World Scientific, Singapore, 1995.<br />
+                Mihaly L., Martin M. C., Solid State Physics - Problems and Solutions, 2nd ed., Wiley VCH, Weinheim, 2009.<br />
+                Mahan G. D., Condensed matter in a nutshell, Princeton University Press, Princeton, 2011.<br />
+                Marder M. P., Condensed Matter Physics, 2nd edition, Wiley, New York, 2010.<br />
+                Omar M. A., Elementary Solid State Physics, Addison-Wesley, Readings, 1975.<br />
+                Simon H. S., The Oxford Solid State Basics, OUP, Oxford, 2013.<br />
+                Šips V., Uvod u fiziku čvrstog stanja, Školska knjiga, Zagreb, 2003.<br />
+                Supek, Ivan Teorijska fizika i struktura materije, Školska knjiga, Zagreb, 1952.<br />
+                Ilakovac, Amon Riješeni zadaci iz fizike elementarnih čestica, Školska knjiga, Zagreb 2001.<br />
+                Bickley & Temple, Rayleigh's Principle and Its Applications to Engineering, 1956<br />
+                Kotkin G. L. & Serbo V. G. (1971). Collection of Problems in Classical Mechanics. Oxford, New York: Pergamon Press<br />
             </div>
         </div>
         <div class="footer">

@@ -6,9 +6,9 @@ joinValues = (values, separator=', ') => {
     return txt.substring(0, txt.length - separator.length)  // delete trailing separator
 }
 
-createDataEntry = (item, name, data) => {
+createDataEntry = (datatable, item, name, data) => {
     if (!data.length) {
-        return document.createElement('div')
+        return
     }
 
     var attr = document.createElement('td')
@@ -46,16 +46,28 @@ createDataEntry = (item, name, data) => {
         value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
     } else if (name === "Link") {
         txt = ""
-        separator = ""
         for (i in item.link) {
             link = item.link[i]
-            txt += "<a class=\"dont-break-out\" href=\"" + link + "\" target=\"_blank\">" + link + "</a>" + separator
+            txt += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a><br/>"
         }
-        value.innerHTML = txt.substring(0, txt.length - separator.length)  // delete trailing separator
+        txt = txt.substring(0, txt.length - 5)  // delete trailing <br/>
+        value.innerHTML = txt
     } else if (name === "Subject") {
-        value.textContent = joinValues(data)
+        txt = ""
+        for (i in item.subject) {
+            subject = item.subject[i]
+            window.tpc_subjects.add(subject)
+            txt += "<div class=\"subject\">" + subject + "</div>"
+        }
+        value.innerHTML = txt
     } else if (name === "Tags") {
-        value.textContent = joinValues(data)
+        txt = ""
+        for (i in item.tags) {
+            tag = item.tags[i]
+            window.tpc_tags.add(tag)
+            txt += "<div class=\"tag\">" + tag + "</div>"
+        }
+        value.innerHTML = txt
     } else {
             value.textContent = data
     }
@@ -65,7 +77,7 @@ createDataEntry = (item, name, data) => {
     entry.appendChild(attr)
     entry.appendChild(value)
 
-    return entry
+    datatable.appendChild(entry)
 }
 
 createImages = (images) => {
@@ -99,28 +111,95 @@ const renderCatalog = async () => {
         card.setAttribute('id', i)
         card.appendChild(createImages(item.image))
 
-        var data = document.createElement('table')
-        data.setAttribute('class', 'data')
-        data.appendChild(createDataEntry(item, "Author", item.author))
-        data.appendChild(createDataEntry(item, "Editor", item.editor))
-        data.appendChild(createDataEntry(item, "Title", item.title))
-        data.appendChild(createDataEntry(item, "Eng. title", item.engtitle))
-        data.appendChild(createDataEntry(item, "Subtitle", item.subtitle))
-        data.appendChild(createDataEntry(item, "Eng. subtitle", item.engsubtitle))
-        data.appendChild(createDataEntry(item, "Publisher", item.publisher))
-        data.appendChild(createDataEntry(item, "Date", item.date))
-        data.appendChild(createDataEntry(item, "Place", item.place))
-        data.appendChild(createDataEntry(item, "Reference", item.reference))
-        data.appendChild(createDataEntry(item, "Contributor", item.contributor))
-        data.appendChild(createDataEntry(item, "Language", item.language))
-        data.appendChild(createDataEntry(item, "ISBN", item.isbn))
-        data.appendChild(createDataEntry(item, "OCLC", item.oclc))
-        data.appendChild(createDataEntry(item, "Link", item.link))
-        data.appendChild(createDataEntry(item, "Subject", item.subject))
-        data.appendChild(createDataEntry(item, "Tags", item.tags))
-        card.appendChild(data)
+        var datatable = document.createElement('table')
+        datatable.setAttribute('class', 'data')
+        createDataEntry(datatable, item, "Author", item.author)
+        createDataEntry(datatable, item, "Editor", item.editor)
+        createDataEntry(datatable, item, "Eng. title", item.engtitle)
+        createDataEntry(datatable, item, "Title", item.title)
+        createDataEntry(datatable, item, "Rom. title", item.romantitle)
+        createDataEntry(datatable, item, "Eng. subtitle", item.engsubtitle)
+        createDataEntry(datatable, item, "Subtitle", item.subtitle)
+        createDataEntry(datatable, item, "Rom. subtitle", item.romansubtitle)
+        createDataEntry(datatable, item, "Publisher", item.publisher)
+        createDataEntry(datatable, item, "Date", item.date)
+        createDataEntry(datatable, item, "Place", item.place)
+        createDataEntry(datatable, item, "Reference", item.reference)
+        createDataEntry(datatable, item, "Contributor", item.contributor)
+        createDataEntry(datatable, item, "Language", item.language)
+        createDataEntry(datatable, item, "ISBN", item.isbn)
+        createDataEntry(datatable, item, "OCLC", item.oclc)
+        createDataEntry(datatable, item, "Link", item.link)
+        createDataEntry(datatable, item, "Subject", item.subject)
+        createDataEntry(datatable, item, "Tags", item.tags)
 
+        card.appendChild(datatable)
         document.getElementById('catalog').appendChild(card);
     }
 }
-renderCatalog()
+
+const filterLabelClick = (el) => {
+    filterrow = el.closest(".filterrow")
+    filters = filterrow.getElementsByClassName("filters")[0].children
+
+    if (filterrow.firstChild.checked) {
+        newState = true;
+    } else {
+        newState = false;
+    }
+
+    for (i in filters) {
+        filter = filters[i]
+
+        if (!filter.firstChild.checked && newState) {
+            filter.firstChild.checked = newState
+            filter.firstChild.dispatchEvent("onchange")
+        } else if (filter.firstChild.checked && !newState) {
+            filter.firstChild.checked = newState
+            filter.firstChild.dispatchEvent("onchange")
+        }
+    }
+}
+
+const filterChange = (el) => {
+    items = document.getElementsByClassName(el.parentElement.getAttribute("category"))
+    for (i in items) {
+        item = items[i]
+        if (item.textContent == el.parentElement.textContent) {
+            if (el.checked) {
+                item.closest(".card").style.display = "flex";
+            } else {
+                item.closest(".card").style.display = "none";
+            }
+        }
+    }
+}
+
+const renderFilters = async () => {
+    txt = ""
+    for (i in window.tpc_subjects) {
+        subject = window.tpc_subjects[i]
+        txt += "<div class=\"filter\" category=\"subject\"><input type=\"checkbox\" id=\"subject " + subject + "\" onchange=\"filterChange(this)\" checked/><label for=\"subject " + subject + "\">" + subject + "</label></div>"
+    }
+    document.getElementById('subjectsfilterrow').getElementsByClassName("filters")[0].innerHTML = txt
+
+    txt = ""
+    for (i in window.tpc_tags) {
+        tag = window.tpc_tags[i]
+        txt += "<div class=\"filter\" category=\"tag\"><input type=\"checkbox\" id=\"tag " + tag + "\" onchange=\"filterChange(this)\" checked/><label for=\"tag " + tag + "\">" + tag + "</label></div>"
+    }
+    document.getElementById('tagsfilterrow').getElementsByClassName("filters")[0].innerHTML = txt
+}
+
+renderPage = async () => {
+    window.tpc_subjects = new Set();
+    window.tpc_tags = new Set();
+
+    await renderCatalog();
+
+    window.tpc_subjects = Array.from(window.tpc_subjects).sort()
+    window.tpc_tags = Array.from(window.tpc_tags).sort()
+
+    await renderFilters();
+}
+renderPage()
