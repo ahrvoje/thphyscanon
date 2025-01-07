@@ -15,10 +15,9 @@ a, :visited {
 }
 
 .top {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 50pt;
+    padding-left: 50pt;
 }
 
 .title {
