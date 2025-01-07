@@ -4,6 +4,10 @@
     vertical-align: middle;
 }
 
+html {
+    -webkit-text-size-adjust: none;
+}
+
 body {
     background-color: rgb(255, 253, 229);
 }
