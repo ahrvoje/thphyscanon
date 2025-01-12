@@ -158,11 +158,48 @@ const filterLabelClick = (el) => {
     for (i in filters) {
         filter = filters[i]
 
+        if (!filter.firstChild) {
+            continue
+        }
+
         if (!filter.firstChild.checked && newState) {
             filter.firstChild.click()
         } else if (filter.firstChild.checked && !newState) {
             filter.firstChild.click()
         }
+    }
+}
+
+const mainFilterChange = (el) => {
+    filterrow = el.closest(".filterrow")
+    filters = filterrow.getElementsByClassName("filters")[0].children
+
+    someTrue = false;
+    someFalse = false
+    for (i in filters) {
+        filter = filters[i]
+
+        if (!filter.firstChild) {
+            continue
+        }
+
+        if (filter.firstChild.checked) {
+            someTrue = true
+        } else {
+            someFalse = true
+        }
+    }
+
+    mainCheck = filterrow.firstChild.firstChild;
+    if (!someFalse) {
+        mainCheck.indeterminate = false;
+        mainCheck.checked = true;
+    } else if (!someTrue) {
+        mainCheck.indeterminate = false;
+        mainCheck.checked = false;        
+    } else {
+        mainCheck.indeterminate = true;
+        mainCheck.checked = false;
     }
 }
 
@@ -178,6 +215,8 @@ const filterChange = (el) => {
             }
         }
     }
+
+    mainFilterChange(el)
 }
 
 const renderFilters = async () => {
