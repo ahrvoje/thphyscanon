@@ -80,6 +80,11 @@ a, :visited {
     white-space: nowrap;
 }
 
+.mainfilter {
+    white-space: nowrap;
+    min-width: 6em;
+}
+
 .filter, .filterlabel {
     /* prevent double-click selection */
     -webkit-user-select: none; /* Safari */
@@ -139,6 +144,18 @@ a, :visited {
 
 td a {
     display: inline;
+}
+
+.notesentry {
+}
+
+.notesattribute {
+    padding-top: 1em;
+}
+
+.notesvalue {
+    padding-top: 1em;
+    font-weight: normal;
 }
 
 .subject {

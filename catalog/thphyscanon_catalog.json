@@ -4,7 +4,6 @@
             "id": 1,
             "type": "book",
             "author": ["Newton, Issac"],
-            "romanauthor": [],
             "editor": [],
             "title": "Philosophiæ Naturalis Principia Mathematica",
             "romantitle": "",
@@ -16,15 +15,13 @@
             "pages": [],
             "dimensions": [],
             "publisher": ["Royal Society"],
+            "series": "",
             "date": "1687-07-05",
             "place": "London, England",
             "reference": "",
             "contributor": [["Halley, Edmond", "investor"], ["Streater, Joseph", "printer"]],
             "language": ["Neo-Latin"],
             "media": "hardcover",
-            "series": "",
-            "precesor": "",
-            
             "image": [[["ID0001_ED001_Principia.webp"], ""]],
             "isbn": [],
             "oclc": "1151794999",
@@ -32,7 +29,8 @@
             "link": ["https://ntnu.tind.io/record/115139?ln=no", "https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00002", "https://www.e-rara.ch/zut/wihibe/content/titleinfo/338026", "https://archive.org/details/newtonspmathema00newtrich/mode/2up"],
             "subject": ["mechanics", "mathematical physics"],
             "tags": ["historical", "academic"],
-            "entry": "2024-12-14"
+            "entry": "2024-12-14",
+            "notes": ""
         }    
     ],
     [
@@ -40,7 +38,6 @@
             "id": 2,
             "type": "book",
             "author": ["Jackson, John David"],
-            "romanauthor": [],
             "editor": [],
             "title": "Classical Electrodynamics",
             "romantitle": "",
@@ -52,6 +49,7 @@
             "pages": ["xvii + 641"],
             "dimensions": ["24 cm"],
             "publisher": ["John Wiley & Sons, Inc."],
+            "series": "",
             "date": "1962",
             "place": "New York, United States",
             "reference": "",
@@ -65,7 +63,8 @@
             "link": [],
             "subject": ["electromagnetism", "electrodynamics"],
             "tags": ["graduate", "academic"],
-            "entry": "2024-12-15"
+            "entry": "2024-12-15",
+            "notes": ""
         }    
     ],
     [
@@ -73,7 +72,6 @@
             "id": 3,
             "type": "book",
             "author": ["Misner, Charles W.", "Thorne, Kip S.", "Wheeler, John Archibald"],
-            "romanauthor": [],
             "editor": [],
             "title": "Gravitation",
             "romantitle": "",
@@ -85,6 +83,7 @@
             "pages": ["xxvii + 1279"],
             "dimensions": ["26 cm"],
             "publisher": ["W.H. Freeman and Company"],
+            "series": "",
             "date": "1973-09-15",
             "place": "New York, United States",
             "reference": "",
@@ -98,7 +97,8 @@
             "link": [],
             "subject": ["general relativity", "gravitation"],
             "tags": ["graduate", "academic"],
-            "entry": "2024-12-15"
+            "entry": "2024-12-15",
+            "notes": ""
         }    
     ],
     [
@@ -106,7 +106,6 @@
             "id": 4,
             "type": "book",
             "author": ["Dumas, H. Scott"],
-            "romanauthor": [],
             "editor": [],
             "title": "The KAM Story",
             "romantitle": "",
@@ -118,6 +117,7 @@
             "pages": ["xv + 361"],
             "dimensions": ["24 cm"],
             "publisher": ["World Scientific Publishing Company"],
+            "series": "",
             "date": "2014-04-17",
             "place": "New Jersey, United States",
             "reference": "",
@@ -131,7 +131,8 @@
             "link": [],
             "subject": ["mechanics", "science history"],
             "tags": ["popular"],
-            "entry": "2024-12-16"
+            "entry": "2024-12-16",
+            "notes": ""
         }    
     ],
     [
@@ -139,7 +140,6 @@
             "id": 5,
             "type": "book",
             "author": ["Feyman, Richard P.", "Leighton, Robert B.", "Sands, Matthew L."],
-            "romanauthor": [],
             "editor": [],
             "title": "The Feynman lectures on physics",
             "romantitle": "",
@@ -151,6 +151,7 @@
             "pages": [],
             "dimensions": ["29 cm"],
             "publisher": ["Addison-Wesley Pub. Co."],
+            "series": "",
             "date": "1964",
             "place": "Reading, Massachusetts, United States",
             "reference": "",
@@ -164,7 +165,8 @@
             "link": [],
             "subject": ["physics"],
             "tags": ["academic"],
-            "entry": "2024-12-16"
+            "entry": "2024-12-16",
+            "notes": ""
         }    
     ],
     [
@@ -172,7 +174,6 @@
             "id": 6,
             "type": "book",
             "author": ["Goldstein, Herbert"],
-            "romanauthor": [],
             "editor": [],
             "title": "Classical mechanics",
             "romantitle": "",
@@ -184,6 +185,7 @@
             "pages": ["xii + 399"],
             "dimensions": ["24 cm"],
             "publisher": ["Addison-Wesley Press"],
+            "series": "",
             "date": "1950",
             "place": "Cambridge, Massachusetts, United States",
             "reference": "",
@@ -197,7 +199,8 @@
             "link": [],
             "subject": ["mechanics", "classical mechanics"],
             "tags": ["academic"],
-            "entry": "2024-12-29"
+            "entry": "2024-12-29",
+            "notes": ""
         }    
     ],
     [
@@ -205,7 +208,6 @@
             "id": 7,
             "type": "article",
             "author": ["Maxwell, John Clerk"],
-            "romanauthor": [],
             "editor": [],
             "title": "On Physical Lines of Force",
             "romantitle": "",
@@ -217,6 +219,7 @@
             "pages": ["62"],
             "dimensions": [],
             "publisher": [],
+            "series": "",
             "date": "1861",
             "place": "",
             "reference": "Philosophical Magazine. 90: 11–23",
@@ -229,8 +232,9 @@
             "doi": "10.1080/14786431003659180",
             "link": ["https://en.wikisource.org/wiki/On_Physical_Lines_of_Force"],
             "subject": ["electricity", "magnetism", "electromagnetism", "electrodynamics"],
-            "tags": ["historical"],
-            "entry": "2024-12-29"
+            "tags": ["historical", "academic"],
+            "entry": "2024-12-29",
+            "notes": "Introduction of Maxwell equations."
         }    
     ],
     [
@@ -238,7 +242,6 @@
             "id": 8,
             "type": "book",
             "author": ["Courant, Richard", "Hilbert, David"],
-            "romanauthor": [],
             "editor": [],
             "title": "Methoden der mathematischen Physik",
             "romantitle": "",
@@ -250,6 +253,7 @@
             "pages": ["xiii + 450", "xvi + 549"],
             "dimensions": [],
             "publisher": ["Verlag von Julius Springer"],
+            "series": "",
             "date": "1924",
             "place": "Berlin",
             "reference": "",
@@ -263,7 +267,42 @@
             "link": ["https://gdz.sub.uni-goettingen.de/id/PPN380672502", "https://gdz.sub.uni-goettingen.de/id/PPN380673029"],
             "subject": ["mathematics", "mathematical physics"],
             "tags": ["academic"],
-            "entry": "2025-01-02"
+            "entry": "2025-01-02",
+            "notes": ""
+        }    
+    ],
+    [
+        {
+            "id": 9,
+            "type": "book",
+            "author": ["Irodov, I. E. (Иродов, Игорь Евгеньевич)"],
+            "editor": [],
+            "title": "Задачи по общей физике",
+            "romantitle": "",
+            "engtitle": "Problems in General Physics",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": 1,
+            "pages": ["446"],
+            "dimensions": [],
+            "publisher": ["Mir Publishers"],
+            "series": "",
+            "date": "1979",
+            "place": "Moscow",
+            "reference": "",
+            "contributor": [],
+            "language": ["Russian"],
+            "media": "hardcover",
+            "image": [[["ID0009_ED001_Irodov_jacket-front.webp", "ID0009_ED001_Irodov_jacket-spine.webp"], ""]],
+            "isbn": [],
+            "oclc": "",
+            "doi": "",
+            "link": ["https://archive.org/details/IrodovProblemsInGeneralPhysics/"],
+            "subject": ["physics", "problems"],
+            "tags": ["academic"],
+            "entry": "2025-01-12",
+            "notes": ""
         }    
     ]
 ]

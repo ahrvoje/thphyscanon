@@ -18,6 +18,11 @@ createDataEntry = (datatable, item, name, data) => {
     var value = document.createElement('td')
     value.setAttribute('class', 'value')
 
+    var entry = document.createElement('tr')
+    entry.setAttribute('class', 'entry')
+    entry.appendChild(attr)
+    entry.appendChild(value)
+
     if (name === "Author") {
         value.textContent = joinValues(data, separator=' / ')
     } else if (name === "Editor") {
@@ -68,14 +73,15 @@ createDataEntry = (datatable, item, name, data) => {
             txt += "<div class=\"tag\">" + tag + "</div>"
         }
         value.innerHTML = txt
+    } else if (name == "Notes") {
+        value.innerHTML = data
+
+        value.parentElement.classList.add("notesentry")
+        value.parentElement.firstChild.classList.add("notesattribute")
+        value.classList.add("notesvalue")
     } else {
             value.textContent = data
     }
-
-    var entry = document.createElement('tr')
-    entry.setAttribute('class', 'entry')
-    entry.appendChild(attr)
-    entry.appendChild(value)
 
     datatable.appendChild(entry)
 }
@@ -132,6 +138,7 @@ const renderCatalog = async () => {
         createDataEntry(datatable, item, "Link", item.link)
         createDataEntry(datatable, item, "Subject", item.subject)
         createDataEntry(datatable, item, "Tags", item.tags)
+        createDataEntry(datatable, item, "Notes", item.notes)
 
         card.appendChild(datatable)
         document.getElementById('catalog').appendChild(card);
@@ -142,7 +149,7 @@ const filterLabelClick = (el) => {
     filterrow = el.closest(".filterrow")
     filters = filterrow.getElementsByClassName("filters")[0].children
 
-    if (filterrow.firstChild.checked) {
+    if (filterrow.firstChild.firstChild.checked) {
         newState = true;
     } else {
         newState = false;
@@ -152,11 +159,9 @@ const filterLabelClick = (el) => {
         filter = filters[i]
 
         if (!filter.firstChild.checked && newState) {
-            filter.firstChild.checked = newState
-            filter.firstChild.dispatchEvent("onchange")
+            filter.firstChild.click()
         } else if (filter.firstChild.checked && !newState) {
-            filter.firstChild.checked = newState
-            filter.firstChild.dispatchEvent("onchange")
+            filter.firstChild.click()
         }
     }
 }
