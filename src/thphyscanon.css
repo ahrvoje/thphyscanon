@@ -108,6 +108,7 @@ a, :visited {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 5%;
 }
 
 .images {
@@ -120,7 +121,6 @@ a, :visited {
     white-space: nowrap;
     justify-content: center;
     padding-right: 2em;
-    margin-left: 5%;
 }
 
 .image {
