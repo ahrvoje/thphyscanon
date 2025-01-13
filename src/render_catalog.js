@@ -88,7 +88,7 @@ createDataEntry = (datatable, item, name, data) => {
 
 createImages = (images) => {
     if (!images.length) {
-        return document.createElement('div')
+        return
     }
 
     var images_el = document.createElement('div')
@@ -103,7 +103,16 @@ createImages = (images) => {
         images_el.appendChild(image_el)
     }
 
-    return images_el
+    var images_caption = document.createElement('div')
+    images_caption.setAttribute('class', 'imagescaption')
+    images_caption.innerHTML = images[0][1]
+
+    var images_form = document.createElement('div')
+    images_form.setAttribute('class', 'imagesform')
+    images_form.appendChild(images_el)
+    images_form.appendChild(images_caption)
+
+    return images_form
 }
 
 const renderCatalog = async () => {
