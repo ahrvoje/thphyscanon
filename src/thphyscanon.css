@@ -105,22 +105,22 @@ a, :visited {
 }
 
 .imagesform {
+    width: 30%;
+    min-width: 27em;
+    max-width: 30%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 5%;
+    padding-right: 2em;
 }
 
 .images {
-    width: 30%;
-    min-width: 27em;
-    max-width: 30%;
     height: 95%;
     column-gap: 1em;
     display: flex;
     white-space: nowrap;
     justify-content: center;
-    padding-right: 2em;
 }
 
 .image {
