@@ -53,9 +53,9 @@ createDataEntry = (datatable, item, name, data) => {
         txt = ""
         for (i in item.link) {
             link = item.link[i]
-            txt += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a><br/>"
+            txt += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a><br>"
         }
-        txt = txt.substring(0, txt.length - 5)  // delete trailing <br/>
+        txt = txt.substring(0, txt.length - 5)  // delete trailing <br>
         value.innerHTML = txt
     } else if (name === "Subject") {
         txt = ""
