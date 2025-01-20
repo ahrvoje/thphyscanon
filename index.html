@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+        <meta name="description" content="Author: Hrvoje Abraham Category: Books, Physics, Mathematics Title: Theoretical Physics Canon">
         <link rel="stylesheet" href="src/thphyscanon.css">
         <script type="text/javascript" src="src/load_catalog.js"></script>
         <title>Theoretical Physics Canon</title>
@@ -10,15 +11,31 @@
 
     <body>
         <div class="top">
-            <h1 class="title">Theoretical Ph<div class="kern-y-1">y</div>sics C<div class="kern-a-1">a</div>non</h1>
+            <h1 class="title">Theoretical Ph<div class="kern-y-1">y</div><div class="kern-s-1">s</div>ics C<div class="kern-a-1">a</div>non</h1>
             <h4 class="subtitle">A curated collection of authoritative sources that established the foundations,</h4>
             <h4 class="subtitle">provide enduring reference, and instruct present study in theoretical physics.</h4>
             <h3 class="editor">Editor: Hrvoje Abraham (ahrvoje<span></span>&#64;gmail.com)</h3>
         </div>
         <!--<h3 class="committee">Committee:</h3>-->
         <div class="filtersection" id="filtersection">
-            <div class="filterrow" id="subjectsfilterrow"><div class="mainfilter"><input type="checkbox" class="filtercheck" id="subjects" onclick="filterLabelClick(this)" checked /><label class="filterlabel" for="subjects" onclick="filterLabelClick(this)">Subjects:</label></div><div class="filters"></div></div>
-            <div class="filterrow" id="tagsfilterrow"><div class="mainfilter"><input type="checkbox" class="filtercheck" id="tags" onclick="filterLabelClick(this)" checked /><label class="filterlabel" for="tags" onclick="filterLabelClick(this)">Tags:</label></div><div class="filters"></div></div>
+            <div class="filterrow" id="subjectsfilterrow">
+                <div class="mainfilter">
+                    <input type="checkbox" class="filtercheck" id="subjects" onclick="filterLabelClick(this)" checked />
+                    <label class="filterlabel" for="subjects" onclick="filterLabelClick(this)">
+                        Subjects:
+                    </label>
+                </div>
+                <div class="filters"></div>
+            </div>
+            <div class="filterrow" id="tagsfilterrow">
+                <div class="mainfilter">
+                    <input type="checkbox" class="filtercheck" id="tags" onclick="filterLabelClick(this)" checked />
+                    <label class="filterlabel" for="tags" onclick="filterLabelClick(this)">
+                        Tags:
+                    </label>
+                </div>
+                <div class="filters"></div>
+            </div>
         </div>
         <div class="catalog" id="catalog"></div>
         <div class="queue">
@@ -182,6 +199,28 @@
                 <div class="queueentry">Boltzmann, Ludwig. “Über die Beziehung eines allgemeinen mechanischen Satzes zum zweiten Hauptsatze der Wärmetheorie.” (“On the Relation of a General Mechanical Theorem to the Second Law of Thermodynamics”) Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften in Wien 76 (1877): 373–435.</div>
                 <div class="queueentry">Boltzmann, Ludwig. “Weitere Studien über das Wärmegleichgewicht unter Gasmolekülen.” (“Further Studies on the Thermal Equilibrium among Gas Molecules”) Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften, mathematisch-naturwissenschaftliche Klasse 66 (1872): 275–370.</div>
                 <div class="queueentry">Boltzmann, Ludwig. “Vorlesungen über Gastheorie” (“Lectures on Gas Theory”). 2 vols. Leipzig: J. A. Barth, 1896–1898.</div>
+                <div class="queueentry">Weinberg, Steven. “The Cosmological Constant Problem.” Reviews of Modern Physics 61, no. 1 (1989): 1–23. review</div>
+                <div class="queueentry">Martin, Stephen P. “A Supersymmetry Primer.” In Perspectives on Supersymmetry, edited by G. L. Kane, 1–98. Singapore: World Scientific, 1997. review</div>
+                <div class="queueentry">Maldacena, Juan M. “The Large-N Limit of Superconformal Field Theories and Supergravity.” International Journal of Theoretical Physics 38, no. 4 (1999): 1113–1133. review</div>
+                <div class="queueentry">Will, Clifford M. “The Confrontation between General Relativity and Experiment.” Living Reviews in Relativity 17 (2014): 4. https://doi.org/10.12942/lrr-2014-4. living review</div>
+                <div class="queueentry">Particle Data Group. “Review of Particle Physics.” Progress of Theoretical and Experimental Physics 2022, no. 8 (2022): 083C01. https://doi.org/10.1093/ptep/ptac097. living review</div>
+                <div class="queueentry">Polchinski, Joseph. “Effective Field Theory and the Fermi Surface.” In Recent Directions in Particle Theory: From Superstrings and Black Holes to the Standard Model (TASI 92), edited by J. Harvey and J. Polchinski, 235–274. Redwood City, CA: Addison-Wesley, 1993.</div>
+                <div class="queueentry">Bousso, Raphael. “The Holographic Principle.” Reviews of Modern Physics 74, no. 3 (2002): 825–874. review</div>
+                <div class="queueentry">Douglas, Michael R., and Shamit Kachru. “Flux Compactification.” Reviews of Modern Physics 79, no. 2 (2007): 733–796. review</div>
+                <div class="queueentry">Linde, Andrei. “Inflationary Cosmology.” Physics Reports 333–334 (2000): 575–591. review</div>
+                <div class="queueentry">Bartolo, Nicola, Eiichiro Komatsu, Sabino Matarrese, and Antonio Riotto. “Non-Gaussianity from Inflation: Theory and Observations.” Physics Reports 402, no. 3 (2004): 103–266. review</div>
+                <div class="queueentry">Vilenkin, Alexander. “Cosmic Strings and Domain Walls.” Physics Reports 121, no. 5 (1985): 263–315. review</div>
+                <div class="queueentry">Beisert, Niklas, Changrim Ahn, Luis F. Alday, Zoltan Bajnok, John M. Drummond, et al. “Review of AdS/CFT Integrability: An Overview.” Letters in Mathematical Physics 99, no. 1–3 (2012): 3–32. review</div>
+                <div class="queueentry">Mohapatra, Rabindra N., and Alexei Y. Smirnov. “Neutrino Mass and New Physics Beyond the Standard Model.” Annual Review of Nuclear and Particle Science 56 (2006): 569–628. review</div>
+                <div class="queueentry">Donoghue, John F. “Introduction to the Effective Field Theory Description of Gravity.” In Proceedings of the Advanced School on Effective Theories, Almunecar, Spain, 1–45. Edited by F. Cornet and M. J. Herrero. Singapore: World Scientific, 1997. arXiv:gr-qc/9512024. review</div>
+                <div class="queueentry">Mukhanov, Viatcheslav F., H. A. Feldman, and R. H. Brandenberger. “Theory of Cosmological Perturbations.” Physics Reports 215, no. 5–6 (1992): 203–333. review</div>
+                <div class="queueentry">Wald, Robert M. “The Thermodynamics of Black Holes.” Living Reviews in Relativity 4 (2001): 6. review</div>
+                <div class="queueentry">Lifshitz, E. M. “The Theory of Molecular Attractive Forces between Solids.” Soviet Physics JETP 2 (1956): 73–83.</div>
+                <div class="queueentry">Wilson, Kenneth G., and John Kogut. “The Renormalization Group and the ϵ-Expansion.” Physics Reports 12, no. 2 (1974): 75–200. seminal review</div>
+                <div class="queueentry">Will, Clifford M. “The Confrontation between General Relativity and Experiment.” Living Reviews in Relativity 17 (2014): 4. https://doi.org/10.12942/lrr-2014-4.</div>
+                <div class="queueentry">Blanchet, Luc. “Gravitational Radiation from Post-Newtonian Sources and Inspiralling Compact Binaries.” Living Reviews in Relativity 17 (2014): 2. https://doi.org/10.12942/lrr-2014-2.</div>
+                <div class="queueentry">Gourgoulhon, Éric. “3+1 Formalism in General Relativity: Bases of Numerical Relativity.” Living Reviews in Relativity 8 (2007): 1. https://doi.org/10.12942/lrr-2007-1.</div>
+                <div class="queueentry">Poisson, Éric, Adam Pound, and Ian Vega. “The Motion of Point Particles in Curved Spacetime.” Living Reviews in Relativity 14 (2011): 7. https://doi.org/10.12942/lrr-2011-7.</div>
                 <!-- <div class="queueentry"></div> -->
             </div>
         </div>
