@@ -117,6 +117,18 @@ a, :visited {
     box-shadow: rgba(99, 99, 99, 0.4) 0px 8px 8px -8px;
 }
 
+.anchor {
+    display: flex;
+}
+
+.anchor a {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .imagesform {
     width: 30%;
     min-width: 27em;
@@ -124,7 +136,7 @@ a, :visited {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 3%;
     padding-right: 2em;
 }
 

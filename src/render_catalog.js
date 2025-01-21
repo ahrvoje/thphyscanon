@@ -123,7 +123,14 @@ const renderCatalog = async () => {
 
         var card = document.createElement('div')
         card.setAttribute('class', 'card')
-        card.setAttribute('id', i)
+        card.setAttribute('id', item.id)
+
+        var anchorlink = document.createElement('div')
+        anchorlink.setAttribute('class', 'anchor')
+        anchorlink.innerHTML = "<a href=\"#" + item.id + "\">&#9875;</a>"
+        card.appendChild(anchorlink)
+
+
         card.appendChild(createImages(item.image))
 
         var datatable = document.createElement('table')
