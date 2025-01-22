@@ -115,11 +115,18 @@ createImages = (images) => {
     return images_form
 }
 
-const renderCatalog = async () => {
-    catalog = await loadCatalog();
+const renderBooks = async (catalog) => {
+    var section = document.createElement('div')
+    section.setAttribute('class', 'section')
+    section.innerHTML = "Books"
+    document.getElementById('catalog').appendChild(section)
 
     for (i in catalog) {
         item = catalog[i][0]
+
+        if (item.type != "book") {
+            continue
+        }
 
         var card = document.createElement('div')
         card.setAttribute('class', 'card')
@@ -127,7 +134,7 @@ const renderCatalog = async () => {
 
         var anchorlink = document.createElement('div')
         anchorlink.setAttribute('class', 'anchor')
-        anchorlink.innerHTML = "<a href=\"#" + item.id + "\">&#9875;</a>"
+        anchorlink.innerHTML = "<a href=\"#" + item.id + "\">&para;</a>"
         card.appendChild(anchorlink)
 
 
@@ -159,6 +166,30 @@ const renderCatalog = async () => {
         card.appendChild(datatable)
         document.getElementById('catalog').appendChild(card);
     }
+}
+
+const renderSubArticles = async (catalog, subsectionText) => {
+    var subsection = document.createElement('div')
+    subsection.setAttribute('class', 'subsection')
+    subsection.innerHTML = subsectionText
+    document.getElementById('catalog').appendChild(subsection)
+}
+
+const renderArticles = async (catalog) => {
+    var section = document.createElement('div')
+    section.setAttribute('class', 'section')
+    section.innerHTML = "Articles"
+    document.getElementById('catalog').appendChild(section)
+
+    await renderSubArticles(catalog, "Discoveries")
+    await renderSubArticles(catalog, "Seminal reviews")
+    await renderSubArticles(catalog, "Living reviews")
+}
+
+const renderCatalog = async () => {
+    catalog = await loadCatalog()
+    await renderBooks(catalog)
+    await renderArticles(catalog)
 }
 
 const filterLabelClick = (el) => {
