@@ -229,6 +229,22 @@ td a {
     white-space: nowrap;
 }
 
+.article {
+    display: flex;
+    margin-top: 0.3em;
+}
+
+.biblio {
+    font-size: 1.5em;
+    margin-left: 5%;
+    max-width: 85%;
+    white-space: normal;
+}
+
+.bibliospace {
+    padding-left: 0.25em;
+}
+
 .queue {
     margin: auto;
     width: 60em;

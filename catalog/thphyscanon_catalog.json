@@ -30,7 +30,8 @@
             "subject": ["mechanics"],
             "tags": ["historical", "academic"],
             "entry": "2024-12-14",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
@@ -64,7 +65,8 @@
             "subject": ["electromagnetism", "electrodynamics"],
             "tags": ["graduate", "academic"],
             "entry": "2024-12-15",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
@@ -98,7 +100,8 @@
             "subject": ["general relativity", "gravitation"],
             "tags": ["graduate", "academic"],
             "entry": "2024-12-15",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
@@ -132,7 +135,8 @@
             "subject": ["mechanics", "science history"],
             "tags": ["popular"],
             "entry": "2024-12-16",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
@@ -166,7 +170,8 @@
             "subject": ["physics"],
             "tags": ["academic"],
             "entry": "2024-12-16",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
@@ -200,13 +205,14 @@
             "subject": ["mechanics", "classical mechanics"],
             "tags": ["academic"],
             "entry": "2024-12-29",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
         {
             "id": 7,
-            "type": "article",
+            "type": "article-discovery",
             "author": ["Maxwell, John Clerk"],
             "editor": [],
             "title": "On Physical Lines of Force",
@@ -222,11 +228,16 @@
             "series": "",
             "date": "1861",
             "place": "",
-            "reference": "Philosophical Magazine. 90: 11–23",
+            "reference": {
+                "journal": "Philosophical Magazine",
+                "volume": "90",
+                "issue": "",
+                "pagerange": "11–23"
+            },
             "contributor": [],
             "language": ["English"],
             "media": "paper",
-            "image": [[["ID0007_ED001_Maxwell.webp"], ""]],
+            "image": [],
             "isbn": [],
             "oclc": "7317625615",
             "doi": "10.1080/14786431003659180",
@@ -234,7 +245,8 @@
             "subject": ["electricity", "magnetism", "electromagnetism", "electrodynamics"],
             "tags": ["historical", "academic"],
             "entry": "2024-12-29",
-            "notes": "Introduction of Maxwell equations."
+            "notes": "Introduction of Maxwell equations.",
+            "metadata": ""
         }    
     ],
     [
@@ -268,7 +280,8 @@
             "subject": ["mathematics", "mathematical physics"],
             "tags": ["academic"],
             "entry": "2025-01-02",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
@@ -302,7 +315,8 @@
             "subject": ["physics", "problems"],
             "tags": ["academic"],
             "entry": "2025-01-12",
-            "notes": ""
+            "notes": "",
+            "metadata": ""
         }    
     ],
     [
@@ -336,7 +350,88 @@
             "subject": ["mathematics", "special functions", "reference"],
             "tags": ["academic"],
             "entry": "2025-01-14",
-            "notes": "Preceded by Abramowitz & Stegun."
+            "notes": "Preceded by Abramowitz & Stegun.",
+            "metadata": ""
+        }
+    ],
+    [
+        {
+            "id": 11,
+            "type": "article-review-seminal",
+            "author": ["Weinberg, Steven"],
+            "editor": [],
+            "title": "The Cosmological Constant Problem",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": 1,
+            "pages": ["23"],
+            "dimensions": [],
+            "publisher": [],
+            "series": "",
+            "date": "1989",
+            "place": "",
+            "reference": {
+                "journal": "Reviews of Modern Physics",
+                "volume": "61",
+                "issue": "1",
+                "pagerange": "1–23"
+            },
+            "contributor": [],
+            "language": ["English"],
+            "media": "paper",
+            "image": [],
+            "isbn": [],
+            "oclc": "4643798208",
+            "doi": "10.1103/RevModPhys.61.1",
+            "link": ["https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.61.1"],
+            "subject": ["cosmological constant", "cosmology", "quantum field theory", "general relativity"],
+            "tags": ["cosmology", "theoretical physics", "review"],
+            "entry": "2025-01-25",
+            "notes": "Comprehensive review of the cosmological constant problem in the context of quantum field theory and general relativity.",
+            "metadata": ""
+        }
+    ],
+    [
+        {
+            "id": 12,
+            "type": "article-review-living",
+            "author": ["Particle Data Group"],
+            "editor": [],
+            "title": "Review of Particle Physics",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": 1,
+            "pages": ["083C01"],
+            "dimensions": [],
+            "publisher": [],
+            "series": "",
+            "date": "2022",
+            "place": "",
+            "reference": {
+                "journal": "Progress of Theoretical and Experimental Physics",
+                "volume": "2022",
+                "issue": "8",
+                "pagerange": "083C01"
+            },
+            "contributor": [],
+            "language": ["English"],
+            "media": "paper",
+            "image": [],
+            "isbn": [],
+            "oclc": "9586068461",
+            "doi": "10.1093/ptep/ptac097",
+            "link": ["https://doi.org/10.1093/ptep/ptac097"],
+            "subject": ["particle physics", "theoretical physics", "experimental physics", "physics"],
+            "tags": ["physics", "review", "academic"],
+            "entry": "2025-01-25",
+            "notes": "Comprehensive review of particle physics.",
+            "metadata": ""
         }
     ]
 ]

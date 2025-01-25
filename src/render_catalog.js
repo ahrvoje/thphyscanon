@@ -136,8 +136,6 @@ const renderBooks = async (catalog) => {
         anchorlink.setAttribute('class', 'anchor')
         anchorlink.innerHTML = "<a href=\"#" + item.id + "\">&para;</a>"
         card.appendChild(anchorlink)
-
-
         card.appendChild(createImages(item.image))
 
         var datatable = document.createElement('table')
@@ -168,11 +166,53 @@ const renderBooks = async (catalog) => {
     }
 }
 
-const renderSubArticles = async (catalog, subsectionText) => {
+const renderArticle = async (item) => {
+    var article = document.createElement('div')
+    article.setAttribute('class', 'article')
+    article.setAttribute('id', item.id)
+
+    var anchorlink = document.createElement('div')
+    anchorlink.setAttribute('class', 'anchor')
+    anchorlink.innerHTML = "<a href=\"#" + item.id + "\">&para;</a>"
+    article.appendChild(anchorlink)
+
+    var biblio = document.createElement('div')
+    biblio.setAttribute('class', 'biblio')
+    article.appendChild(biblio)
+
+    biblio.innerHTML =  item.author + "."
+    biblio.innerHTML += "<span class=\"bibliospace\"/>"    + item.date.substring(0, 4) + "."
+    biblio.innerHTML += "<span class=\"bibliospace\"/>" + item.title + "."
+    biblio.innerHTML += "<span class=\"bibliospace\"/><i>" + item.reference.journal + "</i>"
+    if (item.reference.volume) {
+        biblio.innerHTML += "<span class=\"bibliospace\"/><i>" + item.reference.volume + "</i>"
+    }
+    if (item.reference.issue) {
+        biblio.innerHTML += "<span class=\"bibliospace\"/>(" + item.reference.issue + ")"
+    }
+    if (item.reference.pagerange) {
+        biblio.innerHTML += ":<span class=\"bibliospace\"/>" + item.reference.pagerange
+    }
+    biblio.innerHTML += "."
+
+    return article
+}
+
+const renderSubArticles = async (catalog, subsectionText, subsectionType) => {
     var subsection = document.createElement('div')
     subsection.setAttribute('class', 'subsection')
     subsection.innerHTML = subsectionText
     document.getElementById('catalog').appendChild(subsection)
+
+    for (i in catalog) {
+        item = catalog[i][0]
+
+        if (item.type != subsectionType) {
+            continue
+        }
+
+        document.getElementById('catalog').appendChild(await renderArticle(item))
+    }
 }
 
 const renderArticles = async (catalog) => {
@@ -181,9 +221,9 @@ const renderArticles = async (catalog) => {
     section.innerHTML = "Articles"
     document.getElementById('catalog').appendChild(section)
 
-    await renderSubArticles(catalog, "Discoveries")
-    await renderSubArticles(catalog, "Seminal reviews")
-    await renderSubArticles(catalog, "Living reviews")
+    await renderSubArticles(catalog, "Discoveries", "article-discovery")
+    await renderSubArticles(catalog, "Seminal reviews", "article-review-seminal")
+    await renderSubArticles(catalog, "Living reviews", "article-review-living")
 }
 
 const renderCatalog = async () => {
