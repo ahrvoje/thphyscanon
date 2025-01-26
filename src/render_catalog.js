@@ -51,6 +51,11 @@ createDataEntry = (datatable, item, name, data) => {
         value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
     } else if (name === "Link") {
         txt = ""
+
+        if (item.doi) {
+            txt += "<a href=\"https://doi.org/" + item.doi + "\" target=\"_blank\">"+ item.doi + "</a><br>"
+        }
+    
         for (i in item.link) {
             link = item.link[i]
             txt += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a><br>"
@@ -77,7 +82,7 @@ createDataEntry = (datatable, item, name, data) => {
         value.innerHTML = data
 
         value.parentElement.classList.add("notesentry")
-        value.parentElement.firstChild.classList.add("notesattribute")
+        value.parentElement.children[0].classList.add("notesattribute")
         value.classList.add("notesvalue")
     } else {
             value.textContent = data
@@ -129,7 +134,7 @@ const renderBooks = async (catalog) => {
         }
 
         var card = document.createElement('div')
-        card.setAttribute('class', 'card')
+        card.setAttribute('class', 'bookcard')
         card.setAttribute('id', item.id)
 
         var anchorlink = document.createElement('div')
@@ -167,22 +172,26 @@ const renderBooks = async (catalog) => {
 }
 
 const renderArticle = async (item) => {
-    var article = document.createElement('div')
-    article.setAttribute('class', 'article')
-    article.setAttribute('id', item.id)
+    var card = document.createElement('div')
+    card.setAttribute('class', 'articlecard')
+    card.setAttribute('id', item.id)
 
-    var anchorlink = document.createElement('div')
-    anchorlink.setAttribute('class', 'anchor')
-    anchorlink.innerHTML = "<a href=\"#" + item.id + "\">&para;</a>"
-    article.appendChild(anchorlink)
+    var anchorLink = document.createElement('div')
+    anchorLink.setAttribute('class', 'anchor')
+    anchorLink.innerHTML = "<a href=\"#" + item.id + "\">&para;</a>"
+    card.appendChild(anchorLink)
+
+    var articleData = document.createElement('div')
+    articleData.setAttribute('class', 'articledata')
+    card.appendChild(articleData)
 
     var biblio = document.createElement('div')
     biblio.setAttribute('class', 'biblio')
-    article.appendChild(biblio)
+    articleData.appendChild(biblio)
 
     biblio.innerHTML =  item.author + "."
     biblio.innerHTML += "<span class=\"bibliospace\"/>"    + item.date.substring(0, 4) + "."
-    biblio.innerHTML += "<span class=\"bibliospace\"/>" + item.title + "."
+    biblio.innerHTML += "<span class=\"bibliospace\"/>\"" + item.title + "\"."
     biblio.innerHTML += "<span class=\"bibliospace\"/><i>" + item.reference.journal + "</i>"
     if (item.reference.volume) {
         biblio.innerHTML += "<span class=\"bibliospace\"/><i>" + item.reference.volume + "</i>"
@@ -195,7 +204,17 @@ const renderArticle = async (item) => {
     }
     biblio.innerHTML += "."
 
-    return article
+    var data = document.createElement('div')
+    data.setAttribute('class', 'data')
+    createDataEntry(data, item, "OCLC", item.oclc)
+    createDataEntry(data, item, "Link", item.link)
+    createDataEntry(data, item, "Subject", item.subject)
+    createDataEntry(data, item, "Tags", item.tags)
+    createDataEntry(data, item, "Notes", item.notes)
+
+    articleData.appendChild(data)
+
+    return card
 }
 
 const renderSubArticles = async (catalog, subsectionText, subsectionType) => {
@@ -236,7 +255,7 @@ const filterLabelClick = (el) => {
     filterrow = el.closest(".filterrow")
     filters = filterrow.getElementsByClassName("filters")[0].children
 
-    if (filterrow.firstChild.firstChild.checked) {
+    if (filterrow.children[0].children[0].checked) {
         newState = true;
     } else {
         newState = false;
@@ -245,14 +264,18 @@ const filterLabelClick = (el) => {
     for (i in filters) {
         filter = filters[i]
 
-        if (!filter.firstChild) {
+        if (!filter.children) {
             continue
         }
 
-        if (!filter.firstChild.checked && newState) {
-            filter.firstChild.click()
-        } else if (filter.firstChild.checked && !newState) {
-            filter.firstChild.click()
+        if (!filter.children[0]) {
+            continue
+        }
+
+        if (!filter.children[0].checked && newState) {
+            filter.children[0].click()
+        } else if (filter.children[0].checked && !newState) {
+            filter.children[0].click()
         }
     }
 }
@@ -266,18 +289,22 @@ const mainFilterChange = (el) => {
     for (i in filters) {
         filter = filters[i]
 
-        if (!filter.firstChild) {
+        if (!filter.children) {
             continue
         }
 
-        if (filter.firstChild.checked) {
+        if (!filter.children[0]) {
+            continue
+        }
+
+        if (filter.children[0].checked) {
             someTrue = true
         } else {
             someFalse = true
         }
     }
 
-    mainCheck = filterrow.firstChild.firstChild;
+    mainCheck = filterrow.children[0].children[0];
     if (!someFalse) {
         mainCheck.indeterminate = false;
         mainCheck.checked = true;
@@ -292,14 +319,23 @@ const mainFilterChange = (el) => {
 
 const filterChange = (el) => {
     items = document.getElementsByClassName(el.parentElement.getAttribute("category"))
+
     for (i in items) {
         item = items[i]
-        if (item.textContent == el.parentElement.textContent) {
-            if (el.checked) {
-                item.closest(".card").style.display = "flex";
-            } else {
-                item.closest(".card").style.display = "none";
-            }
+
+        if (item.textContent != el.parentElement.textContent) {
+            continue
+        }
+
+        card = item.closest(".bookcard")
+        if (!card) {
+            continue
+        }
+        
+        if (el.checked) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
         }
     }
 

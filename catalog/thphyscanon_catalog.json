@@ -345,10 +345,10 @@
             "image": [[["ID0010_ED001_NIST.webp", "ID0010_ED001_NIST_spine.webp"], "Cover of the first edition, 2010."]],
             "isbn": ["9780521192255", "9780521140638"],
             "oclc": "502037224",
-            "doi": "10.1017/CBO9780511920472",
+            "doi": "",
             "link": ["http://dlmf.nist.gov/"],
-            "subject": ["mathematics", "special functions", "reference"],
-            "tags": ["academic"],
+            "subject": ["mathematics", "special functions"],
+            "tags": ["academic", "reference"],
             "entry": "2025-01-14",
             "notes": "Preceded by Abramowitz & Stegun.",
             "metadata": ""
@@ -388,7 +388,7 @@
             "doi": "10.1103/RevModPhys.61.1",
             "link": ["https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.61.1"],
             "subject": ["cosmological constant", "cosmology", "quantum field theory", "general relativity"],
-            "tags": ["cosmology", "theoretical physics", "review"],
+            "tags": ["review"],
             "entry": "2025-01-25",
             "notes": "Comprehensive review of the cosmological constant problem in the context of quantum field theory and general relativity.",
             "metadata": ""
@@ -407,31 +407,31 @@
             "romansubtitle": [],
             "engsubtitle": [],
             "volumes": 1,
-            "pages": ["083C01"],
+            "pages": [],
             "dimensions": [],
             "publisher": [],
             "series": "",
-            "date": "2022",
+            "date": "2024",
             "place": "",
             "reference": {
-                "journal": "Progress of Theoretical and Experimental Physics",
-                "volume": "2022",
-                "issue": "8",
-                "pagerange": "083C01"
+                "journal": "Physical Review D",
+                "volume": "110",
+                "issue": "",
+                "pagerange": "030001"
             },
             "contributor": [],
             "language": ["English"],
             "media": "paper",
             "image": [],
             "isbn": [],
-            "oclc": "9586068461",
-            "doi": "10.1093/ptep/ptac097",
-            "link": ["https://doi.org/10.1093/ptep/ptac097"],
-            "subject": ["particle physics", "theoretical physics", "experimental physics", "physics"],
-            "tags": ["physics", "review", "academic"],
+            "oclc": "10320535047",
+            "doi": "10.1103/PhysRevD.110.030001",
+            "link": [],
+            "subject": ["particle physics"],
+            "tags": ["review", "reference"],
             "entry": "2025-01-25",
-            "notes": "Comprehensive review of particle physics.",
-            "metadata": ""
+            "notes": "Comprehensive review of particle physics measurements.",
+            "metadata": "Updated to 2024 version on 2025-01-26."
         }
     ]
 ]

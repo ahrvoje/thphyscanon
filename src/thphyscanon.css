@@ -71,6 +71,7 @@ a, :visited {
     display: flex;
     flex-direction: row;
     max-width: 50em;
+    margin-top: 0.5em;
 }
 
 .filterlabel {
@@ -113,16 +114,18 @@ a, :visited {
 .section {
     width: 100%;
     font-size: 3em;
+    margin-top: 0.5em;
     border-bottom: 1px solid;
 }
 
 .subsection {
     width: 90%;
     font-size: 2em;
+    margin-top: 0.5em;
     border-bottom: 0.5px solid;
 }
 
-.card {
+.bookcard {
     height: 26.5em;
     margin-top: 1em;
     display: flex;
@@ -229,20 +232,30 @@ td a {
     white-space: nowrap;
 }
 
-.article {
+.articlecard {
     display: flex;
+    width: 90%;
     margin-top: 0.3em;
 }
 
 .biblio {
     font-size: 1.5em;
     margin-left: 5%;
-    max-width: 85%;
+    margin-bottom: 0.25em;
     white-space: normal;
 }
 
 .bibliospace {
     padding-left: 0.25em;
+    white-space: normal;
+}
+
+.articledata {
+    width: 100%;
+}
+
+.articledata > .data {
+    margin-left: 20%;
 }
 
 .queue {
