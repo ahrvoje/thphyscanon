@@ -388,7 +388,7 @@
             "doi": "10.1103/RevModPhys.61.1",
             "link": ["https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.61.1"],
             "subject": ["cosmological constant", "cosmology", "quantum field theory", "general relativity"],
-            "tags": ["review"],
+            "tags": ["academic", "review"],
             "entry": "2025-01-25",
             "notes": "Comprehensive review of the cosmological constant problem in the context of quantum field theory and general relativity.",
             "metadata": ""
@@ -428,7 +428,7 @@
             "doi": "10.1103/PhysRevD.110.030001",
             "link": [],
             "subject": ["particle physics"],
-            "tags": ["review", "reference"],
+            "tags": ["academic", "review", "reference"],
             "entry": "2025-01-25",
             "notes": "Comprehensive review of particle physics measurements.",
             "metadata": "Updated to 2024 version on 2025-01-26."

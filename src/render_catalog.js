@@ -327,7 +327,7 @@ const filterChange = (el) => {
             continue
         }
 
-        card = item.closest(".bookcard")
+        card = item.closest(".bookcard") || item.closest(".articlecard")
         if (!card) {
             continue
         }
