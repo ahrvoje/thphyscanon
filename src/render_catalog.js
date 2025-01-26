@@ -338,7 +338,7 @@ const filterChange = (el) => {
             card.style.display = "none";
         }
     }
-
+    
     mainFilterChange(el)
 }
 
