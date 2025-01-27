@@ -7,7 +7,11 @@ joinValues = (values, separator=', ') => {
 }
 
 createDataEntry = (datatable, item, name, data) => {
-    if (!data.length) {
+    if (name != "Link" && !data.length) {
+        return
+    }
+
+    if (name == "Link" && !data.length && !item.doi.length) {
         return
     }
 
@@ -338,7 +342,7 @@ const filterChange = (el) => {
             card.style.display = "none";
         }
     }
-    
+
     mainFilterChange(el)
 }
 
