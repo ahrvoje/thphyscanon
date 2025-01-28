@@ -188,11 +188,13 @@ a, :visited {
 }
 
 .attribute {
+    vertical-align: middle;
 }
 
 .value {
     font-weight: bold;
     padding-left: 1em;
+    vertical-align: middle;
 }
 
 td a {
