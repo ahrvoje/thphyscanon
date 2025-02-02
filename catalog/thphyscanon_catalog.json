@@ -166,7 +166,7 @@
             "isbn": ["9780201020106", "9780201021165", "9780201020113", "..."],
             "oclc": "531535",
             "doi": "",
-            "link": [],
+            "link": ["https://www.feynmanlectures.caltech.edu/"],
             "subject": ["physics"],
             "tags": ["academic"],
             "entry": "2024-12-16",
