@@ -175,6 +175,44 @@ const renderBooks = async (catalog) => {
     }
 }
 
+const chicagoNames = (names) => {
+    txt = ""
+
+    for (i in names) {
+        name = names[i]
+
+        internationalName = name.split("(")[0]
+        lastfirstName = internationalName.split(",")
+
+        lastName = lastfirstName[0]
+        firstName = lastfirstName[1]
+
+        if (!firstName) {
+            txt += lastName
+        } else {
+            if (i == 0) {
+                txt += lastName + ", " + firstName
+            } else {
+                txt += firstName + " " + lastName
+            }
+        }
+
+        if (i < names.length - 1) {
+            txt += ", "
+        }
+
+        if (i == names.length - 2) {
+            txt += "and "
+        }
+    }
+
+    if (txt[txt.length - 1] != ".") {
+        txt += "."
+    }
+
+    return txt
+}
+
 const renderArticle = async (item) => {
     var card = document.createElement('div')
     card.setAttribute('class', 'articlecard')
@@ -193,7 +231,7 @@ const renderArticle = async (item) => {
     biblio.setAttribute('class', 'biblio')
     articleData.appendChild(biblio)
 
-    biblio.innerHTML =  item.author + "."
+    biblio.innerHTML =  chicagoNames(item.author)
     biblio.innerHTML += "<span class=\"bibliospace\"/>"    + item.date.substring(0, 4) + "."
     biblio.innerHTML += "<span class=\"bibliospace\"/>\"" + item.title + "\"."
     biblio.innerHTML += "<span class=\"bibliospace\"/><i>" + item.reference.journal + "</i>"
