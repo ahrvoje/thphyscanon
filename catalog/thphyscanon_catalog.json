@@ -19,14 +19,24 @@
             "date": "1687-07-05",
             "place": "London, England",
             "reference": "",
-            "contributor": [["Halley, Edmond", "investor"], ["Streater, Joseph", "printer"]],
+            "contributor": [
+                ["Halley, Edmond", "investor"],
+                ["Streater, Joseph", "printer"]
+            ],
             "language": ["Neo-Latin"],
             "media": "hardcover",
-            "image": [[["ID0001_ED001_Principia.webp"], "Title page of the first edition, 1687."]],
+            "image": [
+                [["ID0001_ED001_Principia.webp"], "Title page of the first edition, 1687."]
+            ],
             "isbn": [],
             "oclc": "1151794999",
             "doi": "",
-            "link": ["https://ntnu.tind.io/record/115139?ln=no", "https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00002", "https://www.e-rara.ch/zut/wihibe/content/titleinfo/338026", "https://archive.org/details/newtonspmathema00newtrich/mode/2up"],
+            "link": [
+                "https://ntnu.tind.io/record/115139?ln=no",
+                "https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00002",
+                "https://www.e-rara.ch/zut/wihibe/content/titleinfo/338026",
+                "https://archive.org/details/newtonspmathema00newtrich/mode/2up"
+            ],
             "subject": ["mechanics"],
             "tags": ["historical", "academic"],
             "entry": "2024-12-14",
@@ -593,5 +603,111 @@
             "notes": "",
             "metadata": ""
         }
+    ],
+    [
+        {
+            "id": 17,
+            "type": "article-discovery",
+            "author": ["Maldacena, Juan M."],
+            "editor": [],
+            "title": "The Large-N Limit of Superconformal Field Theories and Supergravity",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": ["21"],
+            "dimensions": [],
+            "publisher": ["Springer"],
+            "series": "",
+            "date": "1999",
+            "place": "Berlin, Germany",
+            "reference": {
+                "journal": "International Journal of Theoretical Physics",
+                "volume": "38",
+                "issue": "4",
+                "pagerange": "1113–1133"
+            },
+            "contributor": [],
+            "language": ["English"],
+            "media": "paper",
+            "image": [],
+            "isbn": [],
+            "oclc": "5649158851",
+            "doi": "10.1023/A:1026654312961",
+            "link": ["https://arxiv.org/abs/hep-th/9711200"],
+            "subject": [
+                "AdS/CFT",
+                "QFT",
+                "superconformal field theory",
+                "supergravity",
+                "string theory"
+            ],
+            "tags": [
+                "academic",
+                "seminal"
+            ],
+            "entry": "2025-02-10",
+            "notes": "Seminal paper that introduced the AdS/CFT correspondence.",
+            "metadata": ""
+        }        
+    ],
+    [
+        {
+            "id": 18,
+            "type": "article-discovery",
+            "author": [
+                "Nambu, Yoichiro"
+            ],
+            "editor": [],
+            "title": "Quasi-Particles and Gauge Invariance in the Theory of Superconductivity",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "16"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "American Physical Society"
+            ],
+            "series": "",
+            "date": "1960",
+            "place": "United States",
+            "reference": {
+                "journal": "Physical Review",
+                "volume": "117",
+                "issue": "3",
+                "pagerange": "648–663"
+            },
+            "contributor": [],
+            "language": [
+                "English"
+            ],
+            "media": "paper",
+            "image": [],
+            "isbn": [],
+            "oclc": "4644593625",
+            "doi": "10.1103/PhysRev.117.648",
+            "link": [],
+            "subject": [
+                "superconductivity",
+                "gauge invariance",
+                "quasi-particles",
+                "condensed matter physics"
+            ],
+            "tags": [
+                "academic",
+                "discovery",
+                "nobel"
+            ],
+            "entry": "2025-02-10",
+            "notes": "This seminal paper introduced the concept of symmetry breaking, and contributed to the theoretical understanding of superconductivity and gauge invariance. It was later recognized with the Nobel Prize in Physics in 2008.",
+            "metadata": ""
+        }        
     ]
 ]
