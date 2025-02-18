@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Biolinum';
+    src: url('../resources/LinBiolinum.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../resources/LinBiolinum_R.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 *::before, *::after, *::first-line {
     margin: 0;
     padding: 0;
@@ -11,6 +17,7 @@ html {
 
 body {
     background-color: rgb(255, 253, 229);
+    font-family: 'Biolinum';
 }
 
 a, :visited {
