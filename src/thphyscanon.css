@@ -74,8 +74,20 @@ a, :visited {
     max-width: 50em;
 }
 
-.filterrow {
+.filterchooser {
     display: flex;
+}
+
+.showfiltermainlabel {
+    min-width: 6em;
+}
+
+.showfilterlabel {
+    margin-left: 1em;
+}
+
+.filterrow {
+    display: none;
     flex-direction: row;
     max-width: 50em;
     margin-top: 0.5em;
@@ -106,7 +118,7 @@ a, :visited {
     min-width: 6em;
 }
 
-.filter, .filterlabel {
+.filter, .filterlabel,.showfilterlabel, .showfilter {
     /* prevent double-click selection */
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */

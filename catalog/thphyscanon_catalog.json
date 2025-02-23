@@ -73,7 +73,7 @@
             "doi": "",
             "link": [],
             "subject": ["electromagnetism", "electrodynamics"],
-            "tags": ["graduate", "academic"],
+            "tags": ["academic"],
             "entry": "2024-12-15",
             "notes": "",
             "metadata": ""
@@ -108,7 +108,7 @@
             "doi": "",
             "link": [],
             "subject": ["general relativity", "gravitation"],
-            "tags": ["graduate", "academic"],
+            "tags": ["academic"],
             "entry": "2024-12-15",
             "notes": "",
             "metadata": ""
@@ -645,8 +645,7 @@
                 "string theory"
             ],
             "tags": [
-                "academic",
-                "seminal"
+                "academic"
             ],
             "entry": "2025-02-10",
             "notes": "Seminal paper that introduced the AdS/CFT correspondence.",
@@ -703,7 +702,7 @@
             "tags": [
                 "academic",
                 "discovery",
-                "nobel"
+                "Nobel"
             ],
             "entry": "2025-02-10",
             "notes": "This seminal paper introduced the concept of symmetry breaking, and contributed to the theoretical understanding of superconductivity and gauge invariance. It was later recognized with the Nobel Prize in Physics in 2008.",

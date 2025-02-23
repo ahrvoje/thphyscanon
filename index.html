@@ -17,20 +17,31 @@
             <h3 class="editor">Editor: Hrvoje Abraham (ahrvoje<span></span>&#64;gmail.com)</h3>
         </div>
         <div class="filtersection" id="filtersection">
-            <div class="filterrow" id="subjectsfilterrow">
-                <div class="mainfilter">
-                    <input type="checkbox" class="filtercheck" id="subjects" onclick="filterLabelClick(this)" checked />
-                    <label class="filterlabel" for="subjects" onclick="filterLabelClick(this)">
-                        Subjects:
-                    </label>
-                </div>
-                <div class="filters"></div>
+            <div class="filterchooser">
+                <div class="showfiltermainlabel">Show filter:</div>
+                <label class="showfilterlabel">
+                    <input type="checkbox" class="showfilter tags" onclick="showFilter(this)">
+                    Tags
+                </label>
+                <label class="showfilterlabel">
+                    <input type="checkbox" class="showfilter subjects" onclick="showFilter(this)" />
+                    Subjects
+                </label>
             </div>
-            <div class="filterrow" id="tagsfilterrow">
+            <div class="filterrow tags" id="tagsfilterrow">
                 <div class="mainfilter">
                     <input type="checkbox" class="filtercheck" id="tags" onclick="filterLabelClick(this)" checked />
                     <label class="filterlabel" for="tags" onclick="filterLabelClick(this)">
                         Tags:
+                    </label>
+                </div>
+                <div class="filters"></div>
+            </div>
+            <div class="filterrow subjects" id="subjectsfilterrow">
+                <div class="mainfilter">
+                    <input type="checkbox" class="filtercheck" id="subjects" onclick="filterLabelClick(this)" checked />
+                    <label class="filterlabel" for="subjects" onclick="filterLabelClick(this)">
+                        Subjects:
                     </label>
                 </div>
                 <div class="filters"></div>

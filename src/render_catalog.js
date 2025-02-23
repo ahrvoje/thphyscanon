@@ -1,11 +1,3 @@
-joinValues = (values, separator=', ') => {
-    txt = ""
-    for (i in values) {
-        txt += values[i] + separator
-    }
-    return txt.substring(0, txt.length - separator.length)  // delete trailing separator
-}
-
 createDataEntry = (datatable, item, name, data) => {
     if (name != "Link" && !data.length) {
         return
@@ -28,17 +20,17 @@ createDataEntry = (datatable, item, name, data) => {
     entry.appendChild(value)
 
     if (name === "Author") {
-        value.textContent = joinValues(data, separator=' / ')
+        value.textContent = data.join(' / ')
     } else if (name === "Editor") {
-        value.textContent = joinValues(data, separator=' / ')
+        value.textContent = data.join(' / ')
     } else if (name === "Subtitle") {
-        value.textContent = joinValues(data, separator=' / ')
+        value.textContent = data.join(' / ')
     } else if (name === "English subtitle") {
-        value.textContent = joinValues(data, separator=' / ')
+        value.textContent = data.join(' / ')
     } else if (name === "Pages") {
-        value.textContent = joinValues(data, separator=' / ')
+        value.textContent = data.join(' / ')
     } else if (name === "Publisher") {
-        value.textContent = joinValues(data, separator=' / ')
+        value.textContent = data.join(' / ')
     } else if (name === "Contributor") {
         txt = ""
         separator = " / "
@@ -48,9 +40,9 @@ createDataEntry = (datatable, item, name, data) => {
         }
         value.textContent = txt.substring(0, txt.length - separator.length)  // delete trailing separator
     } else if (name === "Language") {
-        value.textContent = joinValues(data)
+        value.textContent = data.join(' / ')
     } else if (name === "ISBN") {
-        value.textContent = joinValues(data, separator= " / ")
+        value.textContent = data.join(' / ')
     } else if (name === "OCLC") {
         value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
     } else if (name === "Link") {
@@ -398,6 +390,19 @@ const renderFilters = async () => {
         txt += "<div class=\"filter\" category=\"tag\"><input type=\"checkbox\" id=\"tag " + tag + "\" onchange=\"filterChange(this)\" checked/><label for=\"tag " + tag + "\">" + tag + "</label></div>"
     }
     document.getElementById('tagsfilterrow').getElementsByClassName("filters")[0].innerHTML = txt
+}
+
+const showFilter = (el) => {
+    filterType = el.classList[1]
+
+    if (el.checked) {
+        displayState = 'flex'
+    } else {
+        displayState = 'none'
+    }
+
+    filterrow = document.getElementById(filterType + 'filterrow')
+    filterrow.style.display = displayState
 }
 
 renderPage = async () => {
