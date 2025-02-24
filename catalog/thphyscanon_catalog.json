@@ -398,7 +398,7 @@
             "doi": "10.1103/RevModPhys.61.1",
             "link": [""],
             "subject": ["cosmological constant", "cosmology", "QFT", "general relativity"],
-            "tags": ["academic", "review"],
+            "tags": ["academic"],
             "entry": "2025-01-25",
             "notes": "Comprehensive review of the cosmological constant problem in the context of quantum field theory and general relativity.",
             "metadata": ""
@@ -438,7 +438,7 @@
             "doi": "10.1103/PhysRevD.110.030001",
             "link": ["https://pdg.lbl.gov/index.html"],
             "subject": ["particle physics"],
-            "tags": ["academic", "review", "reference"],
+            "tags": ["academic", "reference"],
             "entry": "2025-01-25",
             "notes": "Comprehensive review of particle physics measurements.",
             "metadata": "Updated to 2024 version on 2025-01-26."
@@ -558,7 +558,7 @@
             "doi": "10.12942/lrr-2001-6",
             "link": [],
             "subject": ["black holes", "thermodynamics", "relativity"],
-            "tags": ["academic", "review"],
+            "tags": ["academic"],
             "entry": "2025-01-28",
             "notes": "Seminal living review on black hole thermodynamics. Published in 2001 and not subsequently updated.",
             "metadata": ""
@@ -598,7 +598,7 @@
             "doi": "10.1016/0370-1573(74)90023-4",
             "link": [],
             "subject": ["renormalization group", "QFT"],
-            "tags": ["academic", "review"],
+            "tags": ["academic"],
             "entry": "2025-01-28",
             "notes": "",
             "metadata": ""
@@ -701,11 +701,156 @@
             ],
             "tags": [
                 "academic",
-                "discovery",
                 "Nobel"
             ],
             "entry": "2025-02-10",
             "notes": "This seminal paper introduced the concept of symmetry breaking, and contributed to the theoretical understanding of superconductivity and gauge invariance. It was later recognized with the Nobel Prize in Physics in 2008.",
+            "metadata": ""
+        }        
+    ],
+    [
+        {
+            "id": 19,
+            "type": "book",
+            "author": [
+                "Schweber, Silvan S."
+            ],
+            "editor": [],
+            "title": "An Introduction to Relativistic Quantum Field Theory",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "913"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "Harper & Row"
+            ],
+            "series": "",
+            "date": "1961",
+            "place": "New York",
+            "reference": {},
+            "contributor": [],
+            "language": [
+                "English"
+            ],
+            "media": "paper",
+            "image": [[["ID0019_ED001_Schweber.webp"], "Cover of 2005 edition by Dover."]],
+            "isbn": [],
+            "oclc": "1310567042",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "QFT"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-24",
+            "notes": "",
+            "metadata": ""
+        }        
+    ],
+    [
+        {
+            "id": 20,
+            "type": "book",
+            "author": [
+                "Bjorken, James D.",
+                "Drell, Sidney D."
+            ],
+            "editor": [],
+            "title": "Relativistic Quantum Mechanics",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "x + 300"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "McGraw-Hill"
+            ],
+            "series": "International series in pure and applied physics",
+            "date": "1964",
+            "place": "New York",
+            "reference": {},
+            "contributor": [],
+            "language": [
+                "English"
+            ],
+            "media": "print",
+            "image": [[["ID0020_ED001_Bjorken-Drell.webp"], "Jacket of the first edition."]],
+            "isbn": ["9780070054936", "0070054932"],
+            "oclc": "534560",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "relativistic quantum mechanics"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-24",
+            "notes": "",
+            "metadata": ""
+        }
+    ],
+    [
+        {
+            "id": 21,
+            "type": "book",
+            "author": [
+                "Bjorken, James D.",
+                "Drell, Sidney D."
+            ],
+            "editor": [],
+            "title": "Relativistic Quantum Fields",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "xiv + 396"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "McGraw-Hill"
+            ],
+            "series": "",
+            "date": "1965",
+            "place": "New York",
+            "reference": {},
+            "contributor": [],
+            "language": [
+                "English"
+            ],
+            "media": "print",
+            "image": [[["ID0021_ED001_Bjorken-Drell.webp", "ID0021_ED001_Bjorken-Drell_spine.webp"], "Jacket of the first edition."]],
+            "isbn": ["9780070054943", "0070054940"],
+            "oclc": "939866",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "QFT"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-24",
+            "notes": "",
             "metadata": ""
         }        
     ]
