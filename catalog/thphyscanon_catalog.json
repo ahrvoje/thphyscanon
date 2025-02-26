@@ -788,7 +788,7 @@
                 "English"
             ],
             "media": "print",
-            "image": [[["ID0020_ED001_Bjorken-Drell.webp"], "Jacket of the first edition."]],
+            "image": [[["ID0020_ED001_Bjorken-Drell_jacket.webp"], "Jacket of the first edition."]],
             "isbn": ["9780070054936", "0070054932"],
             "oclc": "534560",
             "doi": "",
@@ -837,7 +837,7 @@
                 "English"
             ],
             "media": "print",
-            "image": [[["ID0021_ED001_Bjorken-Drell.webp", "ID0021_ED001_Bjorken-Drell_spine.webp"], "Jacket of the first edition."]],
+            "image": [[["ID0021_ED001_Bjorken-Drell_jacket.webp", "ID0021_ED001_Bjorken-Drell_jacket-spine.webp"], "Jacket of the first edition."]],
             "isbn": ["9780070054943", "0070054940"],
             "oclc": "939866",
             "doi": "",
@@ -985,7 +985,7 @@
                 "English"
             ],
             "media": "hardcover",
-            "image": [[["ID0024_ED001_Itzykson-Zuber_jacket.webp", "ID0024_ED001_Itzykson-Zuber_spine.webp"], "Jacket and cover spine of the first edition."]],
+            "image": [[["ID0024_ED001_Itzykson-Zuber_jacket.webp", "ID0024_ED001_Itzykson-Zuber_spine.webp"], "Jacket front and cover spine of the first edition."]],
             "isbn": ["9780070320710", "0070320713"],
             "oclc": "240207618",
             "doi": "",
