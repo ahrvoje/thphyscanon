@@ -42,7 +42,7 @@
             "entry": "2024-12-14",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -77,7 +77,7 @@
             "entry": "2024-12-15",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -112,7 +112,7 @@
             "entry": "2024-12-15",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -147,7 +147,7 @@
             "entry": "2024-12-16",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -182,7 +182,7 @@
             "entry": "2024-12-16",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -217,7 +217,7 @@
             "entry": "2024-12-29",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -257,7 +257,7 @@
             "entry": "2024-12-29",
             "notes": "Introduction of Maxwell equations.",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -292,7 +292,7 @@
             "entry": "2025-01-02",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -327,7 +327,7 @@
             "entry": "2025-01-12",
             "notes": "",
             "metadata": ""
-        }    
+        }
     ],
     [
         {
@@ -562,7 +562,7 @@
             "entry": "2025-01-28",
             "notes": "Seminal living review on black hole thermodynamics. Published in 2001 and not subsequently updated.",
             "metadata": ""
-        }  
+        }
     ],
     [
         {
@@ -650,7 +650,7 @@
             "entry": "2025-02-10",
             "notes": "Seminal paper that introduced the AdS/CFT correspondence.",
             "metadata": ""
-        }        
+        }
     ],
     [
         {
@@ -706,7 +706,7 @@
             "entry": "2025-02-10",
             "notes": "This seminal paper introduced the concept of symmetry breaking, and contributed to the theoretical understanding of superconductivity and gauge invariance. It was later recognized with the Nobel Prize in Physics in 2008.",
             "metadata": ""
-        }        
+        }
     ],
     [
         {
@@ -754,7 +754,7 @@
             "entry": "2025-02-24",
             "notes": "",
             "metadata": ""
-        }        
+        }
     ],
     [
         {
@@ -852,6 +852,154 @@
             "entry": "2025-02-24",
             "notes": "",
             "metadata": ""
-        }        
+        }
+    ],
+    [
+        {
+            "id": 22,
+            "type": "book",
+            "author": [
+                "Nash, Charles"
+            ],
+            "editor": [],
+            "title": "Relativistic Quantum Fields",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "vii + 223"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "Academic Press"
+            ],
+            "series": "",
+            "date": "1978",
+            "place": "London",
+            "reference": {},
+            "contributor": [],
+            "language": [
+                "English"
+            ],
+            "media": "hardcover",
+            "image": [[["ID0022_ED001_Nash.webp"], "Cover of the first edition."]],
+            "isbn": ["9780125143509", "9780125140805", "0125143508", "0125140800"],
+            "oclc": "4884624",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "QFT"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-26",
+            "notes": "",
+            "metadata": ""
+        }
+    ],
+    [
+        {
+            "id": 23,
+            "type": "book",
+            "author": [
+                "Bogoliubov, Nikolai Nicolaevich (Боголю́бов, Никола́й Никола́евич)",
+                "Shirkov, Dimitrii Vasil'evich (Ширко́в, Дми́трий Васи́льевич)"
+            ],
+            "editor": [],
+            "title": "Введение в теорию квантованных полей",
+            "romantitle": "",
+            "engtitle": "Introduction to the Theory of Quantized Fields",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "442"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "Nauka"
+            ],
+            "series": "",
+            "date": "1957",
+            "place": "Moscow",
+            "reference": {},
+            "contributor": [],
+            "language": [
+                "Russian"
+            ],
+            "media": "hardcover",
+            "image": [[["ID0023_ED001_Bogoliubov-Shirkov_jacket.webp"], "Jacket of the first english edition, Wiley 1959."]],
+            "isbn": [],
+            "oclc": "488872505",
+            "doi": "",
+            "link": [
+                "https://archive.org/details/IntroductionToTheoryOfQuantizedFields/"
+            ],
+            "subject": [
+                "QFT"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-26",
+            "notes": "",
+            "metadata": ""
+        }
+    ],
+    [
+        {
+            "id": 24,
+            "type": "book",
+            "author": [
+                "Itzykson, Claude",
+                "Zuber, Jean-Bernard"
+            ],
+            "editor": [],
+            "title": "Quantum Field Theory",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "xxii + 705"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "McGraw-Hill"
+            ],
+            "series": "",
+            "date": "1980",
+            "place": "New York",
+            "reference": {},
+            "contributor": [],
+            "language": [
+                "English"
+            ],
+            "media": "hardcover",
+            "image": [[["ID0024_ED001_Itzykson-Zuber_jacket.webp", "ID0024_ED001_Itzykson-Zuber_spine.webp"], "Jacket and cover spine of the first edition."]],
+            "isbn": ["9780070320710", "0070320713"],
+            "oclc": "240207618",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "QFT"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-26",
+            "notes": "",
+            "metadata": ""
+        }
     ]
 ]
