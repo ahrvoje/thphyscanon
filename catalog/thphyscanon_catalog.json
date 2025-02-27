@@ -1001,5 +1001,148 @@
             "notes": "",
             "metadata": ""
         }
+    ],
+    [
+        {
+            "id": 25,
+            "type": "book",
+            "author": [
+                "Ramond, Pierre"
+            ],
+            "editor": [],
+            "title": "Field Theory: A Modern Primer",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "xviii + 397"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "Benjamin-Cummings Publishing Company"
+            ],
+            "series": "Frontiers in Physics, Vol. 74",
+            "date": "1981",
+            "place": "Reading, Massachusetts",
+            "reference": {},
+            "contributor": [],
+            "language": ["English"],
+            "media": "hardcover",
+            "image": [
+                [
+                    ["ID0025_ED001_Ramond.webp"],
+                    "Cover of 2007 edition by Levant Books."
+                ]
+            ],
+            "isbn": ["9780805378924", "9780805378931", "0805378928", "0805378936"],
+            "oclc": "7170461",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "QFT"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-27",
+            "notes": "",
+            "metadata": ""
+        }
+    ],
+    [
+        {
+            "id": 26,
+            "type": "book",
+            "author": [
+                "Sakurai, Jun John"
+            ],
+            "editor": [],
+            "title": "Advanced Quantum Mechanics",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "xii + 336"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "Addison-Wesley"
+            ],
+            "series": "",
+            "date": "1967",
+            "place": "Reading, Massachusetts",
+            "reference": {},
+            "contributor": [],
+            "language": ["English"],
+            "media": "hardcover",
+            "image": [[["ID0026_ED001_Sakurai.webp"], ""]],
+            "isbn": ["9780201067101", "0201067102"],
+            "oclc": "869733",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "quantum mechanics"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-27",
+            "notes": "",
+            "metadata": ""
+        }
+    ],
+    [
+        {
+            "id": 27,
+            "type": "book",
+            "author": [
+                "Lee, Tsung-Dao"
+            ],
+            "editor": [],
+            "title": "Particle Physics and Introduction to Field Theory",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "xviii + 865"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "Harwood Academic Press"
+            ],
+            "series": "",
+            "date": "1981",
+            "place": "New York",
+            "reference": {},
+            "contributor": [],
+            "language": ["English"],
+            "media": "hardcover",
+            "image": [[["ID0027_ED001_Lee.webp", "ID0027_ED001_Lee_spine.webp"], ""]],
+            "isbn": ["9783718600328", "9783718600335", "3718600323", "3718600331"],
+            "oclc": "827630560",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "QFT", "elementary particles", "symmetry"
+            ],
+            "tags": [
+                "academic",
+                "QFT by Nižić"
+            ],
+            "entry": "2025-02-27",
+            "notes": "",
+            "metadata": ""
+        }
     ]
 ]
