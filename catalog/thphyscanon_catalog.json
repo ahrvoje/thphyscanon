@@ -1144,5 +1144,59 @@
             "notes": "",
             "metadata": ""
         }
+    ],
+    [
+        {
+            "id": 28,
+            "type": "book",
+            "author": [
+                "Gradshteyn, Izrail Solomonovich (Градштейн, Израиль Соломонович)",
+                "Ryzhik, Iosif Moiseevich (Рыжик, Иосиф Моисеевич)"
+            ],
+            "editor": [],
+            "title": "Таблицы интегралов, сумм, рядов и произведений",
+            "romantitle": "",
+            "engtitle": "Table of Integrals, Series, and Products",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "xliii + 1133"
+            ],
+            "dimensions": [],
+            "publisher": [
+                "Gosudarstvennoe Izdatel'stvo Tehniko-Teoretičeskoj Literatury"
+            ],
+            "series": "",
+            "date": "1943",
+            "place": "Moscow",
+            "reference": {},
+            "contributor": [],
+            "language": ["Russian"],
+            "media": "hardcover",
+            "image": [[["ID0028_ED001_Gradstein-Ryzhik.webp"], "Cover of 8th edition by Academic Press, 2014."]],
+            "isbn": ["9780123849342", "0123849349"],
+            "oclc": "893676501",
+            "doi": "",
+            "link": [
+                "https://en.wikipedia.org/wiki/Gradshteyn_and_Ryzhik",
+                "https://archive.org/details/GradshteinI.S.RyzhikI.M.TablesOfIntegralsSeriesAndProducts/"
+            ],
+            "subject": [
+                "integrals",
+                "series",
+                "special functions",
+                "mathematical tables"
+            ],
+            "tags": [
+                "academic",
+                "mathematics",
+                "reference"
+            ],
+            "entry": "2025-05-07",
+            "notes": "First edition by Ryzhnik in 1943. Third edition worked by Gradshteyn in 1951.",
+            "metadata": ""
+        }
     ]
 ]
