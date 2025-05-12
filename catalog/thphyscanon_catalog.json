@@ -1198,5 +1198,52 @@
             "notes": "First edition by Ryzhik in 1943. Third edition worked by Gradshteyn in 1951.",
             "metadata": ""
         }
+    ],
+    [
+        {
+            "id": 29,
+            "type": "book",
+            "author": [
+                "Dirac, Paul Adrien Maurice"
+            ],
+            "editor": [],
+            "title": "General Theory of Relativity",
+            "romantitle": "",
+            "engtitle": "",
+            "subtitle": [],
+            "romansubtitle": [],
+            "engsubtitle": [],
+            "volumes": "",
+            "pages": [
+                "viii + 69"
+            ],
+            "dimensions": [
+                "23 cm"
+            ],
+            "publisher": [
+                "John Wiley & Sons"
+            ],
+            "series": "",
+            "date": "1975-08-28",
+            "place": "New York",
+            "reference": {},
+            "contributor": [],
+            "language": ["English"],
+            "media": "hardcover",
+            "image": [[["ID0029_ED001_Dirac.webp", "ID0029_ED001_Dirac_spine.webp"], "Cover and spine of the first edition, 1975."]],
+            "isbn": ["9780471215752", "0471215759"],
+            "oclc": "1149376704",
+            "doi": "",
+            "link": [],
+            "subject": [
+                "general relativity"
+            ],
+            "tags": [
+                "academic"
+            ],
+            "entry": "2025-05-12",
+            "notes": "Based on a course of lectures given at Florida State University.",
+            "metadata": ""
+        }
     ]
 ]
