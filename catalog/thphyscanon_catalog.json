@@ -357,8 +357,14 @@
             "oclc": "502037224",
             "doi": "",
             "link": ["http://dlmf.nist.gov/"],
-            "subject": ["mathematics", "special functions"],
-            "tags": ["academic", "reference"],
+            "subject": [
+                "mathematics",
+                "integrals",
+                "series",
+                "special functions",
+                "mathematical tables"
+            ],
+            "tags": ["reference"],
             "entry": "2025-01-14",
             "notes": "Preceded by Abramowitz & Stegun.",
             "metadata": ""
@@ -1184,14 +1190,13 @@
                 "https://archive.org/details/GradshteinI.S.RyzhikI.M.TablesOfIntegralsSeriesAndProducts/"
             ],
             "subject": [
+                "mathematics",
                 "integrals",
                 "series",
                 "special functions",
                 "mathematical tables"
             ],
             "tags": [
-                "academic",
-                "mathematics",
                 "reference"
             ],
             "entry": "2025-05-07",
