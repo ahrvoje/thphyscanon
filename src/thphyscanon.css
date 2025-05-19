@@ -286,8 +286,7 @@ td a {
 }
 
 .queuetitle {
-    margin-left: 1em;
-    font-size: 25px;
+    font-size: 32px;
 }
 
 .queuelist {
@@ -296,8 +295,16 @@ td a {
     line-height: 1em;
 }
 
+.queuegrouptitle {
+    padding-top: 0.5em;
+    padding-bottom: 0.15em;
+    font-size: 24px;
+}
+
 .queueentry {
-    margin-top: 0.5em;
+    padding-left: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
     line-height: 1.2em;
 }
 
