@@ -7,7 +7,8 @@
         <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
         <link rel="canonical" href="https://ahrvoje.github.io/thphyscanon/">
         <link rel="stylesheet" href="src/thphyscanon.css">
-        <script type="text/javascript" src="src/load_catalog.js"></script>
+        <script defer type="text/javascript" src="src/load_elements2.js"></script>
+        <script type="text/javascript" src="src/load_catalog2.js"></script>
     </head>
 
     <body>
@@ -48,9 +49,7 @@
                 <div class="filters"></div>
             </div>
         </div>
-        <div class="catalog" id="catalog"></div>
         <div class="queue">
-            <div class="queuetitle">To Do:</div>
             <div class="queuelist">
                 <div class="queuegroup">
                     <div class="queuegrouptitle">General Physics</div>
@@ -60,6 +59,7 @@
                     <div class="queueentry">Supek, Ivan. 1952. <i>Teorijska fizika i struktura materije</i>. Zagreb: Školska knjiga.</div>
                     <div class="queueentry">Kompaneyets, A. S. 1961. <i>Theoretical Physics</i>. Moscow: Mir Publishers.</div>
                     <div class="queueentry">The Berkeley Physics Course. 1963–1967. New York: McGraw-Hill.</div>
+                    <div class="queueentry" id="5">Feynman, Richard P., Robert B. Leighton, and Matthew L. Sands. 1964. <i>The Feynman Lectures on Physics</i>. 3 vols. Reading, Massachusetts, United States: Addison-Wesley Pub. Co.</div>
                     <div class="queueentry">Harvard Project Physics. 1964. New York: Holt, Rinehart and Winston.</div>
                     <div class="queueentry">Alonso, Marcelo, and Edward J. Finn. 1967.–1968. <i>Fundamental University Physics</i>. 3 vols. Reading, MA: Addison-Wesley.</div>
                     <div class="queueentry">Pauli, Wolfgang. 1973.–1977. <i>Pauli Lectures on Physics</i>. 6 vols. Cambridge, MA: MIT Press.</div>
@@ -73,8 +73,9 @@
                     <div class="queueentry">Tong, David. 2025. <i>Lectures on Theoretical Physics</i>. 4 vols. Cambridge: Cambridge University Press.</div>
                 </div>
                 <div class="queuegroup">
-                    <div class="queuegrouptitle">Classical Mechanics, Nonlinear Dynamics, Chaos, Fluid Dynamics, Rheology</div>
+                    <div class="queuegrouptitle">Classical & Fluid Mechanics, Nonlinear Dynamics, Rheology</div>
                     <div class="queueentry">Huygens, Christiaan. 1673. <i>Horologium Oscillatorium</i>. Paris: L’Imprimerie Royale.</div>
+                    <div class="queueentry" id="1">Newton, Isaac. 1687. <i>Philosophiæ Naturalis Principia Mathematica</i>. 3 vols. London, England: Royal Society.</div>
                     <div class="queueentry">Euler, Leonhard. 1736. <i>Mechanica</i>. St. Petersburg: Imperial Academy Press.</div>
                     <div class="queueentry">Bernoulli, Daniel. 1738. <i>Hydrodynamica</i>. Basel: Peter Huber.</div>
                     <div class="queueentry">d’Alembert, Jean le Rond. 1743. <i>Traité de dynamique</i>. Paris: Chez la Veuve du Curé.</div>
@@ -84,6 +85,7 @@
                     <div class="queueentry">Routh, Edward John. 1891. <i>The Elementary Part of a Treatise on the Dynamics of a System of Rigid Bodies: Being Part I of a Treatise on the Whole Subject</i>. 5th ed. London: Macmillan.</div>
                     <div class="queueentry">Routh, Edward John. 1892. <i>The Advanced Part of a Treatise on the Dynamics of a System of Rigid Bodies: Being Part II of a Treatise on the Whole Subject</i>. 5th ed. London: Macmillan.</div>
                     <div class="queueentry">Lanczos, Cornelius. 1949. <i>The Variational Principles of Mechanics</i>. New York: Dover Publications.</div>
+                    <div class="queueentry" id="6">Goldstein, Herbert. 1950. <i>Classical Mechanics</i>. Cambridge, Massachusetts, United States: Addison-Wesley Press.</div>
                     <div class="queueentry">Bickley, W. G., and R. E. D. Bishop. 1956. <i>Rayleigh’s Principle and Its Applications to Engineering</i>. Oxford: Oxford University Press.</div>
                     <div class="queueentry">Leech, John Watson. 1958. <i>Classical Mechanics</i>. London: Methuen & Co.</div>
                     <div class="queueentry">Chandrasekhar, Subrahmanyan. 1961. <i>Hydrodynamic and Hydromagnetic Stability</i>. Oxford: Clarendon Press.</div>
@@ -119,6 +121,7 @@
                     <div class="queueentry">Coulomb, Charles-Augustin de. 1785. <i>Premier Mémoire sur l’Électricité et le Magnétisme</i>. Paris: Imprimerie de l’École Royale Polytechnique.</div>
                     <div class="queueentry">Ampère, André-Marie. 1827. <i>Essai sur la Théorie des Forces Électrodynamiques</i>. Paris: Bachelier.</div>
                     <div class="queueentry">Maxwell, James Clerk. 1873. <i>A Treatise on Electricity and Magnetism</i>. 2 vols. Oxford: Clarendon Press.</div>
+                    <div class="queueentry" id="2">Jackson, John David. 1962. <i>Classical Electrodynamics</i>. New York, United States: John Wiley &amp; Sons, Inc.</div>
                     <div class="queueentry">Schwartz, Melvin. 1987. <i>Principles of Electrodynamics</i>. New York: Dover Publications.</div>
                     <div class="queueentry">Ohanian, Hans C. 1988. <i>Classical Electrodynamics</i>. Boston: Allyn and Bacon.</div>
                     <div class="queueentry">Griffiths, David J. 1989. <i>Introduction to Electrodynamics</i>. Englewood Cliffs, NJ: Prentice-Hall.</div>
@@ -131,7 +134,7 @@
                     <div class="queueentry">Wald, Robert. 2022. <i>Advanced Classical Electromagnetism</i>. Princeton, NJ: Princeton University Press.</div>
                 </div>
                 <div class="queuegroup">
-                    <div class="queuegrouptitle">Statistical Physics, Thermodynamics, Many-Body, Phase Transitions</div>
+                    <div class="queuegrouptitle">Statistical Physics, Thermodynamics, Phase Transitions</div>
                     <div class="queueentry">Boltzmann, Ludwig. 1896–1898. <i>Vorlesungen über Gastheorie</i>. 2 vols. Leipzig: J. A. Barth.</div>
                     <div class="queueentry">Gibbs, Josiah Willard. 1902. <i>Elementary Principles in Statistical Mechanics, Developed with Especial Reference to the Rational Foundation of Thermodynamics</i>. New York: Charles Scribner’s Sons.</div>
                     <div class="queueentry">Planck, Max. 1906. <i>Vorlesungen über die Theorie der Wärmestrahlung</i>. Leipzig: Johann Ambrosius Barth.</div>
@@ -177,6 +180,7 @@
                     <div class="queueentry">Kramers, Hendrik Anthony. 1957. <i>Quantum Mechanics</i>. Translated by Dirk ter Haar. Amsterdam: North-Holland.</div>
                     <div class="queueentry">Messiah, Albert. 1961. <i>Quantum Mechanics</i>. Amsterdam: North-Holland.</div>
                     <div class="queueentry">Feynman, Richard P., and A. R. Hibbs. 1965. <i>Quantum Mechanics and Path Integrals</i>. New York: McGraw-Hill.</div>
+                    <div class="queueentry" id="26">Sakurai, Jun John. 1967. <i>Advanced Quantum Mechanics</i>. Reading, Massachusetts: Addison-Wesley.</div>
                     <div class="queueentry">Jauch, Josef M. 1968. <i>Foundations of Quantum Mechanics</i>. Reading, MA: Addison-Wesley.</div>
                     <div class="queueentry">Schiff, Leonard I. 1968. <i>Quantum Mechanics</i>. 3rd ed. New York: McGraw-Hill.</div>
                     <div class="queueentry">Berestetskii, V. B., E. M. Lifshitz, and L. P. Pitaevskii. 1971. <i>Relativistic Quantum Theory</i>. Oxford: Pergamon Press.</div>
@@ -233,8 +237,10 @@
                     <div class="queueentry">Møller, Christian. 1972. <i>The Theory of Relativity</i>. 2nd ed. Oxford: Clarendon Press.</div>
                     <div class="queueentry">Weinberg, Steven. 1972. <i>Gravitation and Cosmology: Principles and Applications of the General Theory of Relativity</i>. New York: Wiley.</div>
                     <div class="queueentry">Hawking, Stephen W., and G. F. R. Ellis. 1973. <i>The Large Scale Structure of Space-Time</i>. Cambridge: Cambridge University Press.</div>
+                    <div class="queueentry" id="3">Misner, Charles W., Kip S. Thorne, and John Archibald Wheeler. 1973. <i>Gravitation</i>. New York, United States: W.H. Freeman and Company.</div>
                     <div class="queueentry">Papapetrou, Achille. 1974. <i>Lectures on General Relativity</i>. Dordrecht: Reidel.</div>
                     <div class="queueentry">Adler, Ronald, Maurice Bazin, and Menahem Schiffer. 1975. <i>Introduction to General Relativity</i>. 2nd ed. New York: McGraw-Hill.</div>
+                    <div class="queueentry" id="29">Dirac, Paul Adrien Maurice. 1975. <i>General Theory of Relativity</i>. New York: John Wiley &amp; Sons.</div>
                     <div class="queueentry">de Groot, Sybren R., Willem A. van Leeuwen, and Christianus G. van Weert. 1980. <i>Relativistic Kinetic Theory: Principles and Applications</i>. Amsterdam: North-Holland Publishing.</div>
                     <div class="queueentry">Peebles, P. J. E. 1980. <i>Large-Scale Structure of the Universe</i>. Princeton, NJ: Princeton University Press.</div>
                     <div class="queueentry">Wald, Robert M. 1984. <i>General Relativity</i>. Chicago: University of Chicago Press.</div>
@@ -270,14 +276,22 @@
                     <div class="queueentry">Davis, Marc, and George Efstathiou. 2025. <i>The Large-Scale Structure of the Universe</i>. Cambridge: Cambridge University Press.</div>
                 </div>
                 <div class="queuegroup">
-                    <div class="queuegrouptitle">Classical Fields, Quantum Field Theory, Strong Interaction, Strings & Branes</div>
+                    <div class="queuegrouptitle">Classical & Quantum Field Theory, Strong Interaction, Strings</div>
                     <div class="queueentry">Wentzel, Gregor. 1949. <i>Quantum Theory of Fields</i>. New York: Interscience Publishers.</div>
+                    <div class="queueentry" id="23">Bogoliubov, Nikolai Nicolaevich, and Dimitrii Vasil'evich Shirkov. 1957. <i>Введение в теорию квантованных полей</i>. Moscow: Nauka.</div>
                     <div class="queueentry">Feynman, Richard P. 1961. <i>Quantum Electrodynamics: A Lecture Note and Reprint Volume</i>. New York: W. A. Benjamin.</div>
                     <div class="queueentry">Feynman, Richard P. 1961. <i>The Theory of Fundamental Processes: A Lecture Note Volume</i>. New York: W. A. Benjamin.</div>
+                    <div class="queueentry" id="19">Schweber, Silvan S. 1961. <i>An Introduction to Relativistic Quantum Field Theory</i>. New York: Harper &amp; Row.</div>
+                    <div class="queueentry" id="20">Bjorken, James D., and Sidney D. Drell. 1964. <i>Relativistic Quantum Mechanics</i>. New York: McGraw-Hill.</div>
+                    <div class="queueentry" id="21">Bjorken, James D., and Sidney D. Drell. 1965. <i>Relativistic Quantum Fields</i>. New York: McGraw-Hill.</div>
                     <div class="queueentry">Dirac, Paul Adrien Maurice. 1966. <i>Lectures on Quantum Field Theory</i>. New York: Belfer Graduate School of Science, Yeshiva University.</div>
                     <div class="queueentry">Polyakov, A. M. 1974. “Particle Spectrum in the Quantum Field Theory.” <i>JETP Letters</i> 20:194–97.</div>
                     <div class="queueentry">Abrikosov, Alexei A., Lev P. Gorkov, and Igor E. Dzyaloshinskii. 1975. <i>Methods of Quantum Field Theory in Statistical Physics</i>. Rev. ed. Translated by Richard A. Silverman. New York: Dover Publications.</div>
                     <div class="queueentry">Soper, Davison E. 1976. <i>Classical Field Theory</i>. Mineola, NY: Dover Publications.</div>
+                    <div class="queueentry" id="22">Nash, Charles. 1978. <i>Relativistic Quantum Fields</i>. London: Academic Press.</div>
+                    <div class="queueentry" id="24">Itzykson, Claude, and Jean-Bernard Zuber. 1980. <i>Quantum Field Theory</i>. New York: McGraw-Hill.</div>
+                    <div class="queueentry" id="27">Lee, Tsung-Dao. 1981. <i>Particle Physics and Introduction to Field Theory</i>. New York: Harwood Academic Press.</div>
+                    <div class="queueentry" id="25">Ramond, Pierre. 1981. <i>Field Theory: A Modern Primer</i>. Reading, Massachusetts: Benjamin-Cummings Publishing Company.</div>
                     <div class="queueentry">Birrell, N. D., and P. C. W. Davies. 1982. <i>Quantum Fields in Curved Space</i>. Cambridge: Cambridge University Press.</div>
                     <div class="queueentry">Rajaraman, R. 1982. <i>Solitons and Instantons: An Introduction to Solitons and Instantons in Quantum Field Theory</i>. Amsterdam: North-Holland.</div>
                     <div class="queueentry">Cheng, Ta-Pei, and Ling-Fong Li. 1984. <i>Gauge Theory of Elementary Particle Physics</i>. Oxford: Clarendon Press.</div>
@@ -359,7 +373,7 @@
                     <div class="queueentry">Talagrand, Michel. 2022. <i>What Is a Quantum Field Theory?</i>. Cambridge: Cambridge University Press.</div>
                 </div>
                 <div class="queuegroup">
-                    <div class="queuegrouptitle">Particle Physics, High-Energy</div>
+                    <div class="queuegrouptitle">Particle Physics, High-Energy Physics, Standard Model</div>
                     <div class="queueentry">Rose, Morris Edgar. 1961. <i>Relativistic Electron Theory</i>. New York: Wiley.</div>
                     <div class="queueentry">Okun, Lev B. 1982. <i>Leptons and Quarks</i>. Amsterdam: North-Holland.</div>
                     <div class="queueentry">Halzen, Francis, and Alan D. Martin. 1984. <i>Quarks and Leptons: An Introductory Course in Modern Particle Physics</i>. New York: Wiley.</div>
@@ -460,8 +474,10 @@
                 <div class="queuegroup">
                     <div class="queuegrouptitle">Mathematical Physics, Analysis, Reference</div>
                     <div class="queueentry">Euler, Leonhard. 1744. <i>Methodus inveniendi lineas curvas maximi minimive proprietate gaudentes, sive solutio problematis isoperimetrici latissimo sensu accepti</i>. Lausanne: Apud Marcum-Michaelem Bousquet & Socios.</div>
+                    <div class="queueentry" id="8">Courant, Richard, and David Hilbert. 1924. <i>Methoden der mathematischen Physik</i>. 2 vols. Berlin: Verlag von Julius Springer.</div>
                     <div class="queueentry">Whittaker, Edmund T., and George N. Watson. 1927. <i>A Course of Modern Analysis</i>. 4th ed. Cambridge: Cambridge University Press.</div>
                     <div class="queueentry">Frank, Philipp, and Richard von Mises. 1930–1935. <i>Die Differential- und Integralgleichungen der Mechanik und Physik</i>. 2nd ed. 2 vols. Braunschweig: Friedr. Vieweg & Sohn.</div>
+                    <div class="queueentry" id="28">Gradshteyn, Izrail Solomonovich, and Iosif Moiseevich Ryzhik. 1943. <i>Таблицы интегралов, сумм, рядов и произведений</i>. Moscow: Gosudarstvennoe Izdatel'stvo Tehniko-Teoretičeskoj Literatury.</div>
                     <div class="queueentry">Watson, George N. 1944. <i>A Treatise on the Theory of Bessel Functions</i>. 2nd ed. Cambridge: Cambridge University Press.</div>
                     <div class="queueentry">Erdélyi, Arthur, Wilhelm Magnus, Fritz Oberhettinger, and Francesco G. Tricomi, eds. 1953–1955. <i>Higher Transcendental Functions</i>. 3 vols. New York: McGraw-Hill.</div>
                     <div class="queueentry">Morse, Philip M., and Herman Feshbach. 1953. <i>Methods of Theoretical Physics</i>. 2 vols. New York: McGraw-Hill.</div>
@@ -514,6 +530,7 @@
                     <div class="queueentry">Polyanin, Andrei D., and Alexei I. Manzhirov. 2007. <i>Handbook of Mathematics for Engineers and Scientists: Concepts, Methods, and Formulas for Problem Solving</i>. Boca Raton, FL: Chapman & Hall/CRC Press.</div>
                     <div class="queueentry">Van Kampen, Nicolaas G. 2007. <i>Stochastic Processes in Physics and Chemistry</i>. 3rd ed. Amsterdam: Elsevier.</div>
                     <div class="queueentry">Gowers, Timothy, June Barrow-Green, and Imre Leader, eds. 2008. <i>The Princeton Companion to Mathematics</i>. Princeton, NJ: Princeton University Press.</div>
+                    <div class="queueentry" id="10">Olver, Frank W. J., Daniel W. Lozier, Ronald F. Boisvert, and Charles W. Clark, eds. 2010. <i>NIST Handbook of Mathematical Functions</i>. Cambridge and New York, United States: Cambridge University Press.</div>
                     <div class="queueentry">Hassani, Sadri. 2013. <i>Mathematical Physics: A Modern Introduction to Its Foundations</i>. 2nd ed. Cham, Switzerland: Springer International Publishing.</div>
                     <div class="queueentry">Pishro-Nik, Hossein. 2014. <i>Introduction to Probability, Statistics, and Random Processes</i>. Blue Bell, PA: Kappa Research.</div>
                     <div class="queueentry">Higham, Nicholas J., ed. 2015. <i>The Princeton Companion to Applied Mathematics</i>. Princeton, NJ: Princeton University Press.</div>
@@ -546,6 +563,7 @@
                     <div class="queueentry">Haar, D. ter. 1975. <i>Problems in Statistical Physics</i>. Oxford: Pergamon Press.</div>
                     <div class="queueentry">Lightman, Alan P., and Richard H. Price. 1975. <i>Problems in General Relativity</i>. New York: Wiley.</div>
                     <div class="queueentry">Batygin, V. V., and I. N. Toptygin. 1978. <i>Problems in Electrodynamics</i>. New York: Academic Press.</div>
+                    <div class="queueentry" id="9">Irodov, I. E. 1979. <i>Задачи по общей физике</i>. Moscow: Nauka.</div>
                     <div class="queueentry">Irodov, Igor E. 1980. <i>Fundamental Laws of Mechanics</i>. Moscow: Mir Publishers.</div>
                     <div class="queueentry">Medvedev, P. B. 1980. <i>Problems in Quantum Field Theory</i>. Moscow: Nauka Publishers.</div>
                     <div class="queueentry">Irodov, Igor E. 1983. <i>Basic Laws of Electromagnetism</i>. Moscow: Mir Publishers.</div>
@@ -575,6 +593,7 @@
                     <div class="queueentry">Guth, Alan H. 1997. <i>The Inflationary Universe: The Quest for a New Theory of Cosmic Origins.</i> Reading, MA: Addison-Wesley.</div>
                     <div class="queueentry">Mehra, Jagdish, and Kimball A. Milton. 2000. <i>Climbing the Mountain: The Scientific Biography of Julian Schwinger</i>. Oxford: Oxford University Press.</div>
                     <div class="queueentry">Penrose, Roger. 2004. <i>The Road to Reality: A Complete Guide to the Laws of the Universe</i>. London: Jonathan Cape.</div>
+                    <div class="queueentry" id="4">Dumas, H. Scott. 2014. <i>The KAM Story: A Friendly Introduction to the Content, History, and Significance of Classical Kolmogorov-Arnold-Moser Theory</i>. New Jersey, United States: World Scientific Publishing Company.</div>
                     <div class="queueentry">Verma, H. C. 2019. <i>Concepts of Physics</i>. 2nd ed. New Delhi: Bharati Bhawan Publishers & Distributors.</div>
                 </div>
                 <div class="queuegroup">
@@ -607,6 +626,7 @@
                     <div class="queueentry">Green, George. 1850. “An Essay on the Application of Mathematical Analysis to the Theories of Electricity and Magnetism.” <i>Journal für die reine und angewandte Mathematik</i> 39: 73–89.</div>
                     <div class="queueentry">Cayley, Arthur. 1858. “A Memoir on the Theory of Matrices.” <i>Philosophical Transactions of the Royal Society</i> 148: 17–37.</div>
                     <div class="queueentry">Kirchhoff, Gustav Robert. 1860. “Ueber das Verhältnis zwischen dem Emissionsvermögen und dem Absorptionsvermögen der Körper für Wärme und Licht.” <i>Annalen der Physik und Chemie</i> 140 (2): 1–18. https://doi.org/10.1002/andp.18601850202.</div>
+                    <div class="queueentry" id="7">Maxwell, John Clerk. 1861. “On Physical Lines of Force.” <i>Philosophical Magazine</i> 90: 11–23. https://doi.org/10.1080/14786431003659180.</div>
                     <div class="queueentry">Maxwell, James Clerk. 1865. “A Dynamical Theory of the Electromagnetic Field.” <i>Philosophical Transactions of the Royal Society</i> 155: 459–512.</div>
                     <div class="queueentry">Riemann, Bernhard. 1868. “Ueber die Hypothesen, welche der Geometrie zu Grunde liegen.” <i>Abhandlungen der Königlichen Gesellschaft der Wissenschaften zu Göttingen</i> 13: 133–152.</div>
                     <div class="queueentry">Boltzmann, Ludwig. 1872. “Weitere Studien über das Wärmegleichgewicht unter Gasmolekülen.” <i>Sitzungsberichte der Kaiserlichen Akademie der Wissenschaften, mathematisch-naturwissenschaftliche Klasse</i> 66: 275–370.</div>
@@ -617,8 +637,9 @@
                     <div class="queueentry">Poincaré, Henri. 1890. “Sur le problème des trois corps et les équations de la dynamique. Divergence des séries de M. Lindstedt et remarques sur la stabilité des solutions.” <i>Acta Mathematica</i> 13: 1–270. https://doi.org/10.1007/BF02392506.</div>
                     <div class="queueentry">Thomson, J. J. 1897. “Cathode Rays.” <i>Philosophical Magazine</i> 44 (269): 293–316. https://doi.org/10.1080/14786449708621070.</div>
                     <div class="queueentry">Planck, Max. 1901. “Ueber das Gesetz der Energieverteilung im Normalspektrum.” <i>Annalen der Physik</i> 4 (3): 553–63. https://doi.org/10.1002/andp.19013090310.</div>
-                    <div class="queueentry">Einstein, Albert. 1905-03-17. “Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt.” <i>Annalen der Physik</i> 17 (6): 132–48. https://doi.org/10.1002/andp.19053220607.</div>
+                    <div class="queueentry">Einstein, Albert. 1905-03-18. “Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt.” <i>Annalen der Physik</i> 17 (6): 132–48. https://doi.org/10.1002/andp.19053220607.</div>
                     <div class="queueentry">Einstein, Albert. 1905-05-11. “Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen.” <i>Annalen der Physik</i> 17 (8): 549–60. https://doi.org/10.1002/andp.19053220806.</div>
+                    <div class="queueentry" id="13">Einstein, Albert. 1905-06-30. “Zur Elektrodynamik bewegter Körper”. <i>Annalen der Physik</i> 17 (10): 891–921. https://doi.org/10.1002/andp.19053221004.</div>
                     <div class="queueentry">Einstein, Albert. 1905-09-27. “Ist die Trägheit eines Körpers von seinem Energieinhalt abhängig?” <i>Annalen der Physik</i> 18 (13): 639–41. https://doi.org/10.1002/andp.19053231314.</div>
                     <div class="queueentry">Minkowski, Hermann. 1908. “Raum und Zeit.” <i>Physikalische Zeitschrift</i> 10: 104–11.</div>
                     <div class="queueentry">Rutherford, Ernest. 1911. “The Scattering of α and β Particles by Matter and the Structure of the Atom.” <i>Philosophical Magazine</i> 21 (125): 669–688. https://doi.org/10.1080/14786440408637070.</div>
@@ -658,6 +679,7 @@
                     <div class="queueentry">Oppenheimer, J. Robert, and Hartland Snyder. 1939. “On Massive Neutron Cores.” <i>Physical Review</i> 56 (5): 455–459. https://doi.org/10.1103/PhysRev.56.455.</div>
                     <div class="queueentry">Wigner, Eugene P. 1939. “On Unitary Representations of the Inhomogeneous Lorentz Group.” <i>Annals of Mathematics</i> 40 (1): 149–204. https://doi.org/10.2307/1968551.</div>
                     <div class="queueentry">Kolmogorov, Andrey N. 1941. “The Local Structure of Turbulence in Incompressible Viscous Fluid for Very Large Reynolds Number.” <i>Doklady Akademii Nauk SSSR</i> 30 (4): 301–05.</div>
+                    <div class="queueentry" id="14">Landau, L. D. 1941. “Theory of the Superfluidity of Helium II.” <i>Physical Review</i> 60 (4): 356–358. https://doi.org/10.1103/PhysRev.60.356.</div>
                     <div class="queueentry">Alfvén, Hannes. 1942. “Existence of Electromagnetic-Hydrodynamic Waves.” <i>Nature</i> 150 (3805): 405–06. https://doi.org/10.1038/150405d0.</div>
                     <div class="queueentry">Onsager, Lars. 1944. “Crystal Statistics. I. A Two-Dimensional Model with an Order–Disorder Transition.” <i>Physical Review</i> 65 (3–4): 117–49. https://doi.org/10.1103/PhysRev.65.117.</div>
                     <div class="queueentry">Bloch, Felix, and Edward M. Purcell. 1946. “Nuclear Induction.” <i>Physical Review</i> 70 (7–8): 460–474. https://doi.org/10.1103/PhysRev.70.460.</div>
@@ -683,6 +705,7 @@
                     <div class="queueentry">Bardeen, John, Leon N. Cooper, and John R. Schrieffer. 1957. “Microscopic Theory of Superconductivity.” <i>Physical Review</i> 106 (1): 162–64. https://doi.org/10.1103/PhysRev.106.162.</div>
                     <div class="queueentry">Bardeen, John, Leon N. Cooper, and John R. Schrieffer. 1957. “Theory of Superconductivity.” <i>Physical Review</i> 108 (5): 1175–1204.</div>
                     <div class="queueentry">Anderson, Philip W. 1958. “Absence of Diffusion in Certain Random Lattices.” <i>Physical Review</i> 109 (5): 1492–1505. https://doi.org/10.1103/PhysRev.109.1492.</div>
+                    <div class="queueentry" id="18">Nambu, Yoichiro. 1960. “Quasi-Particles and Gauge Invariance in the Theory of Superconductivity.” <i>Physical Review</i> 117 (3): 648–663. https://doi.org/10.1103/PhysRev.117.648.</div>
                     <div class="queueentry">Glashow, Sheldon L. 1961. “Partial-Symmetries of Weak Interactions.” <i>Nuclear Physics</i> 22: 579–88. https://doi.org/10.1016/0029-5582(61)90469-2.</div>
                     <div class="queueentry">Josephson, Brian D. 1962. “Possible New Effects in Superconductive Tunnelling.” <i>Physics Letters</i> 1 (7): 251–53. https://doi.org/10.1016/0031-9163(62)91369-0.</div>
                     <div class="queueentry">Cabibbo, Nicola. 1963. “Unitary Symmetry and Leptonic Decays.” <i>Physical Review Letters</i> 10 (12): 531–33. https://doi.org/10.1103/PhysRevLett.10.531.</div>
@@ -714,6 +737,7 @@
                     <div class="queueentry">Politzer, H. David. 1973. “Reliable Perturbative Results for Strong Interactions?” <i>Physical Review Letters</i> 30 (26): 1346–49. https://doi.org/10.1103/PhysRevLett.30.1346.</div>
                     <div class="queueentry">’t Hooft, Gerard. 1974. “Magnetic Monopoles in Unified Gauge Theories.” <i>Nuclear Physics B</i> 79 (2): 276–84. https://doi.org/10.1016/0550-3213(74)90486-6.</div>
                     <div class="queueentry">Wess, Julius, and Bruno Zumino. 1974. “Supergauge Transformations in Four Dimensions.” <i>Nuclear Physics</i> B 70 (1): 39–50. https://doi.org/10.1016/0550-3213(74)90355-1.</div>
+                    <div class="queueentry" id="16">Wilson, Kenneth G., and John Kogut. 1974. “The Renormalization Group and the ϵ-Expansion.” <i>Physics Reports</i> 12 (2): 75–200. https://doi.org/10.1016/0370-1573(74)90023-4.</div>
                     <div class="queueentry">Hawking, Stephen W. 1975. “Particle Creation by Black Holes.” <i>Communications in Mathematical Physics</i> 43 (3): 199–220. https://doi.org/10.1007/BF02345020.</div>
                     <div class="queueentry">Wu, Tai Tsun, and Chen Ning Yang. 1975. “Concept of Nonintegrable Phase Factors and Global Formulation of Gauge Fields.” <i>Physical Review</i> D 12 (12): 3845–57.</div>
                     <div class="queueentry">Hasselmann, Klaus. 1976. “Stochastic Climate Models Part I. Theory.” <i>Tellus</i> 28 (6): 473–85. https://doi.org/10.3402/tellusa.v28i6.11316.</div>
@@ -728,6 +752,7 @@
                     <div class="queueentry">Vilenkin, Alexander. 1985. “Cosmic Strings and Domain Walls.” <i>Physics Reports</i> 121 (5): 263–315. https://doi.org/10.1016/0370-1573(85)90033-X.</div>
                     <div class="queueentry">Atiyah, Michael F. 1988. “Topological Quantum Field Theories.” <i>Publications Mathématiques de l’Institut des Hautes Études Scientifiques</i> 68: 175–86. https://doi.org/10.1007/BF02698547.</div>
                     <div class="queueentry">Witten, Edward. 1988. “Topological Quantum Field Theory.” <i>Communications in Mathematical Physics</i> 117 (3): 353–86. https://doi.org/10.1007/BF01223371.</div>
+                    <div class="queueentry" id="11">Weinberg, Steven. 1989. “The Cosmological Constant Problem.” <i>Reviews of Modern Physics</i> 61 (1): 1–23. https://doi.org/10.1103/RevModPhys.61.1.</div>
                     <div class="queueentry">Mukhanov, Viatcheslav F., H. A. Feldman, and Robert H. Brandenberger. 1992. “Theory of Cosmological Perturbations.” <i>Physics Reports</i> 215 (5–6): 203–333. https://doi.org/10.1016/0370-1573(92)90044-Z.</div>
                     <div class="queueentry">Polchinski, Joseph. 1993. “Effective Field Theory and the Fermi Surface.” In <i>Recent Directions in Particle Theory: From Superstrings and Black Holes to the Standard Model (TASI 92)</i>, edited by Jeffrey Harvey and Joseph Polchinski, 235–74. Redwood City, CA: Addison-Wesley.</div>
                     <div class="queueentry">Seiberg, Nathan, and Edward Witten. 1994. “Electric–Magnetic Duality, Monopole Condensation, and Confinement in 𝒩 = 2 Supersymmetric Yang–Mills Theory.” <i>Nuclear Physics B</i> 426 (1): 19–52. https://doi.org/10.1016/0550-3213(94)90124-4.</div>
@@ -735,7 +760,9 @@
                     <div class="queueentry">Witten, Edward. 1995. “String Theory Dynamics in Various Dimensions.” <i>Nuclear Physics</i> B 443 (1-2): 85–126. https://doi.org/10.1016/0550-3213(95)00158-O.</div>
                     <div class="queueentry">Donoghue, John F. 1997. “Introduction to the Effective Field Theory Description of Gravity.” In <i>Proceedings of the Advanced School on Effective Theories, Almunecar, Spain</i>, edited by Fernando Cornet and M. J. Herrero, 1–45. Singapore: World Scientific. arXiv:gr-qc/9512024.</div>
                     <div class="queueentry">Martin, Stephen P. 1997. “A Supersymmetry Primer.” In <i>Perspectives on Supersymmetry</i>, edited by Gordon L. Kane, 1–98. Singapore: World Scientific.</div>
+                    <div class="queueentry" id="17">Maldacena, Juan M. 1999. “The Large-N Limit of Superconformal Field Theories and Supergravity.” <i>International Journal of Theoretical Physics</i> 38 (4): 1113–1133. https://doi.org/10.1023/A:1026654312961.</div>
                     <div class="queueentry">Perlmutter, Saul, George Aldering, Greg Goldhaber, Robert A. Knop, Peter Nugent, et al. 1999. “Measurements of Ω and Λ from 42 High-Redshift Supernovae.” <i>The Astrophysical Journal</i> 517 (2): 565–86. https://doi.org/10.1086/307221.</div>
+                    <div class="queueentry" id="15">Wald, Robert M. 2001. “The Thermodynamics of Black Holes.” <i>Living Reviews in Relativity</i> 4: Article 6. https://doi.org/10.12942/lrr-2001-6.</div>
                     <div class="queueentry">Bousso, Raphael. 2002. “The Holographic Principle.” <i>Reviews of Modern Physics</i> 74 (3): 825–74. https://doi.org/10.1103/RevModPhys.74.825.</div>
                     <div class="queueentry">Freedman, Michael H., Alexei Kitaev, Michael J. Larsen, and Zhenghan Wang. 2003. “Topological Quantum Computation.” <i>Bulletin of the American Mathematical Society</i> 40 (1): 31–38. https://doi.org/10.1090/S0273-0979-02-00964-3.</div>
                     <div class="queueentry">Bartolo, Nicola, Eiichiro Komatsu, Sabino Matarrese, and Antonio Riotto. 2004. “Non-Gaussianity from Inflation: Theory and Observations.” <i>Physics Reports</i> 402 (3): 103–266. https://doi.org/10.1016/j.physrep.2004.08.022.</div>
@@ -748,6 +775,7 @@
                     <div class="queueentry">Blanchet, Luc. 2014. “Gravitational Radiation from Post-Newtonian Sources and Inspiralling Compact Binaries.” <i>Living Reviews in Relativity</i> 17:2. https://doi.org/10.12942/lrr-2014-2.</div>
                     <div class="queueentry">Will, Clifford M. 2014. “The Confrontation between General Relativity and Experiment.” <i>Living Reviews in Relativity</i> 17:4. https://doi.org/10.12942/lrr-2014-4.</div>
                     <div class="queueentry">Fan, Xing, Samuel L. Myers, Shashank Sukra, and Gerald Gabrielse. 2022. “Measurement of the Electron Magnetic Moment.” <i>Physical Review Letters</i> 130 (7): 071801. https://doi.org/10.1103/PhysRevLett.130.071801.</div>
+                    <div class="queueentry" id="12">Particle Data Group. 2024. “Review of Particle Physics.” <i>Physical Review D</i> 110: 030001. https://doi.org/10.1103/PhysRevD.110.030001.</div>
                 </div>
             </div>
         </div>

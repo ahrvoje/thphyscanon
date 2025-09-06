@@ -68,7 +68,7 @@ a, :visited {
 }
 
 .filtersection {
-    display: block;
+    display: none;
     margin-top: 1em;
     margin-left: 50pt;
     max-width: 50em;
@@ -280,15 +280,14 @@ td a {
 }
 
 .queue {
-    margin: auto;
-    width: 60em;
-    margin-top: 3em;
+    width: 64em;
 }
-
+/*
 .queuetitle {
-    font-size: 32px;
+    margin-left: 50pt;
+    font-size: 48px;
 }
-
+*/
 .queuelist {
     margin-top: 0em;
     font-size: 20px;
@@ -296,18 +295,39 @@ td a {
 }
 
 .queuegrouptitle {
-    padding-top: 0.5em;
-    padding-bottom: 0.15em;
-    font-size: 24px;
+    margin-left: 50pt;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+    font-size: 36px;
 }
 
+.queueentry {
+    padding-left: 50pt;
+    margin-top: 0.35em;
+    margin-bottom: 0.25em;
+    line-height: 1.2em;
+}
+/*
 .queueentry {
     padding-left: 1em;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     line-height: 1.2em;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: .5rem;
+    align-items: start;
+    min-width: 0;
 }
 
+.menu {
+    width: 40pt;
+    display: inline-block;
+    text-align: center;
+    align-self: start;
+}
+*/
 .footer {
     width: 100%;
     min-height: 4em;

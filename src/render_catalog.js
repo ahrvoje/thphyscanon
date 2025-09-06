@@ -1,9 +1,9 @@
 createDataEntry = (datatable, item, name, data) => {
-    if (name != "Link" && !data.length) {
+    if (name != 'Link' && !data.length) {
         return
     }
 
-    if (name == "Link" && !data.length && !item.doi.length) {
+    if (name == 'Link' && !data.length && !item.doi.length) {
         return
     }
 
@@ -19,67 +19,67 @@ createDataEntry = (datatable, item, name, data) => {
     entry.appendChild(attr)
     entry.appendChild(value)
 
-    if (name === "Author") {
+    if (name === 'Author') {
         value.textContent = data.join(' / ')
-    } else if (name === "Editor") {
+    } else if (name === 'Editor') {
         value.textContent = data.join(' / ')
-    } else if (name === "Subtitle") {
+    } else if (name === 'Subtitle') {
         value.textContent = data.join(' / ')
-    } else if (name === "English subtitle") {
+    } else if (name === 'English subtitle') {
         value.textContent = data.join(' / ')
-    } else if (name === "Pages") {
+    } else if (name === 'Pages') {
         value.textContent = data.join(' / ')
-    } else if (name === "Publisher") {
+    } else if (name === 'Publisher') {
         value.textContent = data.join(' / ')
-    } else if (name === "Contributor") {
-        txt = ""
-        separator = " / "
+    } else if (name === 'Contributor') {
+        txt = ''
+        separator = ' / '
         for (i in item.contributor) {
             contributor = item.contributor[i]
-            txt += contributor[0] + " (" + contributor[1] + ")"+ separator
+            txt += contributor[0] + ' (' + contributor[1] + ')'+ separator
         }
         value.textContent = txt.substring(0, txt.length - separator.length)  // delete trailing separator
-    } else if (name === "Language") {
+    } else if (name === 'Language') {
         value.textContent = data.join(' / ')
-    } else if (name === "ISBN") {
+    } else if (name === 'ISBN') {
         value.textContent = data.join(' / ')
-    } else if (name === "OCLC") {
-        value.innerHTML = "<a href=\"https://search.worldcat.org/title/" + data + "\" target=\"_blank\">" + data + "</a>"
-    } else if (name === "Link") {
-        txt = ""
+    } else if (name === 'OCLC') {
+        value.innerHTML = '<a href=\'https://search.worldcat.org/title/' + data + '\' target=\'_blank\'>' + data + '</a>'
+    } else if (name === 'Link') {
+        txt = ''
 
         if (item.doi) {
-            txt += "<a href=\"https://doi.org/" + item.doi + "\" target=\"_blank\">"+ item.doi + "</a><br>"
+            txt += '<a href=\'https://doi.org/' + item.doi + '\' target=\'_blank\'>'+ item.doi + '</a><br>'
         }
     
         for (i in item.link) {
             link = item.link[i]
-            txt += "<a href=\"" + link + "\" target=\"_blank\">" + link + "</a><br>"
+            txt += '<a href=\'' + link + '\' target=\'_blank\'>' + link + '</a><br>'
         }
         txt = txt.substring(0, txt.length - 5)  // delete trailing <br>
         value.innerHTML = txt
-    } else if (name === "Subject") {
-        txt = ""
+    } else if (name === 'Subject') {
+        txt = ''
         for (i in item.subject) {
             subject = item.subject[i]
             window.tpc_subjects.add(subject)
-            txt += "<div class=\"subject\">" + subject + "</div>"
+            txt += '<div class=\'subject\'>' + subject + '</div>'
         }
         value.innerHTML = txt
-    } else if (name === "Tags") {
-        txt = ""
+    } else if (name === 'Tags') {
+        txt = ''
         for (i in item.tags) {
             tag = item.tags[i]
             window.tpc_tags.add(tag)
-            txt += "<div class=\"tag\">" + tag + "</div>"
+            txt += '<div class=\'tag\'>' + tag + '</div>'
         }
         value.innerHTML = txt
-    } else if (name == "Notes") {
+    } else if (name == 'Notes') {
         value.innerHTML = data
 
-        value.parentElement.classList.add("notesentry")
-        value.parentElement.children[0].classList.add("notesattribute")
-        value.classList.add("notesvalue")
+        value.parentElement.classList.add('notesentry')
+        value.parentElement.children[0].classList.add('notesattribute')
+        value.classList.add('notesvalue')
     } else {
             value.textContent = data
     }
@@ -100,7 +100,7 @@ createImages = (images) => {
 
         var image_el = document.createElement('img')
         image_el.setAttribute('class', 'image')
-        image_el.setAttribute('src', "resources/images/" + image_img)
+        image_el.setAttribute('src', 'resources/images/' + image_img)
         images_el.appendChild(image_el)
     }
 
@@ -119,13 +119,13 @@ createImages = (images) => {
 const renderBooks = async (catalog) => {
     var section = document.createElement('div')
     section.setAttribute('class', 'section')
-    section.innerHTML = "Books"
+    section.innerHTML = 'Books'
     document.getElementById('catalog').appendChild(section)
 
     for (i in catalog) {
         item = catalog[i][0]
 
-        if (item.type != "book") {
+        if (item.type != 'book') {
             continue
         }
 
@@ -135,32 +135,32 @@ const renderBooks = async (catalog) => {
 
         var anchorlink = document.createElement('div')
         anchorlink.setAttribute('class', 'anchor')
-        anchorlink.innerHTML = "<a href=\"#" + item.id + "\">&para;</a>"
+        anchorlink.innerHTML = '<a href=\'#' + item.id + '\'>&para;</a>'
         card.appendChild(anchorlink)
         card.appendChild(createImages(item.image))
 
         var datatable = document.createElement('table')
         datatable.setAttribute('class', 'data')
-        createDataEntry(datatable, item, "Author", item.author)
-        createDataEntry(datatable, item, "Editor", item.editor)
-        createDataEntry(datatable, item, "Eng. title", item.engtitle)
-        createDataEntry(datatable, item, "Title", item.title)
-        createDataEntry(datatable, item, "Rom. title", item.romantitle)
-        createDataEntry(datatable, item, "Eng. subtitle", item.engsubtitle)
-        createDataEntry(datatable, item, "Subtitle", item.subtitle)
-        createDataEntry(datatable, item, "Rom. subtitle", item.romansubtitle)
-        createDataEntry(datatable, item, "Publisher", item.publisher)
-        createDataEntry(datatable, item, "Date", item.date)
-        createDataEntry(datatable, item, "Place", item.place)
-        createDataEntry(datatable, item, "Reference", item.reference)
-        createDataEntry(datatable, item, "Contributor", item.contributor)
-        createDataEntry(datatable, item, "Language", item.language)
-        createDataEntry(datatable, item, "ISBN", item.isbn)
-        createDataEntry(datatable, item, "OCLC", item.oclc)
-        createDataEntry(datatable, item, "Link", item.link)
-        createDataEntry(datatable, item, "Subject", item.subject)
-        createDataEntry(datatable, item, "Tags", item.tags)
-        createDataEntry(datatable, item, "Notes", item.notes)
+        createDataEntry(datatable, item, 'Author', item.author)
+        createDataEntry(datatable, item, 'Editor', item.editor)
+        createDataEntry(datatable, item, 'Eng. title', item.engtitle)
+        createDataEntry(datatable, item, 'Title', item.title)
+        createDataEntry(datatable, item, 'Rom. title', item.romantitle)
+        createDataEntry(datatable, item, 'Eng. subtitle', item.engsubtitle)
+        createDataEntry(datatable, item, 'Subtitle', item.subtitle)
+        createDataEntry(datatable, item, 'Rom. subtitle', item.romansubtitle)
+        createDataEntry(datatable, item, 'Publisher', item.publisher)
+        createDataEntry(datatable, item, 'Date', item.date)
+        createDataEntry(datatable, item, 'Place', item.place)
+        createDataEntry(datatable, item, 'Reference', item.reference)
+        createDataEntry(datatable, item, 'Contributor', item.contributor)
+        createDataEntry(datatable, item, 'Language', item.language)
+        createDataEntry(datatable, item, 'ISBN', item.isbn)
+        createDataEntry(datatable, item, 'OCLC', item.oclc)
+        createDataEntry(datatable, item, 'Link', item.link)
+        createDataEntry(datatable, item, 'Subject', item.subject)
+        createDataEntry(datatable, item, 'Tags', item.tags)
+        createDataEntry(datatable, item, 'Notes', item.notes)
 
         card.appendChild(datatable)
         document.getElementById('catalog').appendChild(card);
@@ -168,13 +168,13 @@ const renderBooks = async (catalog) => {
 }
 
 const chicagoNames = (names) => {
-    txt = ""
+    txt = ''
 
     for (i in names) {
         name = names[i]
 
-        internationalName = name.split("(")[0]
-        lastfirstName = internationalName.split(",")
+        internationalName = name.split('(')[0]
+        lastfirstName = internationalName.split(',')
 
         lastName = lastfirstName[0]
         firstName = lastfirstName[1]
@@ -183,23 +183,23 @@ const chicagoNames = (names) => {
             txt += lastName
         } else {
             if (i == 0) {
-                txt += lastName + ", " + firstName
+                txt += lastName + ', ' + firstName
             } else {
-                txt += firstName + " " + lastName
+                txt += firstName + ' ' + lastName
             }
         }
 
         if (i < names.length - 1) {
-            txt += ", "
+            txt += ', '
         }
 
         if (i == names.length - 2) {
-            txt += "and "
+            txt += 'and '
         }
     }
 
-    if (txt[txt.length - 1] != ".") {
-        txt += "."
+    if (txt[txt.length - 1] != '.') {
+        txt += '.'
     }
 
     return txt
@@ -212,7 +212,7 @@ const renderArticle = async (item) => {
 
     var anchorLink = document.createElement('div')
     anchorLink.setAttribute('class', 'anchor')
-    anchorLink.innerHTML = "<a href=\"#" + item.id + "\">&para;</a>"
+    anchorLink.innerHTML = '<a href=\'#' + item.id + '\'>&para;</a>'
     card.appendChild(anchorLink)
 
     var articleData = document.createElement('div')
@@ -224,27 +224,27 @@ const renderArticle = async (item) => {
     articleData.appendChild(biblio)
 
     biblio.innerHTML =  chicagoNames(item.author)
-    biblio.innerHTML += "<span class=\"bibliospace\"/>"    + item.date.substring(0, 4) + "."
-    biblio.innerHTML += "<span class=\"bibliospace\"/>\"" + item.title + "\"."
-    biblio.innerHTML += "<span class=\"bibliospace\"/><i>" + item.reference.journal + "</i>"
+    biblio.innerHTML += '<span class=\'bibliospace\'/>'    + item.date.substring(0, 4) + '.'
+    biblio.innerHTML += '<span class=\'bibliospace\'/>\'' + item.title + '\'.'
+    biblio.innerHTML += '<span class=\'bibliospace\'/><i>' + item.reference.journal + '</i>'
     if (item.reference.volume) {
-        biblio.innerHTML += "<span class=\"bibliospace\"/><i>" + item.reference.volume + "</i>"
+        biblio.innerHTML += '<span class=\'bibliospace\'/><i>' + item.reference.volume + '</i>'
     }
     if (item.reference.issue) {
-        biblio.innerHTML += "<span class=\"bibliospace\"/>(" + item.reference.issue + ")"
+        biblio.innerHTML += '<span class=\'bibliospace\'/>(' + item.reference.issue + ')'
     }
     if (item.reference.pagerange) {
-        biblio.innerHTML += ":<span class=\"bibliospace\"/>" + item.reference.pagerange
+        biblio.innerHTML += ':<span class=\'bibliospace\'/>' + item.reference.pagerange
     }
-    biblio.innerHTML += "."
+    biblio.innerHTML += '.'
 
     var data = document.createElement('div')
     data.setAttribute('class', 'data')
-    createDataEntry(data, item, "OCLC", item.oclc)
-    createDataEntry(data, item, "Link", item.link)
-    createDataEntry(data, item, "Subject", item.subject)
-    createDataEntry(data, item, "Tags", item.tags)
-    createDataEntry(data, item, "Notes", item.notes)
+    createDataEntry(data, item, 'OCLC', item.oclc)
+    createDataEntry(data, item, 'Link', item.link)
+    createDataEntry(data, item, 'Subject', item.subject)
+    createDataEntry(data, item, 'Tags', item.tags)
+    createDataEntry(data, item, 'Notes', item.notes)
 
     articleData.appendChild(data)
 
@@ -271,12 +271,12 @@ const renderSubArticles = async (catalog, subsectionText, subsectionType) => {
 const renderArticles = async (catalog) => {
     var section = document.createElement('div')
     section.setAttribute('class', 'section')
-    section.innerHTML = "Articles"
+    section.innerHTML = 'Articles'
     document.getElementById('catalog').appendChild(section)
 
-    await renderSubArticles(catalog, "Discoveries", "article-discovery")
-    await renderSubArticles(catalog, "Seminal reviews", "article-review-seminal")
-    await renderSubArticles(catalog, "Living reviews", "article-review-living")
+    await renderSubArticles(catalog, 'Discoveries', 'article-discovery')
+    await renderSubArticles(catalog, 'Seminal reviews', 'article-review-seminal')
+    await renderSubArticles(catalog, 'Living reviews', 'article-review-living')
 }
 
 const renderCatalog = async () => {
@@ -286,8 +286,8 @@ const renderCatalog = async () => {
 }
 
 const filterLabelClick = (el) => {
-    filterrow = el.closest(".filterrow")
-    filters = filterrow.getElementsByClassName("filters")[0].children
+    filterrow = el.closest('.filterrow')
+    filters = filterrow.getElementsByClassName('filters')[0].children
 
     if (filterrow.children[0].children[0].checked) {
         newState = true;
@@ -315,8 +315,8 @@ const filterLabelClick = (el) => {
 }
 
 const mainFilterChange = (el) => {
-    filterrow = el.closest(".filterrow")
-    filters = filterrow.getElementsByClassName("filters")[0].children
+    filterrow = el.closest('.filterrow')
+    filters = filterrow.getElementsByClassName('filters')[0].children
 
     someTrue = false;
     someFalse = false
@@ -352,7 +352,7 @@ const mainFilterChange = (el) => {
 }
 
 const filterChange = (el) => {
-    items = document.getElementsByClassName(el.parentElement.getAttribute("category"))
+    items = document.getElementsByClassName(el.parentElement.getAttribute('category'))
 
     for (i in items) {
         item = items[i]
@@ -361,15 +361,15 @@ const filterChange = (el) => {
             continue
         }
 
-        card = item.closest(".bookcard") || item.closest(".articlecard")
+        card = item.closest('.bookcard') || item.closest('.articlecard')
         if (!card) {
             continue
         }
         
         if (el.checked) {
-            card.style.display = "flex";
+            card.style.display = 'flex';
         } else {
-            card.style.display = "none";
+            card.style.display = 'none';
         }
     }
 
@@ -377,19 +377,19 @@ const filterChange = (el) => {
 }
 
 const renderFilters = async () => {
-    txt = ""
+    txt = ''
     for (i in window.tpc_subjects) {
         subject = window.tpc_subjects[i]
-        txt += "<div class=\"filter\" category=\"subject\"><input type=\"checkbox\" id=\"subject " + subject + "\" onchange=\"filterChange(this)\" checked/><label for=\"subject " + subject + "\">" + subject + "</label></div>"
+        txt += '<div class=\'filter\' category=\'subject\'><input type=\'checkbox\' id=\'subject ' + subject + '\' onchange=\'filterChange(this)\' checked/><label for=\'subject ' + subject + '\'>' + subject + '</label></div>'
     }
-    document.getElementById('subjectsfilterrow').getElementsByClassName("filters")[0].innerHTML = txt
+    document.getElementById('subjectsfilterrow').getElementsByClassName('filters')[0].innerHTML = txt
 
-    txt = ""
+    txt = ''
     for (i in window.tpc_tags) {
         tag = window.tpc_tags[i]
-        txt += "<div class=\"filter\" category=\"tag\"><input type=\"checkbox\" id=\"tag " + tag + "\" onchange=\"filterChange(this)\" checked/><label for=\"tag " + tag + "\">" + tag + "</label></div>"
+        txt += '<div class=\'filter\' category=\'tag\'><input type=\'checkbox\' id=\'tag ' + tag + '\' onchange=\'filterChange(this)\' checked/><label for=\'tag ' + tag + '\'>' + tag + '</label></div>'
     }
-    document.getElementById('tagsfilterrow').getElementsByClassName("filters")[0].innerHTML = txt
+    document.getElementById('tagsfilterrow').getElementsByClassName('filters')[0].innerHTML = txt
 }
 
 const showFilter = (el) => {
