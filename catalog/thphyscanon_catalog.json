@@ -1,1254 +1,1167 @@
-[
-    [
-        {
-            "id": 1,
-            "type": "book",
-            "author": ["Newton, Issac"],
-            "editor": [],
-            "title": "Philosophiæ Naturalis Principia Mathematica",
-            "romantitle": "",
-            "engtitle": "The Mathematical Principles of Natural Philosophy",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 3,
-            "pages": [],
-            "dimensions": [],
-            "publisher": ["Royal Society"],
-            "series": "",
-            "date": "1687-07-05",
-            "place": "London, England",
-            "reference": "",
-            "contributor": [
-                ["Halley, Edmond", "investor"],
-                ["Streater, Joseph", "printer"]
-            ],
-            "language": ["Neo-Latin"],
-            "media": "hardcover",
-            "image": [
-                [["ID0001_ED001_Principia.webp"], "Title page of the first edition, 1687."]
-            ],
-            "isbn": [],
-            "oclc": "1151794999",
-            "doi": "",
-            "link": [
-                "https://ntnu.tind.io/record/115139?ln=no",
-                "https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00002",
-                "https://www.e-rara.ch/zut/wihibe/content/titleinfo/338026",
-                "https://archive.org/details/newtonspmathema00newtrich/mode/2up"
-            ],
-            "subject": ["mechanics"],
-            "tags": ["historical", "academic"],
-            "entry": "2024-12-14",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 2,
-            "type": "book",
-            "author": ["Jackson, John David"],
-            "editor": [],
-            "title": "Classical Electrodynamics",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["xvii + 641"],
-            "dimensions": ["24 cm"],
-            "publisher": ["John Wiley & Sons, Inc."],
-            "series": "",
-            "date": "1962",
-            "place": "New York, United States",
-            "reference": "",
-            "contributor": [],
-            "language": ["English"],
-            "media": "hardcover",
-            "image": [[["ID0002_ED001_Jackson.webp", "ID0002_ED001_Jackson_spine.webp"], "Cover of the first edition, 1962."]],
-            "isbn": ["9780471431312", "0471431311"],
-            "oclc": "535998",
-            "doi": "",
-            "link": [],
-            "subject": ["electromagnetism", "electrodynamics"],
-            "tags": ["academic"],
-            "entry": "2024-12-15",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 3,
-            "type": "book",
-            "author": ["Misner, Charles W.", "Thorne, Kip S.", "Wheeler, John Archibald"],
-            "editor": [],
-            "title": "Gravitation",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["xxvii + 1279"],
-            "dimensions": ["26 cm"],
-            "publisher": ["W.H. Freeman and Company"],
-            "series": "",
-            "date": "1973-09-15",
-            "place": "New York, United States",
-            "reference": "",
-            "contributor": [],
-            "language": ["English"],
-            "media": "softcover",
-            "image": [[["ID0003_ED001_MTW.webp", "ID0003_ED001_MTW_spine.webp"], ""]],
-            "isbn": ["9780716703341", "9780716703440", "9780198551409", "0716703343", "0716703440", "0198551401"],
-            "oclc": "585119",
-            "doi": "",
-            "link": [],
-            "subject": ["general relativity", "gravitation"],
-            "tags": ["academic"],
-            "entry": "2024-12-15",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 4,
-            "type": "book",
-            "author": ["Dumas, H. Scott"],
-            "editor": [],
-            "title": "The KAM Story",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": ["A Friendly Introduction to the Content, History, and Significance of Classical Kolmogorov-Arnold-Moser Theory"],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["xv + 361"],
-            "dimensions": ["24 cm"],
-            "publisher": ["World Scientific Publishing Company"],
-            "series": "",
-            "date": "2014-04-17",
-            "place": "New Jersey, United States",
-            "reference": "",
-            "contributor": [],
-            "language": ["English"],
-            "media": "softcover",
-            "image": [[["ID0004_ED001_KAM.webp", "ID0004_ED001_KAM_spine.webp"], ""]],
-            "isbn": ["9814556580", "9789814556583"],
-            "oclc": "869552361",
-            "doi": "",
-            "link": [],
-            "subject": ["mechanics", "science history"],
-            "tags": ["popular"],
-            "entry": "2024-12-16",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 5,
-            "type": "book",
-            "author": ["Feyman, Richard P.", "Leighton, Robert B.", "Sands, Matthew L."],
-            "editor": [],
-            "title": "The Feynman lectures on physics",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": ["Vol 1: -", "Vol. 2: The electromagnetic field", "Vol. 3: Quantum mechanics"],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 3,
-            "pages": [],
-            "dimensions": ["29 cm"],
-            "publisher": ["Addison-Wesley Pub. Co."],
-            "series": "",
-            "date": "1964",
-            "place": "Reading, Massachusetts, United States",
-            "reference": "",
-            "contributor": [],
-            "language": ["English"],
-            "media": "softcover",
-            "image": [[["ID0005_ED001_Feynman.webp", "ID0005_ED001_Feynman_spine.webp"], ""]],
-            "isbn": ["9780201020106", "9780201021165", "9780201020113", "..."],
-            "oclc": "531535",
-            "doi": "",
-            "link": ["https://www.feynmanlectures.caltech.edu/"],
-            "subject": ["physics"],
-            "tags": ["academic"],
-            "entry": "2024-12-16",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 6,
-            "type": "book",
-            "author": ["Goldstein, Herbert"],
-            "editor": [],
-            "title": "Classical mechanics",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["xii + 399"],
-            "dimensions": ["24 cm"],
-            "publisher": ["Addison-Wesley Press"],
-            "series": "",
-            "date": "1950",
-            "place": "Cambridge, Massachusetts, United States",
-            "reference": "",
-            "contributor": [],
-            "language": ["English"],
-            "media": "hardcover",
-            "image": [[["ID0006_ED001_Goldstein_jacket-front.webp", "ID0006_ED001_Goldstein_jacket-spine.webp"], "Jacket of the first edition, 1950."]],
-            "isbn": [],
-            "oclc": "295876",
-            "doi": "",
-            "link": [],
-            "subject": ["mechanics", "classical mechanics"],
-            "tags": ["academic"],
-            "entry": "2024-12-29",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 7,
-            "type": "article-discovery",
-            "author": ["Maxwell, John Clerk"],
-            "editor": [],
-            "title": "On Physical Lines of Force",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["62"],
-            "dimensions": [],
-            "publisher": [],
-            "series": "",
-            "date": "1861",
-            "place": "",
-            "reference": {
-                "journal": "Philosophical Magazine",
-                "volume": "90",
-                "issue": "",
-                "pagerange": "11–23"
-            },
-            "contributor": [],
-            "language": ["English"],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "7317625615",
-            "doi": "10.1080/14786431003659180",
-            "link": ["https://en.wikisource.org/wiki/On_Physical_Lines_of_Force"],
-            "subject": ["electricity", "magnetism", "electromagnetism", "electrodynamics"],
-            "tags": ["historical", "academic"],
-            "entry": "2024-12-29",
-            "notes": "Introduction of Maxwell equations.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 8,
-            "type": "book",
-            "author": ["Courant, Richard", "Hilbert, David"],
-            "editor": [],
-            "title": "Methoden der mathematischen Physik",
-            "romantitle": "",
-            "engtitle": "Methods of Mathematical Physics",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 2,
-            "pages": ["xiii + 450", "xvi + 549"],
-            "dimensions": [],
-            "publisher": ["Verlag von Julius Springer"],
-            "series": "",
-            "date": "1924",
-            "place": "Berlin",
-            "reference": "",
-            "contributor": [],
-            "language": ["German"],
-            "media": "hardcover",
-            "image": [[["ID0008_ED001_Courant-Hilbert.webp", "ID0008_ED001_Courant-Hilbert_spine.webp"], ""]],
-            "isbn": [],
-            "oclc": "934484635",
-            "doi": "",
-            "link": ["https://gdz.sub.uni-goettingen.de/id/PPN380672502", "https://gdz.sub.uni-goettingen.de/id/PPN380673029"],
-            "subject": ["mathematics", "mathematical physics"],
-            "tags": ["academic"],
-            "entry": "2025-01-02",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 9,
-            "type": "book",
-            "author": ["Irodov, I. E. (Иродов, Игорь Евгеньевич)"],
-            "editor": [],
-            "title": "Задачи по общей физике",
-            "romantitle": "",
-            "engtitle": "Problems in General Physics",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["367"],
-            "dimensions": [],
-            "publisher": ["Nauka"],
-            "series": "",
-            "date": "1979",
-            "place": "Moscow",
-            "reference": "",
-            "contributor": [],
-            "language": ["Russian"],
-            "media": "hardcover",
-            "image": [[["ID0009_ED001_Irodov_jacket-front.webp", "ID0009_ED001_Irodov_jacket-spine.webp"], "Jacket of 1st edition 3rd printing of English translation, Mir 1988."]],
-            "isbn": [],
-            "oclc": "315737473",
-            "doi": "",
-            "link": ["https://archive.org/details/IrodovProblemsInGeneralPhysics/"],
-            "subject": ["physics", "problems"],
-            "tags": ["academic"],
-            "entry": "2025-01-12",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 10,
-            "type": "book",
-            "author": [],
-            "editor": ["Olver, Frank W. J.", "Lozier, Daniel W.", "Boisvert, Ronald F.", "Clark, Charles W."],
-            "title": "NIST Handbook of Mathematical Functions",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["xv + 951"],
-            "dimensions": ["28cm"],
-            "publisher": ["Cambridge University Press"],
-            "series": "",
-            "date": "2010",
-            "place": "Cambridge, New York, United States",
-            "reference": "",
-            "contributor": [],
-            "language": ["English"],
-            "media": "softcover",
-            "image": [[["ID0010_ED001_NIST.webp", "ID0010_ED001_NIST_spine.webp"], "Cover of the first edition, 2010."]],
-            "isbn": ["9780521192255", "9780521140638"],
-            "oclc": "502037224",
-            "doi": "",
-            "link": ["http://dlmf.nist.gov/"],
-            "subject": [
-                "mathematics",
-                "integrals",
-                "series",
-                "special functions",
-                "mathematical tables"
-            ],
-            "tags": ["reference"],
-            "entry": "2025-01-14",
-            "notes": "Preceded by Abramowitz & Stegun.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 11,
-            "type": "article-review-seminal",
-            "author": ["Weinberg, Steven"],
-            "editor": [],
-            "title": "The Cosmological Constant Problem",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": ["23"],
-            "dimensions": [],
-            "publisher": [],
-            "series": "",
-            "date": "1989",
-            "place": "",
-            "reference": {
-                "journal": "Reviews of Modern Physics",
-                "volume": "61",
-                "issue": "1",
-                "pagerange": "1–23"
-            },
-            "contributor": [],
-            "language": ["English"],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "4643798208",
-            "doi": "10.1103/RevModPhys.61.1",
-            "link": [""],
-            "subject": ["cosmological constant", "cosmology", "QFT", "general relativity"],
-            "tags": ["academic"],
-            "entry": "2025-01-25",
-            "notes": "Comprehensive review of the cosmological constant problem in the context of quantum field theory and general relativity.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 12,
-            "type": "article-review-living",
-            "author": ["Particle Data Group"],
-            "editor": [],
-            "title": "Review of Particle Physics",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 1,
-            "pages": [],
-            "dimensions": [],
-            "publisher": [],
-            "series": "",
-            "date": "2024",
-            "place": "",
-            "reference": {
-                "journal": "Physical Review D",
-                "volume": "110",
-                "issue": "",
-                "pagerange": "030001"
-            },
-            "contributor": [],
-            "language": ["English"],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "10320535047",
-            "doi": "10.1103/PhysRevD.110.030001",
-            "link": ["https://pdg.lbl.gov/index.html"],
-            "subject": ["particle physics"],
-            "tags": ["academic", "reference"],
-            "entry": "2025-01-25",
-            "notes": "Comprehensive review of particle physics measurements.",
-            "metadata": "Updated to 2024 version on 2025-01-26."
-        }
-    ],
-    [
-        {
-            "id": 13,
-            "type": "article-discovery",
-            "author": ["Einstein, Albert"],
-            "editor": [],
-            "title": "Zur Elektrodynamik bewegter Körper",
-            "romantitle": "",
-            "engtitle": "On the Electrodynamics of Moving Bodies",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": 17,
-            "pages": ["31"],
-            "dimensions": [],
-            "publisher": ["Johann Ambrosius Barth"],
-            "series": "",
-            "date": "1905-06-30",
-            "place": "Leipzig, Germany",
-            "reference": {
-                "journal": "Annalen der Physik",
-                "volume": "17",
-                "issue": "10",
-                "pagerange": "891–921"
-            },
-            "contributor": [],
-            "language": ["German"],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "4650488587",
-            "doi": "10.1002/andp.19053221004",
-            "link": ["https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_(1920_edition)"],
-            "subject": ["relativity", "electrodynamics"],
-            "tags": ["historical", "academic"],
-            "entry": "2025-01-28",
-            "notes": "Seminal paper introducing the E=mc<sup>2</sup>.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 14,
-            "type": "article-discovery",
-            "author": ["Landau, L. D."],
-            "editor": [],
-            "title": "Theory of the Superfluidity of Helium II",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": ["3"],
-            "dimensions": [],
-            "publisher": ["American Physical Society"],
-            "series": "",
-            "date": "1941",
-            "place": "New York, USA",
-            "reference": {
-                "journal": "Physical Review",
-                "volume": "60",
-                "issue": "4",
-                "pagerange": "356–358"
-            },
-            "contributor": [],
-            "language": ["English"],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "4644087711",
-            "doi": "10.1103/PhysRev.60.356",
-            "link": [],
-            "subject": ["quantum physics", "superfluidity"],
-            "tags": ["academic", "Nobel"],
-            "entry": "2025-01-28",
-            "notes": "Foundational work explaining superfluidity in Helium II, later pivotal for Landau's Nobel Prize in Physics 1962.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 15,
-            "type": "article-review-living",
-            "author": ["Wald, Robert M."],
-            "editor": [],
-            "title": "The Thermodynamics of Black Holes",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": ["Article No. 6"],
-            "dimensions": [],
-            "publisher": ["Max Planck Institute for Gravitational Physics"],
-            "series": "",
-            "date": "2001",
-            "place": "Potsdam, Germany",
-            "reference": {
-                "journal": "Living Reviews in Relativity",
-                "volume": "4",
-                "issue": "",
-                "pagerange": "Article No. 6"
-            },
-            "contributor": [],
-            "language": ["English"],
-            "media": "online",
-            "image": [],
-            "isbn": [],
-            "oclc": "",
-            "doi": "10.12942/lrr-2001-6",
-            "link": [],
-            "subject": ["black holes", "thermodynamics", "relativity"],
-            "tags": ["academic"],
-            "entry": "2025-01-28",
-            "notes": "Seminal living review on black hole thermodynamics. Published in 2001 and not subsequently updated.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 16,
-            "type": "article-review-seminal",
-            "author": ["Wilson, Kenneth G.", "Kogut, John"],
-            "editor": [],
-            "title": "The Renormalization Group and the ϵ-Expansion",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": ["126"],
-            "dimensions": [],
-            "publisher": ["North-Holland (Elsevier)"],
-            "series": "",
-            "date": "1974",
-            "place": "Amsterdam, Netherlands",
-            "reference": {
-                "journal": "Physics Reports",
-                "volume": "12",
-                "issue": "2",
-                "pagerange": "75–200"
-            },
-            "contributor": [],
-            "language": ["English"],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "",
-            "doi": "10.1016/0370-1573(74)90023-4",
-            "link": [],
-            "subject": ["renormalization group", "QFT"],
-            "tags": ["academic"],
-            "entry": "2025-01-28",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 17,
-            "type": "article-discovery",
-            "author": ["Maldacena, Juan M."],
-            "editor": [],
-            "title": "The Large-N Limit of Superconformal Field Theories and Supergravity",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": ["21"],
-            "dimensions": [],
-            "publisher": ["Springer"],
-            "series": "",
-            "date": "1999",
-            "place": "Berlin, Germany",
-            "reference": {
-                "journal": "International Journal of Theoretical Physics",
-                "volume": "38",
-                "issue": "4",
-                "pagerange": "1113–1133"
-            },
-            "contributor": [],
-            "language": ["English"],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "5649158851",
-            "doi": "10.1023/A:1026654312961",
-            "link": ["https://arxiv.org/abs/hep-th/9711200"],
-            "subject": [
-                "AdS/CFT",
-                "QFT",
-                "superconformal field theory",
-                "supergravity",
-                "string theory"
-            ],
-            "tags": [
-                "academic"
-            ],
-            "entry": "2025-02-10",
-            "notes": "Seminal paper that introduced the AdS/CFT correspondence.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 18,
-            "type": "article-discovery",
-            "author": [
-                "Nambu, Yoichiro"
-            ],
-            "editor": [],
-            "title": "Quasi-Particles and Gauge Invariance in the Theory of Superconductivity",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "16"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "American Physical Society"
-            ],
-            "series": "",
-            "date": "1960",
-            "place": "United States",
-            "reference": {
-                "journal": "Physical Review",
-                "volume": "117",
-                "issue": "3",
-                "pagerange": "648–663"
-            },
-            "contributor": [],
-            "language": [
-                "English"
-            ],
-            "media": "paper",
-            "image": [],
-            "isbn": [],
-            "oclc": "4644593625",
-            "doi": "10.1103/PhysRev.117.648",
-            "link": [],
-            "subject": [
-                "superconductivity",
-                "gauge invariance",
-                "quasi-particles",
-                "condensed matter physics"
-            ],
-            "tags": [
-                "academic",
-                "Nobel"
-            ],
-            "entry": "2025-02-10",
-            "notes": "This seminal paper introduced the concept of symmetry breaking, and contributed to the theoretical understanding of superconductivity and gauge invariance. It was later recognized with the Nobel Prize in Physics in 2008.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 19,
-            "type": "book",
-            "author": [
-                "Schweber, Silvan S."
-            ],
-            "editor": [],
-            "title": "An Introduction to Relativistic Quantum Field Theory",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "913"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "Harper & Row"
-            ],
-            "series": "",
-            "date": "1961",
-            "place": "New York",
-            "reference": {},
-            "contributor": [],
-            "language": [
-                "English"
-            ],
-            "media": "paper",
-            "image": [[["ID0019_ED001_Schweber.webp"], "Cover of 2005 edition by Dover."]],
-            "isbn": [],
-            "oclc": "1310567042",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "QFT"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-24",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 20,
-            "type": "book",
-            "author": [
-                "Bjorken, James D.",
-                "Drell, Sidney D."
-            ],
-            "editor": [],
-            "title": "Relativistic Quantum Mechanics",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "x + 300"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "McGraw-Hill"
-            ],
-            "series": "International series in pure and applied physics",
-            "date": "1964",
-            "place": "New York",
-            "reference": {},
-            "contributor": [],
-            "language": [
-                "English"
-            ],
-            "media": "print",
-            "image": [[["ID0020_ED001_Bjorken-Drell_jacket.webp"], "Jacket of the first edition."]],
-            "isbn": ["9780070054936", "0070054932"],
-            "oclc": "534560",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "relativistic quantum mechanics"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-24",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 21,
-            "type": "book",
-            "author": [
-                "Bjorken, James D.",
-                "Drell, Sidney D."
-            ],
-            "editor": [],
-            "title": "Relativistic Quantum Fields",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "xiv + 396"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "McGraw-Hill"
-            ],
-            "series": "",
-            "date": "1965",
-            "place": "New York",
-            "reference": {},
-            "contributor": [],
-            "language": [
-                "English"
-            ],
-            "media": "print",
-            "image": [[["ID0021_ED001_Bjorken-Drell_jacket.webp", "ID0021_ED001_Bjorken-Drell_jacket-spine.webp"], "Jacket of the first edition."]],
-            "isbn": ["9780070054943", "0070054940"],
-            "oclc": "939866",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "QFT"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-24",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 22,
-            "type": "book",
-            "author": [
-                "Nash, Charles"
-            ],
-            "editor": [],
-            "title": "Relativistic Quantum Fields",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "vii + 223"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "Academic Press"
-            ],
-            "series": "",
-            "date": "1978",
-            "place": "London",
-            "reference": {},
-            "contributor": [],
-            "language": [
-                "English"
-            ],
-            "media": "hardcover",
-            "image": [[["ID0022_ED001_Nash.webp"], "Cover of the first edition."]],
-            "isbn": ["9780125143509", "9780125140805", "0125143508", "0125140800"],
-            "oclc": "4884624",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "QFT"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-26",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 23,
-            "type": "book",
-            "author": [
-                "Bogoliubov, Nikolai Nicolaevich (Боголю́бов, Никола́й Никола́евич)",
-                "Shirkov, Dimitrii Vasil'evich (Ширко́в, Дми́трий Васи́льевич)"
-            ],
-            "editor": [],
-            "title": "Введение в теорию квантованных полей",
-            "romantitle": "",
-            "engtitle": "Introduction to the Theory of Quantized Fields",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "442"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "Nauka"
-            ],
-            "series": "",
-            "date": "1957",
-            "place": "Moscow",
-            "reference": {},
-            "contributor": [],
-            "language": [
-                "Russian"
-            ],
-            "media": "hardcover",
-            "image": [[["ID0023_ED001_Bogoliubov-Shirkov_jacket.webp"], "Jacket of the first english edition, Wiley 1959."]],
-            "isbn": [],
-            "oclc": "488872505",
-            "doi": "",
-            "link": [
-                "https://archive.org/details/IntroductionToTheoryOfQuantizedFields/"
-            ],
-            "subject": [
-                "QFT"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-26",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 24,
-            "type": "book",
-            "author": [
-                "Itzykson, Claude",
-                "Zuber, Jean-Bernard"
-            ],
-            "editor": [],
-            "title": "Quantum Field Theory",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "xxii + 705"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "McGraw-Hill"
-            ],
-            "series": "",
-            "date": "1980",
-            "place": "New York",
-            "reference": {},
-            "contributor": [],
-            "language": [
-                "English"
-            ],
-            "media": "hardcover",
-            "image": [[["ID0024_ED001_Itzykson-Zuber_jacket.webp", "ID0024_ED001_Itzykson-Zuber_spine.webp"], "Jacket front and cover spine of the first edition."]],
-            "isbn": ["9780070320710", "0070320713"],
-            "oclc": "240207618",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "QFT"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-26",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 25,
-            "type": "book",
-            "author": [
-                "Ramond, Pierre"
-            ],
-            "editor": [],
-            "title": "Field Theory: A Modern Primer",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "xviii + 397"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "Benjamin-Cummings Publishing Company"
-            ],
-            "series": "Frontiers in Physics, Vol. 74",
-            "date": "1981",
-            "place": "Reading, Massachusetts",
-            "reference": {},
-            "contributor": [],
-            "language": ["English"],
-            "media": "hardcover",
-            "image": [
-                [
-                    ["ID0025_ED001_Ramond.webp"],
-                    "Cover of 2007 edition by Levant Books."
-                ]
-            ],
-            "isbn": ["9780805378924", "9780805378931", "0805378928", "0805378936"],
-            "oclc": "7170461",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "QFT"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-27",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 26,
-            "type": "book",
-            "author": [
-                "Sakurai, Jun John"
-            ],
-            "editor": [],
-            "title": "Advanced Quantum Mechanics",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "xii + 336"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "Addison-Wesley"
-            ],
-            "series": "",
-            "date": "1967",
-            "place": "Reading, Massachusetts",
-            "reference": {},
-            "contributor": [],
-            "language": ["English"],
-            "media": "hardcover",
-            "image": [[["ID0026_ED001_Sakurai.webp"], ""]],
-            "isbn": ["9780201067101", "0201067102"],
-            "oclc": "869733",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "quantum mechanics"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-27",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 27,
-            "type": "book",
-            "author": [
-                "Lee, Tsung-Dao"
-            ],
-            "editor": [],
-            "title": "Particle Physics and Introduction to Field Theory",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "xviii + 865"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "Harwood Academic Press"
-            ],
-            "series": "",
-            "date": "1981",
-            "place": "New York",
-            "reference": {},
-            "contributor": [],
-            "language": ["English"],
-            "media": "hardcover",
-            "image": [[["ID0027_ED001_Lee.webp", "ID0027_ED001_Lee_spine.webp"], ""]],
-            "isbn": ["9783718600328", "9783718600335", "3718600323", "3718600331"],
-            "oclc": "827630560",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "QFT", "elementary particles", "symmetry"
-            ],
-            "tags": [
-                "academic",
-                "QFT by Nižić"
-            ],
-            "entry": "2025-02-27",
-            "notes": "",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 28,
-            "type": "book",
-            "author": [
-                "Gradshteyn, Izrail Solomonovich (Градштейн, Израиль Соломонович)",
-                "Ryzhik, Iosif Moiseevich (Рыжик, Иосиф Моисеевич)"
-            ],
-            "editor": [],
-            "title": "Таблицы интегралов, сумм, рядов и произведений",
-            "romantitle": "",
-            "engtitle": "Table of Integrals, Series, and Products",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "xliii + 1133"
-            ],
-            "dimensions": [],
-            "publisher": [
-                "Gosudarstvennoe Izdatel'stvo Tehniko-Teoretičeskoj Literatury"
-            ],
-            "series": "",
-            "date": "1943",
-            "place": "Moscow",
-            "reference": {},
-            "contributor": [],
-            "language": ["Russian"],
-            "media": "hardcover",
-            "image": [[["ID0028_ED001_Gradstein-Ryzhik.webp"], "Cover of 8th edition by Academic Press, 2014."]],
-            "isbn": ["9780123849342", "0123849349"],
-            "oclc": "893676501",
-            "doi": "",
-            "link": [
-                "https://en.wikipedia.org/wiki/Gradshteyn_and_Ryzhik",
-                "https://archive.org/details/GradshteinI.S.RyzhikI.M.TablesOfIntegralsSeriesAndProducts/"
-            ],
-            "subject": [
-                "mathematics",
-                "integrals",
-                "series",
-                "special functions",
-                "mathematical tables"
-            ],
-            "tags": [
-                "reference"
-            ],
-            "entry": "2025-05-07",
-            "notes": "First edition by Ryzhik in 1943. Third edition worked by Gradshteyn in 1951.",
-            "metadata": ""
-        }
-    ],
-    [
-        {
-            "id": 29,
-            "type": "book",
-            "author": [
-                "Dirac, Paul Adrien Maurice"
-            ],
-            "editor": [],
-            "title": "General Theory of Relativity",
-            "romantitle": "",
-            "engtitle": "",
-            "subtitle": [],
-            "romansubtitle": [],
-            "engsubtitle": [],
-            "volumes": "",
-            "pages": [
-                "viii + 69"
-            ],
-            "dimensions": [
-                "23 cm"
-            ],
-            "publisher": [
-                "John Wiley & Sons"
-            ],
-            "series": "",
-            "date": "1975-08-28",
-            "place": "New York",
-            "reference": {},
-            "contributor": [],
-            "language": ["English"],
-            "media": "hardcover",
-            "image": [[["ID0029_ED001_Dirac_jacket.webp", "ID0029_ED001_Dirac_jacket-spine.webp"], "Jacket front and spine of the first edition, 1975."]],
-            "isbn": ["9780471215752", "0471215759"],
-            "oclc": "1149376704",
-            "doi": "",
-            "link": [],
-            "subject": [
-                "general relativity"
-            ],
-            "tags": [
-                "academic"
-            ],
-            "entry": "2025-05-12",
-            "notes": "Based on a course of lectures given at Florida State University.",
-            "metadata": ""
-        }
-    ]
-]
+{
+    "1": {
+        "type": "book",
+        "author": ["Newton, Issac"],
+        "editor": [],
+        "title": "Philosophiæ Naturalis Principia Mathematica",
+        "romantitle": "",
+        "engtitle": "The Mathematical Principles of Natural Philosophy",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 3,
+        "pages": [],
+        "dimensions": [],
+        "publisher": ["Royal Society"],
+        "series": "",
+        "date": "1687-07-05",
+        "place": "London, England",
+        "reference": "",
+        "contributor": [
+            ["Halley, Edmond", "investor"],
+            ["Streater, Joseph", "printer"]
+        ],
+        "language": ["Neo-Latin"],
+        "media": "hardcover",
+        "image": [
+            [["ID0001_ED001_Principia.webp"], "Title page of the first edition, 1687."]
+        ],
+        "isbn": [],
+        "oclc": "1151794999",
+        "doi": "",
+        "link": [
+            "https://ntnu.tind.io/record/115139?ln=no",
+            "https://cudl.lib.cam.ac.uk/view/PR-ADV-B-00039-00002",
+            "https://www.e-rara.ch/zut/wihibe/content/titleinfo/338026",
+            "https://archive.org/details/newtonspmathema00newtrich/mode/2up"
+        ],
+        "subject": ["mechanics"],
+        "tags": ["historical", "academic"],
+        "entry": "2024-12-14",
+        "notes": "",
+        "metadata": ""
+    },
+    "2": {
+        "type": "book",
+        "author": ["Jackson, John David"],
+        "editor": [],
+        "title": "Classical Electrodynamics",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["xvii + 641"],
+        "dimensions": ["24 cm"],
+        "publisher": ["John Wiley & Sons, Inc."],
+        "series": "",
+        "date": "1962",
+        "place": "New York, United States",
+        "reference": "",
+        "contributor": [],
+        "language": ["English"],
+        "media": "hardcover",
+        "image": [[["ID0002_ED001_Jackson.webp", "ID0002_ED001_Jackson_spine.webp"], "Cover of the first edition, 1962."]],
+        "isbn": ["9780471431312", "0471431311"],
+        "oclc": "535998",
+        "doi": "",
+        "link": [],
+        "subject": ["electromagnetism", "electrodynamics"],
+        "tags": ["academic"],
+        "entry": "2024-12-15",
+        "notes": "",
+        "metadata": ""
+    },
+    "3": {
+        "type": "book",
+        "author": ["Misner, Charles W.", "Thorne, Kip S.", "Wheeler, John Archibald"],
+        "editor": [],
+        "title": "Gravitation",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["xxvii + 1279"],
+        "dimensions": ["26 cm"],
+        "publisher": ["W.H. Freeman and Company"],
+        "series": "",
+        "date": "1973-09-15",
+        "place": "New York, United States",
+        "reference": "",
+        "contributor": [],
+        "language": ["English"],
+        "media": "softcover",
+        "image": [[["ID0003_ED001_MTW.webp", "ID0003_ED001_MTW_spine.webp"], ""]],
+        "isbn": ["9780716703341", "9780716703440", "9780198551409", "0716703343", "0716703440", "0198551401"],
+        "oclc": "585119",
+        "doi": "",
+        "link": [],
+        "subject": ["general relativity", "gravitation"],
+        "tags": ["academic"],
+        "entry": "2024-12-15",
+        "notes": "",
+        "metadata": ""
+    },
+    "4": {
+        "type": "book",
+        "author": ["Dumas, H. Scott"],
+        "editor": [],
+        "title": "The KAM Story",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": ["A Friendly Introduction to the Content, History, and Significance of Classical Kolmogorov-Arnold-Moser Theory"],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["xv + 361"],
+        "dimensions": ["24 cm"],
+        "publisher": ["World Scientific Publishing Company"],
+        "series": "",
+        "date": "2014-04-17",
+        "place": "New Jersey, United States",
+        "reference": "",
+        "contributor": [],
+        "language": ["English"],
+        "media": "softcover",
+        "image": [[["ID0004_ED001_KAM.webp", "ID0004_ED001_KAM_spine.webp"], ""]],
+        "isbn": ["9814556580", "9789814556583"],
+        "oclc": "869552361",
+        "doi": "",
+        "link": [],
+        "subject": ["mechanics", "science history"],
+        "tags": ["popular"],
+        "entry": "2024-12-16",
+        "notes": "",
+        "metadata": ""
+    },
+    "5": {
+        "type": "book",
+        "author": ["Feyman, Richard P.", "Leighton, Robert B.", "Sands, Matthew L."],
+        "editor": [],
+        "title": "The Feynman lectures on physics",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": ["Vol 1: -", "Vol. 2: The electromagnetic field", "Vol. 3: Quantum mechanics"],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 3,
+        "pages": [],
+        "dimensions": ["29 cm"],
+        "publisher": ["Addison-Wesley Pub. Co."],
+        "series": "",
+        "date": "1964",
+        "place": "Reading, Massachusetts, United States",
+        "reference": "",
+        "contributor": [],
+        "language": ["English"],
+        "media": "softcover",
+        "image": [[["ID0005_ED001_Feynman.webp", "ID0005_ED001_Feynman_spine.webp"], ""]],
+        "isbn": ["9780201020106", "9780201021165", "9780201020113", "..."],
+        "oclc": "531535",
+        "doi": "",
+        "link": ["https://www.feynmanlectures.caltech.edu/"],
+        "subject": ["physics"],
+        "tags": ["academic"],
+        "entry": "2024-12-16",
+        "notes": "",
+        "metadata": ""
+    },
+    "6": {
+        "type": "book",
+        "author": ["Goldstein, Herbert"],
+        "editor": [],
+        "title": "Classical mechanics",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["xii + 399"],
+        "dimensions": ["24 cm"],
+        "publisher": ["Addison-Wesley Press"],
+        "series": "",
+        "date": "1950",
+        "place": "Cambridge, Massachusetts, United States",
+        "reference": "",
+        "contributor": [],
+        "language": ["English"],
+        "media": "hardcover",
+        "image": [[["ID0006_ED001_Goldstein_jacket-front.webp", "ID0006_ED001_Goldstein_jacket-spine.webp"], "Jacket of the first edition, 1950."]],
+        "isbn": [],
+        "oclc": "295876",
+        "doi": "",
+        "link": [],
+        "subject": ["mechanics", "classical mechanics"],
+        "tags": ["academic"],
+        "entry": "2024-12-29",
+        "notes": "",
+        "metadata": ""
+    },
+    "7": {
+        "type": "article-discovery",
+        "author": ["Maxwell, John Clerk"],
+        "editor": [],
+        "title": "On Physical Lines of Force",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["62"],
+        "dimensions": [],
+        "publisher": [],
+        "series": "",
+        "date": "1861",
+        "place": "",
+        "reference": {
+            "journal": "Philosophical Magazine",
+            "volume": "90",
+            "issue": "",
+            "pagerange": "11–23"
+        },
+        "contributor": [],
+        "language": ["English"],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "7317625615",
+        "doi": "10.1080/14786431003659180",
+        "link": ["https://en.wikisource.org/wiki/On_Physical_Lines_of_Force"],
+        "subject": ["electricity", "magnetism", "electromagnetism", "electrodynamics"],
+        "tags": ["historical", "academic"],
+        "entry": "2024-12-29",
+        "notes": "Introduction of Maxwell equations.",
+        "metadata": ""
+    },
+    "8": {
+        "type": "book",
+        "author": ["Courant, Richard", "Hilbert, David"],
+        "editor": [],
+        "title": "Methoden der mathematischen Physik",
+        "romantitle": "",
+        "engtitle": "Methods of Mathematical Physics",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 2,
+        "pages": ["xiii + 450", "xvi + 549"],
+        "dimensions": [],
+        "publisher": ["Verlag von Julius Springer"],
+        "series": "",
+        "date": "1924",
+        "place": "Berlin",
+        "reference": "",
+        "contributor": [],
+        "language": ["German"],
+        "media": "hardcover",
+        "image": [[["ID0008_ED001_Courant-Hilbert.webp", "ID0008_ED001_Courant-Hilbert_spine.webp"], ""]],
+        "isbn": [],
+        "oclc": "934484635",
+        "doi": "",
+        "link": ["https://gdz.sub.uni-goettingen.de/id/PPN380672502", "https://gdz.sub.uni-goettingen.de/id/PPN380673029"],
+        "subject": ["mathematics", "mathematical physics"],
+        "tags": ["academic"],
+        "entry": "2025-01-02",
+        "notes": "",
+        "metadata": ""
+    },
+    "9": {
+        "type": "book",
+        "author": ["Irodov, I. E. (Иродов, Игорь Евгеньевич)"],
+        "editor": [],
+        "title": "Задачи по общей физике",
+        "romantitle": "",
+        "engtitle": "Problems in General Physics",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["367"],
+        "dimensions": [],
+        "publisher": ["Nauka"],
+        "series": "",
+        "date": "1979",
+        "place": "Moscow",
+        "reference": "",
+        "contributor": [],
+        "language": ["Russian"],
+        "media": "hardcover",
+        "image": [[["ID0009_ED001_Irodov_jacket-front.webp", "ID0009_ED001_Irodov_jacket-spine.webp"], "Jacket of 1st edition 3rd printing of English translation, Mir 1988."]],
+        "isbn": [],
+        "oclc": "315737473",
+        "doi": "",
+        "link": ["https://archive.org/details/IrodovProblemsInGeneralPhysics/"],
+        "subject": ["physics", "problems"],
+        "tags": ["academic"],
+        "entry": "2025-01-12",
+        "notes": "",
+        "metadata": ""
+    },
+    "10": {
+        "type": "book",
+        "author": [],
+        "editor": ["Olver, Frank W. J.", "Lozier, Daniel W.", "Boisvert, Ronald F.", "Clark, Charles W."],
+        "title": "NIST Handbook of Mathematical Functions",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["xv + 951"],
+        "dimensions": ["28cm"],
+        "publisher": ["Cambridge University Press"],
+        "series": "",
+        "date": "2010",
+        "place": "Cambridge, New York, United States",
+        "reference": "",
+        "contributor": [],
+        "language": ["English"],
+        "media": "softcover",
+        "image": [[["ID0010_ED001_NIST.webp", "ID0010_ED001_NIST_spine.webp"], "Cover of the first edition, 2010."]],
+        "isbn": ["9780521192255", "9780521140638"],
+        "oclc": "502037224",
+        "doi": "",
+        "link": ["http://dlmf.nist.gov/"],
+        "subject": [
+            "mathematics",
+            "integrals",
+            "series",
+            "special functions",
+            "mathematical tables"
+        ],
+        "tags": ["reference"],
+        "entry": "2025-01-14",
+        "notes": "Preceded by Abramowitz & Stegun.",
+        "metadata": ""
+    },
+    "11": {
+        "type": "article-review-seminal",
+        "author": ["Weinberg, Steven"],
+        "editor": [],
+        "title": "The Cosmological Constant Problem",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": ["23"],
+        "dimensions": [],
+        "publisher": [],
+        "series": "",
+        "date": "1989",
+        "place": "",
+        "reference": {
+            "journal": "Reviews of Modern Physics",
+            "volume": "61",
+            "issue": "1",
+            "pagerange": "1–23"
+        },
+        "contributor": [],
+        "language": ["English"],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "4643798208",
+        "doi": "10.1103/RevModPhys.61.1",
+        "link": [""],
+        "subject": ["cosmological constant", "cosmology", "QFT", "general relativity"],
+        "tags": ["academic"],
+        "entry": "2025-01-25",
+        "notes": "Comprehensive review of the cosmological constant problem in the context of quantum field theory and general relativity.",
+        "metadata": ""
+    },
+    "12": {
+        "type": "article-review-living",
+        "author": ["Particle Data Group"],
+        "editor": [],
+        "title": "Review of Particle Physics",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 1,
+        "pages": [],
+        "dimensions": [],
+        "publisher": [],
+        "series": "",
+        "date": "2024",
+        "place": "",
+        "reference": {
+            "journal": "Physical Review D",
+            "volume": "110",
+            "issue": "",
+            "pagerange": "030001"
+        },
+        "contributor": [],
+        "language": ["English"],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "10320535047",
+        "doi": "10.1103/PhysRevD.110.030001",
+        "link": ["https://pdg.lbl.gov/index.html"],
+        "subject": ["particle physics"],
+        "tags": ["academic", "reference"],
+        "entry": "2025-01-25",
+        "notes": "Comprehensive review of particle physics measurements.",
+        "metadata": "Updated to 2024 version on 2025-01-26."
+    },
+    "13": {
+        "type": "article-discovery",
+        "author": ["Einstein, Albert"],
+        "editor": [],
+        "title": "Zur Elektrodynamik bewegter Körper",
+        "romantitle": "",
+        "engtitle": "On the Electrodynamics of Moving Bodies",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": 17,
+        "pages": ["31"],
+        "dimensions": [],
+        "publisher": ["Johann Ambrosius Barth"],
+        "series": "",
+        "date": "1905-06-30",
+        "place": "Leipzig, Germany",
+        "reference": {
+            "journal": "Annalen der Physik",
+            "volume": "17",
+            "issue": "10",
+            "pagerange": "891–921"
+        },
+        "contributor": [],
+        "language": ["German"],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "4650488587",
+        "doi": "10.1002/andp.19053221004",
+        "link": ["https://en.wikisource.org/wiki/On_the_Electrodynamics_of_Moving_Bodies_(1920_edition)"],
+        "subject": ["relativity", "electrodynamics"],
+        "tags": ["historical", "academic"],
+        "entry": "2025-01-28",
+        "notes": "Seminal paper introducing the E=mc<sup>2</sup>.",
+        "metadata": ""
+    },
+    "14": {
+        "type": "article-discovery",
+        "author": ["Landau, L. D."],
+        "editor": [],
+        "title": "Theory of the Superfluidity of Helium II",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": ["3"],
+        "dimensions": [],
+        "publisher": ["American Physical Society"],
+        "series": "",
+        "date": "1941",
+        "place": "New York, USA",
+        "reference": {
+            "journal": "Physical Review",
+            "volume": "60",
+            "issue": "4",
+            "pagerange": "356–358"
+        },
+        "contributor": [],
+        "language": ["English"],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "4644087711",
+        "doi": "10.1103/PhysRev.60.356",
+        "link": [],
+        "subject": ["quantum physics", "superfluidity"],
+        "tags": ["academic", "Nobel"],
+        "entry": "2025-01-28",
+        "notes": "Foundational work explaining superfluidity in Helium II, later pivotal for Landau's Nobel Prize in Physics 1962.",
+        "metadata": ""
+    },
+    "15": {
+        "type": "article-review-living",
+        "author": ["Wald, Robert M."],
+        "editor": [],
+        "title": "The Thermodynamics of Black Holes",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": ["Article No. 6"],
+        "dimensions": [],
+        "publisher": ["Max Planck Institute for Gravitational Physics"],
+        "series": "",
+        "date": "2001",
+        "place": "Potsdam, Germany",
+        "reference": {
+            "journal": "Living Reviews in Relativity",
+            "volume": "4",
+            "issue": "",
+            "pagerange": "Article No. 6"
+        },
+        "contributor": [],
+        "language": ["English"],
+        "media": "online",
+        "image": [],
+        "isbn": [],
+        "oclc": "",
+        "doi": "10.12942/lrr-2001-6",
+        "link": [],
+        "subject": ["black holes", "thermodynamics", "relativity"],
+        "tags": ["academic"],
+        "entry": "2025-01-28",
+        "notes": "Seminal living review on black hole thermodynamics. Published in 2001 and not subsequently updated.",
+        "metadata": ""
+    },
+    "16": {
+        "type": "article-review-seminal",
+        "author": ["Wilson, Kenneth G.", "Kogut, John"],
+        "editor": [],
+        "title": "The Renormalization Group and the ϵ-Expansion",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": ["126"],
+        "dimensions": [],
+        "publisher": ["North-Holland (Elsevier)"],
+        "series": "",
+        "date": "1974",
+        "place": "Amsterdam, Netherlands",
+        "reference": {
+            "journal": "Physics Reports",
+            "volume": "12",
+            "issue": "2",
+            "pagerange": "75–200"
+        },
+        "contributor": [],
+        "language": ["English"],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "",
+        "doi": "10.1016/0370-1573(74)90023-4",
+        "link": [],
+        "subject": ["renormalization group", "QFT"],
+        "tags": ["academic"],
+        "entry": "2025-01-28",
+        "notes": "",
+        "metadata": ""
+    },
+    "17": {
+        "type": "article-discovery",
+        "author": ["Maldacena, Juan M."],
+        "editor": [],
+        "title": "The Large-N Limit of Superconformal Field Theories and Supergravity",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": ["21"],
+        "dimensions": [],
+        "publisher": ["Springer"],
+        "series": "",
+        "date": "1999",
+        "place": "Berlin, Germany",
+        "reference": {
+            "journal": "International Journal of Theoretical Physics",
+            "volume": "38",
+            "issue": "4",
+            "pagerange": "1113–1133"
+        },
+        "contributor": [],
+        "language": ["English"],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "5649158851",
+        "doi": "10.1023/A:1026654312961",
+        "link": ["https://arxiv.org/abs/hep-th/9711200"],
+        "subject": [
+            "AdS/CFT",
+            "QFT",
+            "superconformal field theory",
+            "supergravity",
+            "string theory"
+        ],
+        "tags": [
+            "academic"
+        ],
+        "entry": "2025-02-10",
+        "notes": "Seminal paper that introduced the AdS/CFT correspondence.",
+        "metadata": ""
+    },
+    "18": {
+        "type": "article-discovery",
+        "author": [
+            "Nambu, Yoichiro"
+        ],
+        "editor": [],
+        "title": "Quasi-Particles and Gauge Invariance in the Theory of Superconductivity",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "16"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "American Physical Society"
+        ],
+        "series": "",
+        "date": "1960",
+        "place": "United States",
+        "reference": {
+            "journal": "Physical Review",
+            "volume": "117",
+            "issue": "3",
+            "pagerange": "648–663"
+        },
+        "contributor": [],
+        "language": [
+            "English"
+        ],
+        "media": "paper",
+        "image": [],
+        "isbn": [],
+        "oclc": "4644593625",
+        "doi": "10.1103/PhysRev.117.648",
+        "link": [],
+        "subject": [
+            "superconductivity",
+            "gauge invariance",
+            "quasi-particles",
+            "condensed matter physics"
+        ],
+        "tags": [
+            "academic",
+            "Nobel"
+        ],
+        "entry": "2025-02-10",
+        "notes": "This seminal paper introduced the concept of symmetry breaking, and contributed to the theoretical understanding of superconductivity and gauge invariance. It was later recognized with the Nobel Prize in Physics in 2008.",
+        "metadata": ""
+    },
+    "19": {
+        "type": "book",
+        "author": [
+            "Schweber, Silvan S."
+        ],
+        "editor": [],
+        "title": "An Introduction to Relativistic Quantum Field Theory",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "913"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "Harper & Row"
+        ],
+        "series": "",
+        "date": "1961",
+        "place": "New York",
+        "reference": {},
+        "contributor": [],
+        "language": [
+            "English"
+        ],
+        "media": "paper",
+        "image": [[["ID0019_ED001_Schweber.webp"], "Cover of 2005 edition by Dover."]],
+        "isbn": [],
+        "oclc": "1310567042",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "QFT"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-24",
+        "notes": "",
+        "metadata": ""
+    },
+    "20": {
+        "type": "book",
+        "author": [
+            "Bjorken, James D.",
+            "Drell, Sidney D."
+        ],
+        "editor": [],
+        "title": "Relativistic Quantum Mechanics",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "x + 300"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "McGraw-Hill"
+        ],
+        "series": "International series in pure and applied physics",
+        "date": "1964",
+        "place": "New York",
+        "reference": {},
+        "contributor": [],
+        "language": [
+            "English"
+        ],
+        "media": "print",
+        "image": [[["ID0020_ED001_Bjorken-Drell_jacket.webp"], "Jacket of the first edition."]],
+        "isbn": ["9780070054936", "0070054932"],
+        "oclc": "534560",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "relativistic quantum mechanics"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-24",
+        "notes": "",
+        "metadata": ""
+    },
+    "21": {
+        "type": "book",
+        "author": [
+            "Bjorken, James D.",
+            "Drell, Sidney D."
+        ],
+        "editor": [],
+        "title": "Relativistic Quantum Fields",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "xiv + 396"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "McGraw-Hill"
+        ],
+        "series": "",
+        "date": "1965",
+        "place": "New York",
+        "reference": {},
+        "contributor": [],
+        "language": [
+            "English"
+        ],
+        "media": "print",
+        "image": [[["ID0021_ED001_Bjorken-Drell_jacket.webp", "ID0021_ED001_Bjorken-Drell_jacket-spine.webp"], "Jacket of the first edition."]],
+        "isbn": ["9780070054943", "0070054940"],
+        "oclc": "939866",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "QFT"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-24",
+        "notes": "",
+        "metadata": ""
+    },
+    "22": {
+        "type": "book",
+        "author": [
+            "Nash, Charles"
+        ],
+        "editor": [],
+        "title": "Relativistic Quantum Fields",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "vii + 223"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "Academic Press"
+        ],
+        "series": "",
+        "date": "1978",
+        "place": "London",
+        "reference": {},
+        "contributor": [],
+        "language": [
+            "English"
+        ],
+        "media": "hardcover",
+        "image": [[["ID0022_ED001_Nash.webp"], "Cover of the first edition."]],
+        "isbn": ["9780125143509", "9780125140805", "0125143508", "0125140800"],
+        "oclc": "4884624",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "QFT"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-26",
+        "notes": "",
+        "metadata": ""
+    },
+    "23": {
+        "type": "book",
+        "author": [
+            "Bogoliubov, Nikolai Nicolaevich (Боголю́бов, Никола́й Никола́евич)",
+            "Shirkov, Dimitrii Vasil'evich (Ширко́в, Дми́трий Васи́льевич)"
+        ],
+        "editor": [],
+        "title": "Введение в теорию квантованных полей",
+        "romantitle": "",
+        "engtitle": "Introduction to the Theory of Quantized Fields",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "442"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "Nauka"
+        ],
+        "series": "",
+        "date": "1957",
+        "place": "Moscow",
+        "reference": {},
+        "contributor": [],
+        "language": [
+            "Russian"
+        ],
+        "media": "hardcover",
+        "image": [[["ID0023_ED001_Bogoliubov-Shirkov_jacket.webp"], "Jacket of the first english edition, Wiley 1959."]],
+        "isbn": [],
+        "oclc": "488872505",
+        "doi": "",
+        "link": [
+            "https://archive.org/details/IntroductionToTheoryOfQuantizedFields/"
+        ],
+        "subject": [
+            "QFT"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-26",
+        "notes": "",
+        "metadata": ""
+    },
+    "24": {
+        "type": "book",
+        "author": [
+            "Itzykson, Claude",
+            "Zuber, Jean-Bernard"
+        ],
+        "editor": [],
+        "title": "Quantum Field Theory",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "xxii + 705"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "McGraw-Hill"
+        ],
+        "series": "",
+        "date": "1980",
+        "place": "New York",
+        "reference": {},
+        "contributor": [],
+        "language": [
+            "English"
+        ],
+        "media": "hardcover",
+        "image": [[["ID0024_ED001_Itzykson-Zuber_jacket.webp", "ID0024_ED001_Itzykson-Zuber_spine.webp"], "Jacket front and cover spine of the first edition."]],
+        "isbn": ["9780070320710", "0070320713"],
+        "oclc": "240207618",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "QFT"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-26",
+        "notes": "",
+        "metadata": ""
+    },
+    "25": {
+        "type": "book",
+        "author": [
+            "Ramond, Pierre"
+        ],
+        "editor": [],
+        "title": "Field Theory: A Modern Primer",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "xviii + 397"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "Benjamin-Cummings Publishing Company"
+        ],
+        "series": "Frontiers in Physics, Vol. 74",
+        "date": "1981",
+        "place": "Reading, Massachusetts",
+        "reference": {},
+        "contributor": [],
+        "language": ["English"],
+        "media": "hardcover",
+        "image": [
+            [
+                ["ID0025_ED001_Ramond.webp"],
+                "Cover of 2007 edition by Levant Books."
+            ]
+        ],
+        "isbn": ["9780805378924", "9780805378931", "0805378928", "0805378936"],
+        "oclc": "7170461",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "QFT"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-27",
+        "notes": "",
+        "metadata": ""
+    },
+    "26": {
+        "type": "book",
+        "author": [
+            "Sakurai, Jun John"
+        ],
+        "editor": [],
+        "title": "Advanced Quantum Mechanics",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "xii + 336"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "Addison-Wesley"
+        ],
+        "series": "",
+        "date": "1967",
+        "place": "Reading, Massachusetts",
+        "reference": {},
+        "contributor": [],
+        "language": ["English"],
+        "media": "hardcover",
+        "image": [[["ID0026_ED001_Sakurai.webp"], ""]],
+        "isbn": ["9780201067101", "0201067102"],
+        "oclc": "869733",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "quantum mechanics"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-27",
+        "notes": "",
+        "metadata": ""
+    },
+    "27": {
+        "type": "book",
+        "author": [
+            "Lee, Tsung-Dao"
+        ],
+        "editor": [],
+        "title": "Particle Physics and Introduction to Field Theory",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "xviii + 865"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "Harwood Academic Press"
+        ],
+        "series": "",
+        "date": "1981",
+        "place": "New York",
+        "reference": {},
+        "contributor": [],
+        "language": ["English"],
+        "media": "hardcover",
+        "image": [[["ID0027_ED001_Lee.webp", "ID0027_ED001_Lee_spine.webp"], ""]],
+        "isbn": ["9783718600328", "9783718600335", "3718600323", "3718600331"],
+        "oclc": "827630560",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "QFT", "elementary particles", "symmetry"
+        ],
+        "tags": [
+            "academic",
+            "QFT by Nižić"
+        ],
+        "entry": "2025-02-27",
+        "notes": "",
+        "metadata": ""
+    },
+    "28": {
+        "type": "book",
+        "author": [
+            "Gradshteyn, Izrail Solomonovich (Градштейн, Израиль Соломонович)",
+            "Ryzhik, Iosif Moiseevich (Рыжик, Иосиф Моисеевич)"
+        ],
+        "editor": [],
+        "title": "Таблицы интегралов, сумм, рядов и произведений",
+        "romantitle": "",
+        "engtitle": "Table of Integrals, Series, and Products",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "xliii + 1133"
+        ],
+        "dimensions": [],
+        "publisher": [
+            "Gosudarstvennoe Izdatel'stvo Tehniko-Teoretičeskoj Literatury"
+        ],
+        "series": "",
+        "date": "1943",
+        "place": "Moscow",
+        "reference": {},
+        "contributor": [],
+        "language": ["Russian"],
+        "media": "hardcover",
+        "image": [[["ID0028_ED001_Gradstein-Ryzhik.webp"], "Cover of 8th edition by Academic Press, 2014."]],
+        "isbn": ["9780123849342", "0123849349"],
+        "oclc": "893676501",
+        "doi": "",
+        "link": [
+            "https://en.wikipedia.org/wiki/Gradshteyn_and_Ryzhik",
+            "https://archive.org/details/GradshteinI.S.RyzhikI.M.TablesOfIntegralsSeriesAndProducts/"
+        ],
+        "subject": [
+            "mathematics",
+            "integrals",
+            "series",
+            "special functions",
+            "mathematical tables"
+        ],
+        "tags": [
+            "reference"
+        ],
+        "entry": "2025-05-07",
+        "notes": "First edition by Ryzhik in 1943. Third edition worked by Gradshteyn in 1951.",
+        "metadata": ""
+    },
+    "29": {
+        "type": "book",
+        "author": [
+            "Dirac, Paul Adrien Maurice"
+        ],
+        "editor": [],
+        "title": "General Theory of Relativity",
+        "romantitle": "",
+        "engtitle": "",
+        "subtitle": [],
+        "romansubtitle": [],
+        "engsubtitle": [],
+        "volumes": "",
+        "pages": [
+            "viii + 69"
+        ],
+        "dimensions": [
+            "23 cm"
+        ],
+        "publisher": [
+            "John Wiley & Sons"
+        ],
+        "series": "",
+        "date": "1975-08-28",
+        "place": "New York",
+        "reference": {},
+        "contributor": [],
+        "language": ["English"],
+        "media": "hardcover",
+        "image": [[["ID0029_ED001_Dirac_jacket.webp", "ID0029_ED001_Dirac_jacket-spine.webp"], "Jacket front and spine of the first edition, 1975."]],
+        "isbn": ["9780471215752", "0471215759"],
+        "oclc": "1149376704",
+        "doi": "",
+        "link": [],
+        "subject": [
+            "general relativity"
+        ],
+        "tags": [
+            "academic"
+        ],
+        "entry": "2025-05-12",
+        "notes": "Based on a course of lectures given at Florida State University.",
+        "metadata": ""
+    }
+}

@@ -116,6 +116,44 @@ createImages = (images) => {
     return images_form
 }
 
+const createBookCard = async (item, id) => {
+    var card = document.createElement('div')
+    card.setAttribute('class', 'bookcard')
+    card.setAttribute('id', id)
+
+    var anchorlink = document.createElement('div')
+    anchorlink.setAttribute('class', 'anchor')
+    anchorlink.innerHTML = '<a href=\'#' + id + '\'>&para;</a>'
+    card.appendChild(anchorlink)
+    card.appendChild(createImages(item.image))
+
+    var datatable = document.createElement('table')
+    datatable.setAttribute('class', 'data')
+    createDataEntry(datatable, item, 'Author', item.author)
+    createDataEntry(datatable, item, 'Editor', item.editor)
+    createDataEntry(datatable, item, 'Eng. title', item.engtitle)
+    createDataEntry(datatable, item, 'Title', item.title)
+    createDataEntry(datatable, item, 'Rom. title', item.romantitle)
+    createDataEntry(datatable, item, 'Eng. subtitle', item.engsubtitle)
+    createDataEntry(datatable, item, 'Subtitle', item.subtitle)
+    createDataEntry(datatable, item, 'Rom. subtitle', item.romansubtitle)
+    createDataEntry(datatable, item, 'Publisher', item.publisher)
+    createDataEntry(datatable, item, 'Date', item.date)
+    createDataEntry(datatable, item, 'Place', item.place)
+    createDataEntry(datatable, item, 'Reference', item.reference)
+    createDataEntry(datatable, item, 'Contributor', item.contributor)
+    createDataEntry(datatable, item, 'Language', item.language)
+    createDataEntry(datatable, item, 'ISBN', item.isbn)
+    createDataEntry(datatable, item, 'OCLC', item.oclc)
+    createDataEntry(datatable, item, 'Link', item.link)
+    createDataEntry(datatable, item, 'Subject', item.subject)
+    createDataEntry(datatable, item, 'Tags', item.tags)
+    createDataEntry(datatable, item, 'Notes', item.notes)
+
+    card.appendChild(datatable)
+    return card
+}
+
 const renderBooks = async (catalog) => {
     var section = document.createElement('div')
     section.setAttribute('class', 'section')
@@ -125,44 +163,7 @@ const renderBooks = async (catalog) => {
     for (i in catalog) {
         item = catalog[i][0]
 
-        if (item.type != 'book') {
-            continue
-        }
-
-        var card = document.createElement('div')
-        card.setAttribute('class', 'bookcard')
-        card.setAttribute('id', item.id)
-
-        var anchorlink = document.createElement('div')
-        anchorlink.setAttribute('class', 'anchor')
-        anchorlink.innerHTML = '<a href=\'#' + item.id + '\'>&para;</a>'
-        card.appendChild(anchorlink)
-        card.appendChild(createImages(item.image))
-
-        var datatable = document.createElement('table')
-        datatable.setAttribute('class', 'data')
-        createDataEntry(datatable, item, 'Author', item.author)
-        createDataEntry(datatable, item, 'Editor', item.editor)
-        createDataEntry(datatable, item, 'Eng. title', item.engtitle)
-        createDataEntry(datatable, item, 'Title', item.title)
-        createDataEntry(datatable, item, 'Rom. title', item.romantitle)
-        createDataEntry(datatable, item, 'Eng. subtitle', item.engsubtitle)
-        createDataEntry(datatable, item, 'Subtitle', item.subtitle)
-        createDataEntry(datatable, item, 'Rom. subtitle', item.romansubtitle)
-        createDataEntry(datatable, item, 'Publisher', item.publisher)
-        createDataEntry(datatable, item, 'Date', item.date)
-        createDataEntry(datatable, item, 'Place', item.place)
-        createDataEntry(datatable, item, 'Reference', item.reference)
-        createDataEntry(datatable, item, 'Contributor', item.contributor)
-        createDataEntry(datatable, item, 'Language', item.language)
-        createDataEntry(datatable, item, 'ISBN', item.isbn)
-        createDataEntry(datatable, item, 'OCLC', item.oclc)
-        createDataEntry(datatable, item, 'Link', item.link)
-        createDataEntry(datatable, item, 'Subject', item.subject)
-        createDataEntry(datatable, item, 'Tags', item.tags)
-        createDataEntry(datatable, item, 'Notes', item.notes)
-
-        card.appendChild(datatable)
+        var card = await createBookCard(item)
         document.getElementById('catalog').appendChild(card);
     }
 }
@@ -205,14 +206,14 @@ const chicagoNames = (names) => {
     return txt
 }
 
-const renderArticle = async (item) => {
+const createArticleCard = async (item, id) => {
     var card = document.createElement('div')
     card.setAttribute('class', 'articlecard')
-    card.setAttribute('id', item.id)
+    card.setAttribute('id', id)
 
     var anchorLink = document.createElement('div')
     anchorLink.setAttribute('class', 'anchor')
-    anchorLink.innerHTML = '<a href=\'#' + item.id + '\'>&para;</a>'
+    anchorLink.innerHTML = '<a href=\'#' + id + '\'>&para;</a>'
     card.appendChild(anchorLink)
 
     var articleData = document.createElement('div')
@@ -249,6 +250,11 @@ const renderArticle = async (item) => {
     articleData.appendChild(data)
 
     return card
+}
+
+const createCard = async (item, id) => {
+    if (item.type == 'book')    return await createBookCard(item, id)
+    if (item.type.includes('article')) return await createArticleCard(item, id)
 }
 
 const renderSubArticles = async (catalog, subsectionText, subsectionType) => {
@@ -405,15 +411,41 @@ const showFilter = (el) => {
     filterrow.style.display = displayState
 }
 
-renderPage = async () => {
+const load_elements = async () => {
+    const catalog = await loadCatalog()
+
+    const entries = document.querySelectorAll('.queueentry')
+    for (const el of entries) {
+        if (!el.id) continue
+        const item = catalog[el.id]
+        if (!item) continue
+
+        const menu = document.createElement('div')
+        menu.className = 'menu'
+        menu.textContent = ''
+
+        const text = document.createElement('div')
+        text.className = 'text'
+        text.innerHTML = el.innerHTML
+
+        el.innerHTML = ''
+        el.appendChild(menu)
+        el.appendChild(text)
+        el.classList.add('detailed')
+        el.after(await createCard(item, el.id))
+    }
+}
+
+const renderPage = async () => {
     window.tpc_subjects = new Set();
     window.tpc_tags = new Set();
-
-    await renderCatalog();
+    
+    await load_elements()
+    //await renderCatalog();
 
     window.tpc_subjects = Array.from(window.tpc_subjects).sort()
     window.tpc_tags = Array.from(window.tpc_tags).sort()
 
-    await renderFilters();
+    //await renderFilters();
 }
 renderPage()

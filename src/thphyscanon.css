@@ -146,9 +146,9 @@ a, :visited {
 
 .bookcard {
     height: 26.5em;
+    margin-left: 1em;
     margin-top: 1em;
     display: flex;
-    box-shadow: rgba(99, 99, 99, 0.4) 0px 8px 8px -8px;
 }
 
 .anchor {
@@ -211,7 +211,7 @@ a, :visited {
 }
 
 .value {
-    font-weight: bold;
+    font-weight: normal;
     padding-left: 1em;
     vertical-align: middle;
 }
@@ -256,10 +256,12 @@ td a {
 .articlecard {
     display: flex;
     width: 90%;
-    margin-top: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
 }
 
 .biblio {
+    display: none;
     font-size: 1.5em;
     margin-left: 5%;
     margin-bottom: 0.25em;
@@ -307,27 +309,22 @@ td a {
     margin-bottom: 0.25em;
     line-height: 1.2em;
 }
-/*
-.queueentry {
-    padding-left: 1em;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-    line-height: 1.2em;
 
+.detailed {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: .5rem;
     align-items: start;
     min-width: 0;
 }
 
 .menu {
     width: 40pt;
+    margin-left: -40pt;
     display: inline-block;
     text-align: center;
     align-self: start;
 }
-*/
+
 .footer {
     width: 100%;
     min-height: 4em;
