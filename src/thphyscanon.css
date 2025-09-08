@@ -1,7 +1,16 @@
 @font-face {
-    font-family: 'Biolinum';
-    src: url('../resources/LinBiolinum.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-         url('../resources/LinBiolinum_R.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    font-family: 'Biolinum-Regular';
+    src: url('../resources/LinBiolinum_R.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Biolinum-Bold';
+    src: url('../resources/LinBiolinum_RB.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Biolinum-Capital';
+    src: url('../resources/LinBiolinum_aS.ttf') format('truetype');
 }
 
 *::before, *::after, *::first-line {
@@ -17,7 +26,7 @@ html {
 
 body {
     background-color: rgb(255, 253, 229);
-    font-family: 'Biolinum';
+    font-family: 'Biolinum-Regular';
 }
 
 a, :visited {
@@ -34,11 +43,21 @@ a, :visited {
 
 .title {
     display:block;
+    font-family: 'Biolinum-Capital';
+    font-weight: normal;
     font-size: 6.1em;
     margin: 0em 0em 0.2em 0;
     padding: 0em;
     line-height: 1;
     white-space: nowrap;
+}
+
+.kern-h-2 {
+    margin-left: -0.045em;
+}
+
+.kern-o-1 {
+    margin-left: -0.029em;
 }
 
 .kern-h-1 {
@@ -63,6 +82,8 @@ a, :visited {
 
 .subtitle {
     width: 100%;
+    font-family: 'Biolinum-Bold';
+    font-weight: normal;
     font-size: 2.075em;
     margin:  0em 0em 0.2em 0;
     padding: 0em;
