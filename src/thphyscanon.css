@@ -133,24 +133,22 @@ a, :visited {
 }
 
 .section {
-    width: 100%;
     font-size: 3em;
     margin-top: 0.5em;
     border-bottom: 1px solid;
 }
 
 .subsection {
-    width: 90%;
     font-size: 2em;
     margin-top: 0.5em;
     border-bottom: 0.5px solid;
 }
 
 .bookcard {
-    display: flex;
-    min-width:0;
-    max-width: 65em;
-    height: 26.5em;
+    width: 120%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 28em;
     margin-left: 50pt;
     margin-top: 0.25em;
     margin-bottom: 0.5em;
@@ -158,12 +156,11 @@ a, :visited {
 }
 
 .anchor {
-    display: flex;
+    float: left;
     opacity: 0.2;
 }
 
 .anchor a {
-    display: block;
     text-decoration: none;
     padding-bottom: 1em;
     margin-top: auto;
@@ -171,8 +168,8 @@ a, :visited {
 }
 
 .imagesform {
-    display: flex;
-    max-width: 45vw;
+    float: left;
+    height: inherit;
     flex-direction: column;
     margin-left: 3%;
     padding-right: 2em;
@@ -180,7 +177,6 @@ a, :visited {
 
 .images {
     display: flex;
-    max-width: fit-content;
     height: 95%;
     column-gap: 1em;
     white-space: nowrap;
@@ -188,18 +184,18 @@ a, :visited {
 }
 
 .image {
-    max-width: fit-content;
+    height: 100%;
 }
 
 .imagescaption {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     font-style: italic;
 }
 
 .bookcard > .data {
-    display: block;
-    max-height: 25em;
+    display: inline;
+    width: max-content;
     table-layout: fixed;
     padding-top: 1em;
     justify-content: left;

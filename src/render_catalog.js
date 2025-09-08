@@ -20,11 +20,11 @@ createDataEntry = (datatable, item, name, data) => {
     entry.appendChild(value)
 
     if (name === 'Author') {
-        value.textContent = data.join(' / ')
+        value.innerHTML = data.join('<br>')
     } else if (name === 'Editor') {
-        value.textContent = data.join(' / ')
+        value.innerHTML = data.join('<br>')
     } else if (name === 'Subtitle') {
-        value.textContent = data.join(' / ')
+        value.innerHTML = data.join('<br>')
     } else if (name === 'English subtitle') {
         value.textContent = data.join(' / ')
     } else if (name === 'Pages') {
@@ -42,7 +42,7 @@ createDataEntry = (datatable, item, name, data) => {
     } else if (name === 'Language') {
         value.textContent = data.join(' / ')
     } else if (name === 'ISBN') {
-        value.textContent = data.join(' / ')
+        value.innerHTML = data.join('<br>')
     } else if (name === 'OCLC') {
         value.innerHTML = '<a href=\'https://search.worldcat.org/title/' + data + '\' target=\'_blank\'>' + data + '</a>'
     } else if (name === 'Link') {
@@ -81,7 +81,7 @@ createDataEntry = (datatable, item, name, data) => {
         value.parentElement.children[0].classList.add('notesattribute')
         value.classList.add('notesvalue')
     } else {
-            value.textContent = data
+        value.textContent = data
     }
 
     datatable.appendChild(entry)
