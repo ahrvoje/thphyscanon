@@ -139,7 +139,7 @@
     },
     "5": {
         "type": "book",
-        "author": ["Feyman, Richard P.", "Leighton, Robert B.", "Sands, Matthew L."],
+        "author": ["Feynman, Richard P.", "Leighton, Robert B.", "Sands, Matthew L."],
         "editor": [],
         "title": "The Feynman lectures on physics",
         "romantitle": "",
