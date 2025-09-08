@@ -33,11 +33,11 @@ a, :visited {
 }
 
 .title {
-    display: flex;
+    display:block;
     font-size: 6.1em;
     margin: 0em 0em 0.2em 0;
     padding: 0em;
-    line-height: 1em;
+    line-height: 1;
     white-space: nowrap;
 }
 
