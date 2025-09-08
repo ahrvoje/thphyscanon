@@ -24,7 +24,7 @@
         "language": ["Neo-Latin"],
         "media": "hardcover",
         "image": [
-            [["ID0001_ED001_Principia.webp"], "Title page of 1st edition, 1687."]
+            [["ID0001_ED001_Principia.webp"], "Title page of the 1st edition, 1687."]
         ],
         "isbn": [],
         "oclc": "1151794999",
@@ -62,7 +62,7 @@
         "contributor": [],
         "language": ["English"],
         "media": "hardcover",
-        "image": [[["ID0002_ED001_Jackson.webp", "ID0002_ED001_Jackson_spine.webp"], "Cover of 1st edition, 1962."]],
+        "image": [[["ID0002_ED001_Jackson.webp", "ID0002_ED001_Jackson_spine.webp"], "Cover of the 1st edition, 1962."]],
         "isbn": ["9780471431312", "0471431311"],
         "oclc": "535998",
         "doi": "",
@@ -190,7 +190,7 @@
         "contributor": [],
         "language": ["English"],
         "media": "hardcover",
-        "image": [[["ID0006_ED001_Goldstein_jacket-front.webp", "ID0006_ED001_Goldstein_jacket-spine.webp"], "Jacket of 1st edition, 1950."]],
+        "image": [[["ID0006_ED001_Goldstein_jacket-front.webp", "ID0006_ED001_Goldstein_jacket-spine.webp"], "Jacket of the 1st edition, 1950."]],
         "isbn": [],
         "oclc": "295876",
         "doi": "",
@@ -291,7 +291,7 @@
         "contributor": [],
         "language": ["Russian"],
         "media": "hardcover",
-        "image": [[["ID0009_ED001_Irodov_jacket-front.webp", "ID0009_ED001_Irodov_jacket-spine.webp"], "Jacket of 1st edition of English translation, Mir 1988."]],
+        "image": [[["ID0009_ED001_Irodov_jacket-front.webp", "ID0009_ED001_Irodov_jacket-spine.webp"], "Jacket of the 1st edition of English translation, Mir 1988."]],
         "isbn": [],
         "oclc": "315737473",
         "doi": "",
@@ -323,7 +323,7 @@
         "contributor": [],
         "language": ["English"],
         "media": "softcover",
-        "image": [[["ID0010_ED001_NIST.webp", "ID0010_ED001_NIST_spine.webp"], "Cover of 1st edition, 2010."]],
+        "image": [[["ID0010_ED001_NIST.webp", "ID0010_ED001_NIST_spine.webp"], "Cover of the 1st edition, 2010."]],
         "isbn": ["9780521192255", "9780521140638"],
         "oclc": "502037224",
         "doi": "",
@@ -689,7 +689,7 @@
             "English"
         ],
         "media": "paper",
-        "image": [[["ID0019_ED001_Schweber.webp"], "Cover of 2005 edition by Dover."]],
+        "image": [[["ID0019_ED001_Schweber.webp"], "Cover of the 2005 edition by Dover."]],
         "isbn": [],
         "oclc": "1310567042",
         "doi": "",
@@ -735,7 +735,7 @@
             "English"
         ],
         "media": "print",
-        "image": [[["ID0020_ED001_Bjorken-Drell_jacket.webp"], "Jacket of 1st edition."]],
+        "image": [[["ID0020_ED001_Bjorken-Drell_jacket.webp"], "Jacket of the 1st edition."]],
         "isbn": ["9780070054936", "0070054932"],
         "oclc": "534560",
         "doi": "",
@@ -781,7 +781,7 @@
             "English"
         ],
         "media": "print",
-        "image": [[["ID0021_ED001_Bjorken-Drell_jacket.webp", "ID0021_ED001_Bjorken-Drell_jacket-spine.webp"], "Jacket of 1st edition."]],
+        "image": [[["ID0021_ED001_Bjorken-Drell_jacket.webp", "ID0021_ED001_Bjorken-Drell_jacket-spine.webp"], "Jacket of the 1st edition."]],
         "isbn": ["9780070054943", "0070054940"],
         "oclc": "939866",
         "doi": "",
@@ -826,7 +826,7 @@
             "English"
         ],
         "media": "hardcover",
-        "image": [[["ID0022_ED001_Nash.webp"], "Cover of 1st edition."]],
+        "image": [[["ID0022_ED001_Nash.webp"], "Cover of the 1st edition."]],
         "isbn": ["9780125143509", "9780125140805", "0125143508", "0125140800"],
         "oclc": "4884624",
         "doi": "",
@@ -872,7 +872,7 @@
             "Russian"
         ],
         "media": "hardcover",
-        "image": [[["ID0023_ED001_Bogoliubov-Shirkov_jacket.webp"], "Jacket of 1st english edition, Wiley 1959."]],
+        "image": [[["ID0023_ED001_Bogoliubov-Shirkov_jacket.webp"], "Jacket of the 1st english edition, Wiley 1959."]],
         "isbn": [],
         "oclc": "488872505",
         "doi": "",
@@ -920,7 +920,7 @@
             "English"
         ],
         "media": "hardcover",
-        "image": [[["ID0024_ED001_Itzykson-Zuber_jacket.webp", "ID0024_ED001_Itzykson-Zuber_spine.webp"], "Jacket front and cover spine of 1st edition."]],
+        "image": [[["ID0024_ED001_Itzykson-Zuber_jacket.webp", "ID0024_ED001_Itzykson-Zuber_spine.webp"], "Jacket front and cover spine of the 1st edition."]],
         "isbn": ["9780070320710", "0070320713"],
         "oclc": "240207618",
         "doi": "",
@@ -966,7 +966,7 @@
         "image": [
             [
                 ["ID0025_ED001_Ramond.webp"],
-                "Cover of 2007 edition by Levant Books."
+                "Cover of the 2007 edition by Levant Books."
             ]
         ],
         "isbn": ["9780805378924", "9780805378931", "0805378928", "0805378936"],
@@ -1098,7 +1098,7 @@
         "contributor": [],
         "language": ["Russian"],
         "media": "hardcover",
-        "image": [[["ID0028_ED001_Gradstein-Ryzhik.webp"], "Cover of 8th edition by Academic Press, 2014."]],
+        "image": [[["ID0028_ED001_Gradstein-Ryzhik.webp"], "Cover of the 8th edition by Academic Press, 2014."]],
         "isbn": ["9780123849342", "0123849349"],
         "oclc": "893676501",
         "doi": "",
@@ -1149,7 +1149,7 @@
         "contributor": [],
         "language": ["English"],
         "media": "hardcover",
-        "image": [[["ID0029_ED001_Dirac_jacket.webp", "ID0029_ED001_Dirac_jacket-spine.webp"], "Jacket front and spine of 1st edition, 1975."]],
+        "image": [[["ID0029_ED001_Dirac_jacket.webp", "ID0029_ED001_Dirac_jacket-spine.webp"], "Jacket front and spine of the 1st edition, 1975."]],
         "isbn": ["9780471215752", "0471215759"],
         "oclc": "1149376704",
         "doi": "",
