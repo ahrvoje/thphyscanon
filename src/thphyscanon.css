@@ -13,24 +13,12 @@
     src: url('../resources/LinBiolinum_aS.ttf') format('truetype');
 }
 
-*::before, *::after, *::first-line {
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-}
-
-html {
-    text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-}
-
 body {
     background-color: rgb(255, 253, 229);
     font-family: 'Biolinum-Regular';
 }
 
 a, :visited {
-    display: block;
     font-style: normal;
     color: darkblue;
 }
@@ -52,49 +40,17 @@ a, :visited {
     white-space: nowrap;
 }
 
-.kern-h-2 {
-    margin-left: -0.045em;
-}
-
-.kern-e-1 {
-    margin-left: -0.01em;
-}
-
-.kern-o-1 {
-    margin-left: -0.029em;
-}
-
-.kern-h-1 {
-    margin-left: -0.016em;
-}
-
-.kern-r-1 {
-    margin-left: -0.012em;
-}
-
-.kern-y-1 {
-    margin-left: -0.02em;
-}
-
-.kern-s-1 {
-    margin-left: -0.015em;
-}
-
-.kern-c-1 {
-    margin-left: -0.01em;
-}
-
-.kern-a-1 {
-    margin-left: -0.016em;
-}
-
-.kern-o-2 {
-    margin-left: -0.01em;
-}
-
-.kern-n-1 {
-    margin-left: -0.012em;
-}
+.kern-h-2 { margin-left: -0.045em; }
+.kern-e-1 { margin-left: -0.01em; }
+.kern-o-1 { margin-left: -0.029em; }
+.kern-h-1 { margin-left: -0.016em; }
+.kern-r-1 { margin-left: -0.012em; }
+.kern-y-1 { margin-left: -0.02em; }
+.kern-s-1 { margin-left: -0.015em; }
+.kern-c-1 { margin-left: -0.01em; }
+.kern-a-1 { margin-left: -0.016em; }
+.kern-o-2 { margin-left: -0.01em; }
+.kern-n-1 { margin-left: -0.012em; }
 
 .subtitle {
     width: 100%;
@@ -152,9 +108,6 @@ a, :visited {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-.filtercheck, .filterlabel {
 }
 
 .filter {
@@ -266,9 +219,6 @@ a, :visited {
 td a {
     display: inline;
     white-space: nowrap;
-}
-
-.notesentry {
 }
 
 .notesattribute {
