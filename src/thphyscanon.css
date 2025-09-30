@@ -212,7 +212,7 @@ a, :visited {
     justify-content: left;
 }
 
-.entry {
+.dataentry {
     margin-bottom: 1em;
     height: 1.5em;
 }
@@ -291,22 +291,19 @@ td a {
 
 .queue {
     width: 64em;
-}
-
-.queuelist {
     margin-top: 0em;
     font-size: 20px;
     line-height: 1em;
 }
 
-.queuegrouptitle {
+.grouptitle {
     margin-left: 50pt;
     padding-top: 1em;
     padding-bottom: 0.3em;
     font-size: 36px;
 }
 
-.queueentry {
+.entry {
     padding-left: 50pt;
     margin-top: 0.35em;
     margin-bottom: 0.25em;

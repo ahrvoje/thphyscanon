@@ -15,7 +15,7 @@ createDataEntry = (datatable, item, name, data) => {
     value.setAttribute('class', 'value')
 
     var entry = document.createElement('tr')
-    entry.setAttribute('class', 'entry')
+    entry.setAttribute('class', 'dataentry')
     entry.appendChild(attr)
     entry.appendChild(value)
 
@@ -414,7 +414,7 @@ const showFilter = (el) => {
 const load_elements = async () => {
     const catalog = await loadCatalog()
 
-    const entries = document.querySelectorAll('.queueentry')
+    const entries = document.querySelectorAll('.entry')
     for (const el of entries) {
         if (!el.id) continue
         const item = catalog[el.id]
