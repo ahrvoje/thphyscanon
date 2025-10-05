@@ -73,10 +73,21 @@ a, :visited {
     white-space: nowrap;
 }
 
-.editor {
+.info {
+    width: 69em;
+    display: flex;
+    padding-top: 0.8em;
+}
+
+.inforight {
+    flex: 1;
+    text-align: right;
+}
+
+.editor, .github, .about {
     font-size: 1.5em;
     font-weight: normal;
-    margin:  0.8em 0em 0.4em 0.15em;
+    margin:  0em 0em 0.4em 0.15em;
 }
 
 .committee {
