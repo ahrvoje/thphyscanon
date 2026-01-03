@@ -34,6 +34,11 @@ a, :visited {
     color: darkblue;
 }
 
+a.doi {
+    vertical-align: middle;
+    margin-left: 0.25em;
+}
+
 .top {
     display: flex;
     flex-direction: column;
