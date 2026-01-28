@@ -99,6 +99,27 @@ a.doi {
     margin:  0em 0em 0.4em 0em;
 }
 
+.contents {
+    display: flex;
+    width: calc(69rem);
+    padding: 15px 0;
+    border: none;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.contents-column {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.contents-column a {
+    display: block;
+    margin: 4px 0;
+    text-decoration: none;
+    color: black;
+}
+
 .filtersection {
     display: none;
     margin-top: 1em;
