@@ -123,7 +123,7 @@ const createBookCard = async (item, id) => {
 
     var anchorlink = document.createElement('div')
     anchorlink.setAttribute('class', 'anchor')
-    anchorlink.innerHTML = '<a href=\'#' + id + '\'>&para;</a>'
+    anchorlink.innerHTML = '<a href=\'#' + id + '\'>🔗</a>'
     card.appendChild(anchorlink)
     card.appendChild(createImages(item.image))
 
@@ -213,7 +213,7 @@ const createArticleCard = async (item, id) => {
 
     var anchorLink = document.createElement('div')
     anchorLink.setAttribute('class', 'anchor')
-    anchorLink.innerHTML = '<a href=\'#' + id + '\'>&para;</a>'
+    anchorLink.innerHTML = '<a href=\'#' + id + '\'>🔗</a>'
     card.appendChild(anchorLink)
 
     var articleData = document.createElement('div')
@@ -411,6 +411,19 @@ const showFilter = (el) => {
     filterrow.style.display = displayState
 }
 
+// Make tierToggle globally accessible for HTML onchange handlers
+window.tierToggle = (tier, show) => {
+    const entries = document.querySelectorAll('.entry[tier="' + tier + '"]')
+    for (const entry of entries) {
+        entry.style.display = show ? '' : 'none'
+        // Also hide/show the adjacent card (bookcard or articlecard)
+        const nextEl = entry.nextElementSibling
+        if (nextEl && (nextEl.classList.contains('bookcard') || nextEl.classList.contains('articlecard'))) {
+            nextEl.style.display = show ? '' : 'none'
+        }
+    }
+}
+
 const load_elements = async () => {
     const catalog = await loadCatalog()
 
@@ -442,6 +455,26 @@ const renderPage = async () => {
     
     await load_elements()
     //await renderCatalog();
+    
+    // Add tier markers to all entries with tier attribute (after load_elements to preserve markers)
+    const entriesWithTier = document.querySelectorAll('.entry[tier]')
+    for (const entry of entriesWithTier) {
+        const tier = entry.getAttribute('tier')
+        const marker = document.createElement('div')
+        marker.className = 'tier-marker tier-' + tier
+        entry.insertBefore(marker, entry.firstChild)
+    }
+
+    // Add anchor links to group titles
+    const groupTitles = document.querySelectorAll('.grouptitle[id]')
+    for (const title of groupTitles) {
+        const id = title.getAttribute('id')
+        const anchorLink = document.createElement('a')
+        anchorLink.href = '#' + id
+        anchorLink.className = 'grouptitle-anchor'
+        anchorLink.textContent = '🔗'
+        title.appendChild(anchorLink)
+    }
 
     window.tpc_subjects = Array.from(window.tpc_subjects).sort()
     window.tpc_tags = Array.from(window.tpc_tags).sort()

@@ -27,6 +27,7 @@ html {
 body {
     background-color: #f8f4e0;
     font-family: 'Biolinum-Regular';
+    text-align: left;
 }
 
 a, :visited {
@@ -120,6 +121,85 @@ a.doi {
     color: black;
 }
 
+.tier {
+    display: flex;
+    width: 69em;
+    padding: 10px 0;
+}
+
+.tier-toggle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    transition: opacity 0.2s;
+    user-select: none;
+}
+
+.tier-toggle input {
+    display: none;
+}
+
+.tier-toggle span {
+    pointer-events: none;
+}
+
+.tier-1 {
+    background-color: rgb(255, 200, 175);
+}
+
+.tier-2 {
+    background-color: rgb(255, 230, 130);
+}
+
+.tier-3 {
+    background-color: rgb(220, 210, 180);
+}
+
+.tier-toggle:has(input:not(:checked)) {
+    opacity: 0.4;
+}
+
+.queue, .group {
+    overflow: visible;
+}
+
+.entry, .entry * {
+    text-align: left;
+    word-spacing: normal;
+}
+
+.entry[tier] {
+    position: relative;
+    overflow: visible;
+    margin-left: 0px;
+}
+
+.entry[tier]::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 6px;
+}
+
+.entry[tier="1"]::before {
+    background-color: rgb(255, 160, 120);
+}
+
+.entry[tier="2"]::before {
+    background-color: rgb(255, 210, 80);
+}
+
+.entry[tier="3"]::before {
+    background-color: rgb(200, 185, 145);
+}
+
 .filtersection {
     display: none;
     margin-top: 1em;
@@ -205,7 +285,11 @@ a.doi {
 
 .anchor {
     float: left;
-    opacity: 0.2;
+    opacity: 0.5;
+}
+
+.anchor:hover {
+    opacity: 1;
 }
 
 .anchor a {
@@ -213,6 +297,30 @@ a.doi {
     padding-bottom: 1em;
     margin-top: auto;
     margin-bottom: auto;
+    font-size: 1.2em;
+}
+
+.grouptitle {
+    position: relative;
+    display: inline-block;
+}
+
+.grouptitle-anchor {
+    margin-left: 0.5em;
+    visibility: hidden;
+    text-decoration: none;
+    font-size: 0.6em;
+    vertical-align: middle;
+    color: inherit;
+}
+
+.grouptitle:hover .grouptitle-anchor {
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.grouptitle .grouptitle-anchor:hover {
+    opacity: 1;
 }
 
 .imagesform {
@@ -335,8 +443,9 @@ td a {
 
 .grouptitle {
     margin-left: 50pt;
-    padding-top: 1em;
-    padding-bottom: 0.3em;
+    padding-top: 0.25em;
+    margin-top: 0.75em;
+    margin-bottom: 0.3em;
     font-size: 36px;
 }
 
