@@ -500,21 +500,19 @@ const initSearch = () => {
         return
     }
     
-    console.log('TPC Search: Initializing search...')
-    
     // Get all entry elements and build haystack
     const entries = document.querySelectorAll('.entry')
     const haystack = []
+    const haystackNormalized = []  // Latinized version for searching
     const entryMap = []
     
     entries.forEach((entry) => {
         const text = entry.textContent || entry.innerText
         haystack.push(text)
+        haystackNormalized.push(uFuzzy.latinize(text))
         entryMap.push(entry)
         entry.dataset.originalHtml = entry.innerHTML
     })
-    
-    console.log('TPC Search: Found', haystack.length, 'entries')
     
     // Configure uFuzzy with single error tolerance
     const uf = new uFuzzy({
@@ -527,21 +525,20 @@ const initSearch = () => {
     
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim()
-        console.log('TPC Search: Query =', query)
-        performSearch(query, uf, haystack, entryMap, searchStatus)
+        // Latinize query to ignore diacritics
+        const queryNormalized = uFuzzy.latinize(query)
+        performSearch(queryNormalized, uf, haystackNormalized, haystack, entryMap, searchStatus)
     })
     
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             searchInput.value = ''
-            performSearch('', uf, haystack, entryMap, searchStatus)
+            performSearch('', uf, haystackNormalized, haystack, entryMap, searchStatus)
         }
     })
-    
-    console.log('TPC Search: Ready')
 }
 
-const performSearch = (query, uf, haystack, entryMap, searchStatus) => {
+const performSearch = (query, uf, haystackNormalized, haystackOriginal, entryMap, searchStatus) => {
     const groups = document.querySelectorAll('.group')
     
     // If query is empty, show all entries and reset
@@ -564,10 +561,8 @@ const performSearch = (query, uf, haystack, entryMap, searchStatus) => {
         return
     }
     
-    // Perform fuzzy search with order-agnostic matching
-    const [idxs, info, order] = uf.search(haystack, query, true)
-    
-    console.log('TPC Search: Results =', idxs ? idxs.length : 0, 'matches')
+    // Perform fuzzy search with order-agnostic matching (on normalized text)
+    const [idxs, info, order] = uf.search(haystackNormalized, query, true)
     
     if (!idxs || idxs.length === 0) {
         // No matches - hide all entries
@@ -602,7 +597,7 @@ const performSearch = (query, uf, haystack, entryMap, searchStatus) => {
             // Find the position in idxs array for highlighting
             const idxPos = idxs.indexOf(index)
             if (idxPos !== -1 && info && info.ranges && info.ranges[idxPos]) {
-                highlightEntry(entry, haystack[index], info.ranges[idxPos])
+                highlightEntry(entry, haystackOriginal[index], info.ranges[idxPos])
             }
         } else {
             entry.classList.add('search-hidden')

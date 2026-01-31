@@ -503,29 +503,30 @@ td a {
 }
 
 .search-input {
-    width: 180px;
-    padding: 5px 8px;
+    width: 160px;
+    padding: 4px 8px;
     font-family: 'Biolinum-Regular', sans-serif;
-    font-size: 14px;
-    border: 1px solid #c8c4b0;
+    font-size: 13px;
+    border: 1px solid #d8d4c0;
     border-radius: 3px;
-    background-color: #fdfcf8;
+    background-color: #f8f4e0;
     box-sizing: border-box;
 }
 
 .search-input:focus {
     outline: none;
-    border-color: #999;
+    border-color: #aaa;
+    background-color: #fff;
 }
 
 .search-input::placeholder {
-    color: #aaa;
+    color: #bbb;
     font-style: italic;
 }
 
 .search-status {
-    font-size: 12px;
-    color: #888;
+    font-size: 11px;
+    color: #999;
     white-space: nowrap;
 }
 
