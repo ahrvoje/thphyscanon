@@ -493,3 +493,60 @@ td a {
     margin-left: 0.5vw;
     margin-right: 0.5vw;
 }
+
+/* Search bar styles */
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 12px;
+}
+
+.search-input {
+    width: 180px;
+    padding: 5px 8px;
+    font-family: 'Biolinum-Regular', sans-serif;
+    font-size: 14px;
+    border: 1px solid #c8c4b0;
+    border-radius: 3px;
+    background-color: #fdfcf8;
+    box-sizing: border-box;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #999;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.search-status {
+    font-size: 12px;
+    color: #888;
+    white-space: nowrap;
+}
+
+.entry.search-hidden {
+    display: none !important;
+}
+
+.entry.search-visible {
+    display: block;
+}
+
+.group.search-hidden {
+    display: none !important;
+}
+
+.bookcard.search-hidden,
+.articlecard.search-hidden {
+    display: none !important;
+}
+
+/* Highlight matching text */
+.search-highlight {
+    background-color: rgba(255, 210, 80, 0.5);
+}

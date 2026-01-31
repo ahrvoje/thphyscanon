@@ -480,5 +480,203 @@ const renderPage = async () => {
     window.tpc_tags = Array.from(window.tpc_tags).sort()
 
     //await renderFilters();
+    
+    // Initialize uFuzzy search
+    initSearch()
 }
+
+// uFuzzy search functionality
+const initSearch = () => {
+    const searchInput = document.getElementById('searchInput')
+    const searchStatus = document.getElementById('searchStatus')
+    
+    if (!searchInput) {
+        console.error('TPC Search: searchInput element not found')
+        return
+    }
+    
+    if (typeof uFuzzy === 'undefined') {
+        console.error('TPC Search: uFuzzy library not loaded')
+        return
+    }
+    
+    console.log('TPC Search: Initializing search...')
+    
+    // Get all entry elements and build haystack
+    const entries = document.querySelectorAll('.entry')
+    const haystack = []
+    const entryMap = []
+    
+    entries.forEach((entry) => {
+        const text = entry.textContent || entry.innerText
+        haystack.push(text)
+        entryMap.push(entry)
+        entry.dataset.originalHtml = entry.innerHTML
+    })
+    
+    console.log('TPC Search: Found', haystack.length, 'entries')
+    
+    // Configure uFuzzy with single error tolerance
+    const uf = new uFuzzy({
+        intraMode: 1,
+        intraIns: 1,
+        intraSub: 1,
+        intraTrn: 1,
+        intraDel: 1,
+    })
+    
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim()
+        console.log('TPC Search: Query =', query)
+        performSearch(query, uf, haystack, entryMap, searchStatus)
+    })
+    
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            searchInput.value = ''
+            performSearch('', uf, haystack, entryMap, searchStatus)
+        }
+    })
+    
+    console.log('TPC Search: Ready')
+}
+
+const performSearch = (query, uf, haystack, entryMap, searchStatus) => {
+    const groups = document.querySelectorAll('.group')
+    
+    // If query is empty, show all entries and reset
+    if (!query) {
+        entryMap.forEach((entry) => {
+            entry.classList.remove('search-hidden', 'search-visible')
+            if (entry.dataset.originalHtml) {
+                entry.innerHTML = entry.dataset.originalHtml
+            }
+            // Also reset adjacent card
+            const nextEl = entry.nextElementSibling
+            if (nextEl && (nextEl.classList.contains('bookcard') || nextEl.classList.contains('articlecard'))) {
+                nextEl.classList.remove('search-hidden')
+            }
+        })
+        groups.forEach((group) => {
+            group.classList.remove('search-hidden')
+        })
+        searchStatus.textContent = ''
+        return
+    }
+    
+    // Perform fuzzy search with order-agnostic matching
+    const [idxs, info, order] = uf.search(haystack, query, true)
+    
+    console.log('TPC Search: Results =', idxs ? idxs.length : 0, 'matches')
+    
+    if (!idxs || idxs.length === 0) {
+        // No matches - hide all entries
+        entryMap.forEach((entry) => {
+            entry.classList.add('search-hidden')
+            entry.classList.remove('search-visible')
+        })
+        groups.forEach((group) => {
+            group.classList.add('search-hidden')
+        })
+        searchStatus.textContent = '0'
+        return
+    }
+    
+    // Create a set of matching indices for fast lookup
+    const matchingIndices = new Set(idxs)
+    
+    // Apply visibility and highlighting
+    entryMap.forEach((entry, index) => {
+        const nextEl = entry.nextElementSibling
+        const hasCard = nextEl && (nextEl.classList.contains('bookcard') || nextEl.classList.contains('articlecard'))
+        
+        if (matchingIndices.has(index)) {
+            entry.classList.remove('search-hidden')
+            entry.classList.add('search-visible')
+            
+            // Also show the adjacent card
+            if (hasCard) {
+                nextEl.classList.remove('search-hidden')
+            }
+            
+            // Find the position in idxs array for highlighting
+            const idxPos = idxs.indexOf(index)
+            if (idxPos !== -1 && info && info.ranges && info.ranges[idxPos]) {
+                highlightEntry(entry, haystack[index], info.ranges[idxPos])
+            }
+        } else {
+            entry.classList.add('search-hidden')
+            entry.classList.remove('search-visible')
+            
+            // Also hide the adjacent card
+            if (hasCard) {
+                nextEl.classList.add('search-hidden')
+            }
+            
+            // Restore original HTML for hidden entries
+            if (entry.dataset.originalHtml) {
+                entry.innerHTML = entry.dataset.originalHtml
+            }
+        }
+    })
+    
+    // Show/hide groups based on whether they have visible entries
+    groups.forEach((group) => {
+        const visibleEntries = group.querySelectorAll('.entry.search-visible')
+        if (visibleEntries.length === 0) {
+            group.classList.add('search-hidden')
+        } else {
+            group.classList.remove('search-hidden')
+        }
+    })
+    
+    searchStatus.textContent = `${idxs.length}`
+}
+
+const highlightEntry = (entry, text, ranges) => {
+    if (!ranges || ranges.length === 0) {
+        return
+    }
+    
+    // Use uFuzzy's built-in highlight function if available
+    let highlighted
+    try {
+        highlighted = uFuzzy.highlight(text, ranges, (part, matched) => {
+            return matched ? '<mark class="search-highlight">' + escapeHtml(part) + '</mark>' : escapeHtml(part)
+        })
+    } catch (e) {
+        // Fallback: manual highlighting
+        highlighted = ''
+        let lastEnd = 0
+        
+        for (let i = 0; i < ranges.length; i += 2) {
+            const start = ranges[i]
+            const end = ranges[i + 1]
+            
+            highlighted += escapeHtml(text.slice(lastEnd, start))
+            highlighted += '<mark class="search-highlight">' + escapeHtml(text.slice(start, end)) + '</mark>'
+            lastEnd = end
+        }
+        highlighted += escapeHtml(text.slice(lastEnd))
+    }
+    
+    // Update entry content while preserving tier marker
+    const tierMarker = entry.querySelector('.tier-marker')
+    if (tierMarker) {
+        entry.innerHTML = ''
+        entry.appendChild(tierMarker.cloneNode(true))
+        const textSpan = document.createElement('span')
+        textSpan.innerHTML = highlighted
+        entry.appendChild(textSpan)
+    } else {
+        entry.innerHTML = highlighted
+    }
+}
+
+const escapeHtml = (text) => {
+    const div = document.createElement('div')
+    div.textContent = text
+    return div.innerHTML
+}
+
 renderPage()

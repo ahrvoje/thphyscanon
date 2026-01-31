@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="src/thphyscanon.css">
         <link rel="icon" href="favicon.ico">
         <script type="text/javascript" src="src/load_catalog.js"></script>
+        <script type="text/javascript" src="src/uFuzzy.min.js"></script>
     </head>
 
     <body>
@@ -60,6 +61,10 @@
                 </div>
             </div>
             <div class="tier">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search..." autocomplete="off">
+                    <span id="searchStatus" class="search-status"></span>
+                </div>
                 <label class="tier-toggle tier-1">
                     <input type="checkbox" checked onchange="tierToggle(1, this.checked)">
                     <span>Tier 1</span>
