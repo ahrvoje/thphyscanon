@@ -57,6 +57,11 @@ a.doi {
     white-space: nowrap;
 }
 
+.title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .kern-h-2 { margin-left: -0.055em; }
 .kern-e-1 { margin-left: -0.01em; }
 .kern-o-1 { margin-left: -0.029em; }
