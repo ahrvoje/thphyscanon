@@ -525,7 +525,6 @@ const initSearch = () => {
     
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim()
-        // Latinize query to ignore diacritics
         const queryNormalized = uFuzzy.latinize(query)
         performSearch(queryNormalized, uf, haystackNormalized, haystack, entryMap, searchStatus)
     })
@@ -533,9 +532,20 @@ const initSearch = () => {
     searchInput.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             searchInput.value = ''
+            searchInput.blur()
             performSearch('', uf, haystackNormalized, haystack, entryMap, searchStatus)
         }
     })
+    
+    // Clear button handler
+    const searchClear = document.getElementById('searchClear')
+    if (searchClear) {
+        searchClear.addEventListener('click', () => {
+            searchInput.value = ''
+            searchInput.blur()
+            performSearch('', uf, haystackNormalized, haystack, entryMap, searchStatus)
+        })
+    }
 }
 
 const performSearch = (query, uf, haystackNormalized, haystackOriginal, entryMap, searchStatus) => {

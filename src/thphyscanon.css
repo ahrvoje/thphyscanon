@@ -500,13 +500,14 @@ td a {
     align-items: center;
     gap: 6px;
     margin-right: 12px;
+    position: relative;
 }
 
 .search-input {
-    width: 160px;
-    padding: 4px 8px;
+    width: 300px;
+    padding: 4px 24px 4px 8px;
     font-family: 'Biolinum-Regular', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     border: 1px solid #d8d4c0;
     border-radius: 3px;
     background-color: #f8f4e0;
@@ -524,10 +525,33 @@ td a {
     font-style: italic;
 }
 
+.search-clear {
+    position: absolute;
+    left: 278px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #aaa;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+    line-height: 1;
+}
+
+.search-clear:hover {
+    color: #666;
+}
+
+.search-input:not(:placeholder-shown) ~ .search-clear {
+    display: block;
+}
+
 .search-status {
     font-size: 11px;
     color: #999;
     white-space: nowrap;
+    width: 30px;
+    text-align: left;
 }
 
 .entry.search-hidden {
