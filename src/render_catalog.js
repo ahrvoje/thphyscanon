@@ -483,29 +483,32 @@ const renderPage = async () => {
     
     // Initialize uFuzzy search
     initSearch()
+    registerWebMCP()
 }
 
-// uFuzzy search functionality
+// uFuzzy search used for page and WebMCP
+let uf, haystack, haystackNormalized, entryMap
+
 const initSearch = () => {
     const searchInput = document.getElementById('searchInput')
     const searchStatus = document.getElementById('searchStatus')
-    
+
     if (!searchInput) {
         console.error('TPC Search: searchInput element not found')
         return
     }
-    
+
     if (typeof uFuzzy === 'undefined') {
         console.error('TPC Search: uFuzzy library not loaded')
         return
     }
-    
+
     // Get all entry elements and build haystack
     const entries = document.querySelectorAll('.entry')
-    const haystack = []
-    const haystackNormalized = []  // Latinized version for searching
-    const entryMap = []
-    
+    haystack = []
+    haystackNormalized = []  // Latinized version for searching
+    entryMap = []
+
     entries.forEach((entry) => {
         const text = entry.textContent || entry.innerText
         haystack.push(text)
@@ -513,9 +516,9 @@ const initSearch = () => {
         entryMap.push(entry)
         entry.dataset.originalHtml = entry.innerHTML
     })
-    
+
     // Configure uFuzzy with single error tolerance
-    const uf = new uFuzzy({
+    uf = new uFuzzy({
         intraMode: 1,
         intraIns: 1,
         intraSub: 1,
@@ -682,6 +685,36 @@ const escapeHtml = (text) => {
     const div = document.createElement('div')
     div.textContent = text
     return div.innerHTML
+}
+
+const registerWebMCP = () => {
+    if (!navigator.modelContext) return
+
+    navigator.modelContext.registerTool({
+        name: "find_books",
+        description: "Fuzzy search the Theoretical Physics Canon — a curated catalog of books and articles in theoretical physics. Returns matching entry texts.",
+        inputSchema: {
+            type: "object",
+            properties: {
+                pattern: {
+                    type: "string",
+                    description: "Search query (author, title, subject, year, etc.)"
+                }
+            },
+            required: ["pattern"]
+        },
+        async execute({ pattern }) {
+            const query = uFuzzy.latinize(pattern.trim())
+            if (!query) return { content: [{ type: "text", text: "[]" }] }
+
+            const [idxs] = uf.search(haystackNormalized, query, true)
+            if (!idxs || idxs.length === 0)
+                return { content: [{ type: "text", text: "[]" }] }
+
+            const results = idxs.map(idx => haystack[idx])
+            return { content: [{ type: "text", text: JSON.stringify(results) }] }
+        }
+    })
 }
 
 renderPage()
