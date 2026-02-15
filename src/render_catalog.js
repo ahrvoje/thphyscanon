@@ -691,14 +691,14 @@ const registerWebMCP = () => {
     if (!navigator.modelContext) return
 
     navigator.modelContext.registerTool({
-        name: "find_books",
+        name: "get_book",
         description: "Fuzzy search the Theoretical Physics Canon — a curated catalog of books and articles in theoretical physics. Returns matching entry texts.",
         inputSchema: {
             type: "object",
             properties: {
                 pattern: {
                     type: "string",
-                    description: "Search query (author, title, subject, year, etc.)"
+                    description: "Fuzzy search filter matched against entry text (Chicago-style citations with author, title, publisher, year). Keep queries short — ideally a single keyword like an author surname or a key title word. Multi-word queries are matched fuzzily but become increasingly restrictive, often filtering out desired results. For broad exploration, use just one term."
                 }
             },
             required: ["pattern"]
