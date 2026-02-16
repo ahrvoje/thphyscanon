@@ -691,7 +691,7 @@ const registerWebMCP = () => {
     if (!navigator.modelContext) return
 
     navigator.modelContext.registerTool({
-        name: "get_book",
+        name: "get_books",
         description: "Fuzzy search the Theoretical Physics Canon — a curated catalog of books and articles in theoretical physics. Returns matching entry texts.",
         inputSchema: {
             type: "object",
