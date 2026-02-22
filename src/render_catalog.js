@@ -698,7 +698,7 @@ const registerWebMCP = () => {
             properties: {
                 pattern: {
                     type: "string",
-                    description: "Fuzzy search filter matched against entry text (Chicago-style citations with author, title, publisher, year). Keep queries short — ideally a single keyword like an author surname or a key title word. Multi-word queries are matched fuzzily but become increasingly restrictive, often filtering out desired results. For broad exploration, use just one term."
+                    description: "Get Theoretical Physics Canon books optionally using fuzzy string filter matched against entry description (Chicago-style citations with author, year, title, publisher). Calling get_books() with no arguments will return all the books in the canon. Keep filter short — ideally a single keyword like an author surname or a key title word. Although filters are applied fuzzily filtering is very restrictive so multi-word filter string will almost certainly filter out desired results. For broad exploration, use just one term. E.g. get_books(\"Newton\") to get books by Newton, or make multiple queries like get_books(\"1960\") up to get_books(\"1969\") to get books published in the 1960s. Or simply get_books(\"196\") to get books published in the 1960s and filter out desired titles yourself. Filtering is fuzzy thus tolerating one character mismatch, like missing character or extra character, so get_books(\"Newtn\") will also return books by Newton; leverage this functionality when useful or when uncertain about the exact filter pattern."
                 }
             },
             required: ["pattern"]
